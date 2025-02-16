@@ -222,7 +222,7 @@
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="keywordflow">return</span> this-&gt;Contains(_line[0]) &amp;&amp; this-&gt;Contains(_line[1]);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Triangle.html#abe5afd410f05c9b9f03ba45d27848d7e">  115</a></span>&#160;    <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code" href="classgz_1_1math_1_1Triangle.html#abe5afd410f05c9b9f03ba45d27848d7e" title="Get whether this triangle contains the given point.">Contains</a>(<span class="keyword">const</span> <a class="code" href=span class="keyword"> const</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Triangle.html#abe5afd410f05c9b9f03ba45d27848d7e">  115</a></span>&#160;    <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code" href="classgz_1_1math_1_1Triangle.html#abe5afd410f05c9b9f03ba45d27848d7e" title="Get whether this triangle contains the given point.">Contains</a>(<span class="keyword">const</span> <a class="code" href="classgz_1_1math_1_1Vector2.html" title="Two dimensional (x, y) vector.">math::Vector2&lt;T&gt;</a> &amp;_pt)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <span class="comment">// Compute vectors</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <a class="code" href="classgz_1_1math_1_1Vector2.html" title="Two dimensional (x, y) vector.">math::Vector2&lt;T&gt;</a> v0 = this-&gt;pts[2] -this-&gt;pts[0];</div>
@@ -261,7 +261,7 @@
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <a class="code" href="classgz_1_1math_1_1Line2.html" title="A two dimensional line segment. The line is defined by a start and end point.">Line2&lt;T&gt;</a> line3(this-&gt;pts[2], this-&gt;pts[0]);</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      <a class="code" href="classgz_1_1math_1_1Vector2.html" title="Two dimensional (x, y) vector.">math::Vector2&lt;T&gt;</a> pt;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <a class="codeRef" href="http://en.cppreference.com/w/cpp/container/set.html" title="STL class.">std::set&lt;math::Vector2&lt;T&gt;</a> &gt; points;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <a class="codeRef" href="http://en.cppreference.com/w/cpp/container/set.html">std::set&lt;math::Vector2&lt;T&gt;</a> &gt; points;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      <span class="keywordflow">if</span> (line1.<a class="code" href="classgz_1_1math_1_1Line2.html#a0165bcd3ce0e36f711808db7494ccdad" title="Check if this line intersects the given line segment.">Intersect</a>(_line, pt))</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        points.<a class="codeRef" href="http://en.cppreference.com/w/cpp/container/set/insert.html">insert</a>(pt);</div>
@@ -331,13 +331,7 @@
 <div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="namespacegz_1_1math.html#aff6bba1159ce0bbf496611cfb7c6579f">  241</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classgz_1_1math_1_1Triangle.html" title="Triangle class and related functions.">Triangle&lt;float&gt;</a> <a class="code" href="namespacegz_1_1math.html#aff6bba1159ce0bbf496611cfb7c6579f" title="Float specialization of the Triangle class.">Trianglef</a>;</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  }  <span class="comment">// namespace GZ_MATH_VERSION_NAMESPACE</span></div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;}  <span class="comment">// namespace gz::math</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">#endif  // GZ_MATH_TRIANGLE_HH_</span></div>
-</div><!-- fragment --></div><!-- contents -->
-      </div>
-    </main>
-  </div>
-</body>
-MATH_TRIANGLE_HH_</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GZ_MATH_TRIANGLE_HH_</span></div>
 </div><!-- fragment --></div><!-- contents -->
       </div>
     </main>
