@@ -576,13 +576,20 @@
 <div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;  <span class="keyword">using</span> <a class="code" href="namespacegz_1_1math.html#a03a567d33c16012ee3671f757d253bd6">PairOutput</a> = uint32_t;</div>
 <div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00682"></a><span class="lineno"><a class="line" href="namespacegz_1_1math.html#ab6be3ef5e4b7edb37a8c06015bcf4544">  682</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="namespacegz_1_1math.html#ab6be3ef5e4b7edb37a8c06015bcf4544">PairInput</a> = uint32_t;</div>
-<div class="line"><a name="l00683"></a><span class="lineno"><a class="line" href="namespacegz_1_1math.html#a03a567d33c16012ee3671f757d253bd6">  683</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="namespacegz_1_1math.html#a03a567d33c16012ee3671f757d253bd6">PairOutput</a> = uint64_t;</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160; </div>
-<div class="line"><a name="l00695"></a><span class="lineno"><a class="line" href="namespacegz_1_1math.html#a7ee1f9a41ea08bddee460cb77865ab8d">  695</a></span>&#160;  <a class="code" href="namespacegz_1_1math.html#a03a567d33c16012ee3671f757d253bd6">PairOutput</a> GZ_MATH_VISIBLE <a class="code" href="namespacegz_1_1math.html#a7ee1f9a41ea08bddee460cb77865ab8d" title="A pairing function that maps two values to a unique third value. This is an implementation of Szudzik...">Pair</a>(</div>
+<div class="line"><a name="l00683"></a><span class="lineno"><a class="line" href="namespacegz_1_1math.html#a03a567d33c16012ee3671f757d253bd6">  683</a></span>&#160;  <span class="keyword">using</span> s an implementation of Szudzik...">Pair</a>(</div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;      <span class="keyword">const</span> <a class="code" href="namespacegz_1_1math.html#ab6be3ef5e4b7edb37a8c06015bcf4544">PairInput</a> _a, <span class="keyword">const</span> <a class="code" href="namespacegz_1_1math.html#ab6be3ef5e4b7edb37a8c06015bcf4544">PairInput</a> _b);</div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160; </div>
-<div class="line"><a name="l00709"></a><span class="lineno"><a class="line" href="namespacegz_1_1math.html#a26e5ded8e5350d3283f71fb24fe63896">  709</a></span>&#160;  <a class="codeRef" href="http://en.cppreference.com/w/cpp/utility/tuple.html">std::tuple&lt;PairInput, PairInput&gt;</a> GZ_MATH_VISIBLE <a class="code" href="namespacegz_1_1math.html#a26e5ded8e5350d3283f71fb24fe63896" title="The reverse of the Pair function. Accepts a key, produced from the Pair function, and returns a tuple...">Unpair</a>(</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;  <a class="codeRef" href="http://en.cppreference.com/w/cpp/utility/tuple.html">std::tuple&lt;PairInput, PairInput&gt;</a> GZ_MATH_VISIBLE <a class="code" href="namespacegz_1_1math.html#a26e5ded8e5350d3283f71fb24fe63896" title="The reverse of the Pair function. Accepts a key, produced from the Pair function, and returns a tuple...">Unpair</a>(</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;      <span class="keyword">const</span> <a class="code" href="namespacegz_1_1math.html#a03a567d33c16012ee3671f757d253bd6">PairOutput</a> _key);</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;  }  <span class="comment">// namespace GZ_MATH_VERSION_NAMESPACE</span></div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;}  <span class="comment">// namespace gz::math</span></div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;<span class="preprocessor">#endif  // GZ_MATH_FUNCTIONS_HH_</span></div>
+</div><!-- fragment --></div><!-- contents -->
+      </div>
+    </main>
+  </div>
+</body>
+epts a key, produced from the Pair function, and returns a tuple...">Unpair</a>(</div>
 <div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;      <span class="keyword">const</span> <a class="code" href="namespacegz_1_1math.html#a03a567d33c16012ee3671f757d253bd6">PairOutput</a> _key);</div>
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;  }  <span class="comment">// namespace GZ_MATH_VERSION_NAMESPACE</span></div>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;}  <span class="comment">// namespace gz::math</span></div>
