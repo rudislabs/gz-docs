@@ -465,7 +465,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a0915f540d70e0ee39af9dfee12b8fa36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the absolute path of a provided path. Relative paths are resolved relative to the current working directory.  <a href="namespacegz_1_1common.html#a0915f540d70e0ee39af9dfee12b8fa36">More...</a><br /></td></tr>
 <tr class="separator:a0915f540d70e0ee39af9dfee12b8fa36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad164655d1f7741ef424e9c2bd94c7e61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegz_1_1common.html#ad164655d1f7741ef424e9c2bd94c7e61">addFindFileURICallback</a> (<a class="elRef" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt; <a class="elRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>(const <a class="el" href="classgz_1_1common_1_1URI.html">URI</a> &amp;)&gt; _cb)</td></tr>
-<tr class="memdesc:ad164655d1f7741ef424e9c2bd94c7e61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a callback to use when <a class="el" href="namespacegz_1_1common.html#a97f82d2a16c4707a8dd278d4d88770ee" title="search for file in common::SystemPaths">findFile()</a> can't find a file that is a valid <a class="el" href="classgz_1_1common_1_1URI.html" title="A complete URI which has the following components:">URI</a>. The callback should return a path to the requested file, or and empty string if the file was not found in the callback. Callbacks will be called in the order they were added until a path is found.  <a href="namespacegz_1_1common.html#ad164655d1f7741ef424e9c2bd94c7e61">More...</a><br /></td></tr>
+<tr class="memdesc:ad164655d1f7741ef424e9c2bd94c7e61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a callback to use when <a class="el" href="namespacegz_1_1common.html#a97f82d2a16c4707a8dd278d4d88770ee" title="search for file in common::SystemPaths">findFile()</a> can't find a file that is a valid <a class="el" href="classgz_1_1common_1_1URI.html" title="A complete URI which has the following components:">URI</a>. The callback should return a full local path to the requested file, or and empty string if the file was not found in the callback. Callbacks will be called in the order they were added until a path is found.  <a href="namespacegz_1_1common.html#ad164655d1f7741ef424e9c2bd94c7e61">More...</a><br /></td></tr>
 <tr class="separator:ad164655d1f7741ef424e9c2bd94c7e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80cd1825c24a6f01e0a09c23115eb5d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegz_1_1common.html#a80cd1825c24a6f01e0a09c23115eb5d6">addSearchPathSuffix</a> (const <a class="elRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_suffix)</td></tr>
 <tr class="memdesc:a80cd1825c24a6f01e0a09c23115eb5d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">add path suffix to <a class="el" href="classgz_1_1common_1_1SystemPaths.html" title="Functions to handle getting system paths, keeps track of:">common::SystemPaths</a>  <a href="namespacegz_1_1common.html#a80cd1825c24a6f01e0a09c23115eb5d6">More...</a><br /></td></tr>
@@ -478,7 +478,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a09c72cad01e7fab395b1fcf719482998"><td class="memItemLeft" align="right" valign="top">GZ_COMMON_AV_VISIBLE AVFrame *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegz_1_1common.html#a09c72cad01e7fab395b1fcf719482998">AVFrameAlloc</a> (void)</td></tr>
 <tr class="memdesc:a09c72cad01e7fab395b1fcf719482998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to avoid deprecation warnings.  <a href="namespacegz_1_1common.html#a09c72cad01e7fab395b1fcf719482998">More...</a><br /></td></tr>
 <tr class="separator:a09c72cad01e7fab395b1fcf719482998"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a1c072fbe88373fdd13fd07a3fdd13fd07af0bf001"><td class="memItemLeft" align="right" valign="top">GZ_COMMON_AV_VISIBLE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegz_1_1common.html#a8a1c072fbe88373fdd13fd07af0bf001">AVFrameUnref</a> (AVFrame *_frame)</td></tr>
+<tr class="memitem:a8a1c072fbe88373fdd13fd07af0bf001"><td class="memItemLeft" align="right" valign="top">GZ_COMMON_AV_VISIBLE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegz_1_1common.html#a8a1c072fbe88373fdd13fd07af0bf001">AVFrameUnref</a> (AVFrame *_frame)</td></tr>
 <tr class="memdesc:a8a1c072fbe88373fdd13fd07af0bf001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to avoid deprecation warnings.  <a href="namespacegz_1_1common.html#a8a1c072fbe88373fdd13fd07af0bf001">More...</a><br /></td></tr>
 <tr class="separator:a8a1c072fbe88373fdd13fd07af0bf001"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac201c9a8a3b8714f10c58f884ad8baca"><td class="memItemLeft" align="right" valign="top">GZ_COMMON_AV_VISIBLE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegz_1_1common.html#ac201c9a8a3b8714f10c58f884ad8baca">AVPacketUnref</a> (AVPacket *_packet)</td></tr>
@@ -2506,7 +2506,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Parse a single row from an input stream of CSV data. </p>
-<p>If parsing farsing fails, the CSV data stream <code>failbit</code> will be set.</p>
+<p>If parsing fails, the CSV data stream <code>failbit</code> will be set.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">_stream</td><td>CSV data stream to parse. </td></tr>
@@ -2627,7 +2627,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Remove a file or a directory and all its . </p>
+<p>Remove a file or a directory and all its contents. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">_path</td><td>Path to a directory or file. </td></tr>
