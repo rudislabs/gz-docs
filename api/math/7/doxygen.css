@@ -1451,55 +1451,6 @@ div.toc li.level4 {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
-	-moz-user-selediv.toc li.level1 {
-        margin-left: 0px;
-}
-
-div.toc li.level2 {
-        margin-left: 15px;
-}
-
-div.toc li.level3 {
-        margin-left: 30px;
-}
-
-div.toc li.level4 {
-        margin-left: 45px;
-}
-
-span.emoji {
-        /* font family used at the site: https://unicode.org/emoji/charts/full-emoji-list.html
-         * font-family: "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", Times, Symbola, Aegyptus, Code2000, Code2001, Code2002, Musica, serif, LastResort;
-         */
-}
-
-.PageDocRTL-title div.toc li.level1 {
-  margin-left: 0 !important;
-  margin-right: 0;
-}
-
-.PageDocRTL-title div.toc li.level2 {
-  margin-left: 0 !important;
-  margin-right: 15px;
-}
-
-.PageDocRTL-title div.toc li.level3 {
-  margin-left: 0 !important;
-  margin-right: 30px;
-}
-
-.PageDocRTL-title div.toc li.level4 {
-  margin-left: 0 !important;
-  margin-right: 45px;
-}
-
-.inherit_header {
-        font-weight: bold;
-        color: gray;
-        cursor: pointer;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
@@ -1710,6 +1661,47 @@ tr.heading h2 {
 
 /* @group Markdown */
 
+/*
+table.markdownTable {
+	border-collapse:collapse;
+        margin-top: 4px;
+        margin-bottom: 4px;
+}
+
+table.markdownTable td, table.markdownTable th {
+	border: 1px solid #613E34;
+	padding: 3px 7px 2px;
+}
+
+table.markdownTableHead tr {
+}
+
+table.markdownTableBodyLeft td, table.markdownTable th {
+	border: 1px solid #613E34;
+	padding: 3px 7px 2px;
+}
+
+th.markdownTableHeadLeft th.markdownTableHeadRight th.markdownTableHeadCenter th.markdownTableHeadNone {
+	background-color: #774C40;
+	color: #FFFFFF;
+	font-size: 110%;
+	padding-bottom: 4px;
+	padding-top: 5px;
+}
+
+th.markdownTableHeadLeft {
+	text-align: left
+}
+
+th.markdownTableHeadRight {
+	text-align: right
+}
+
+th.markdownTableHeadCenter {
+	text-align: center
+}
+*/
+
 table.markdownTable {
 	border-collapse:collapse;
         margin-top: 4px;
@@ -1750,6 +1742,34 @@ th.markdownTableHeadCenter, td.markdownTableBodyCenter {
 }
 
 .DocNodeLTR {
+  text-align: left;
+  direction: ltr;
+}
+
+table.DocNodeRTL {
+   width: auto;
+   margin-right: 0;
+   margin-left: auto;
+}
+
+table.DocNodeLTR {
+   width: auto;
+   margin-right: auto;
+   margin-left: 0;
+}
+
+tt, code, kbd, samp
+{
+  display: inline-block;
+  direction:ltr; 
+}
+/* @end */
+
+u {
+	text-decoration: underline;
+}
+
+odeLTR {
   text-align: left;
   direction: ltr;
 }

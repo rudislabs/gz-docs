@@ -344,12 +344,20 @@
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keyword">private</span>: <span class="keywordtype">float</span> r = 0;</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="keyword">private</span>: <span class="keywordtype">float</span> g = 0;</div>
-<div class="l97"></a><span class="lineno">  297</span>&#160;        <a class="code" href="namespacegz_1_1math.html#a3cdd8fcd712198d74d90ea8e6edb7594" title="Append a number to a stream. Makes sure &quot;-0&quot; is returned as &quot;0&quot;.">appendToStream</a>(_out, _color[i]);</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      }</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      <span class="keywordflow">return</span> _out;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    }</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
-<div class="line"><a name="l00306"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Color.html#a028efd1660319a2561af6896716d96e1">  306</a></span>&#160;    <span class="keyword">public</span>: <span class="keyword">friend</span> <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::istream</a> &amp;operator&gt;&gt; (<a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::istream</a> &amp;_in, <a class="code" href="classgz_1_1math_1_1Color.html" title="Defines a color using a red (R), green (G), blue (B), and alpha (A) component. Each color component i...">Color</a> &amp;_pt)</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160; </div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keyword">private</span>: <span class="keywordtype">float</span> b = 0;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keyword">private</span>: <span class="keywordtype">float</span> a = 1;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  };</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  }  <span class="comment">// namespace GZ_MATH_VERSION_NAMESPACE</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;}  <span class="comment">// namespace gz::math</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="preprocessor">#endif  // GZ_MATH_COLOR_HH_</span></div>
+</div><!-- fragment --></div><!-- contents -->
+      </div>
+    </main>
+  </div>
+</body>
+">std::istream</a> &amp;_in, <a class="code" href="classgz_1_1math_1_1Color.html" title="Defines a color using a red (R), green (G), blue (B), and alpha (A) component. Each color component i...">Color</a> &amp;_pt)</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    {</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      <span class="comment">// Skip white spaces</span></div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      _in.<a class="codeRef" href="http://en.cppreference.com/w/cpp/io/ios_base/setf.html">setf</a>(std::ios_base::skipws);</div>
