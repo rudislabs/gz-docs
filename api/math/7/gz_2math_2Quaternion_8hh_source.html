@@ -261,7 +261,16 @@
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      <a class="code" href="classgz_1_1math_1_1Quaternion.html" title="A quaternion class that represents 3D rotations and orientations. Four scalar values,...">Quaternion&lt;T&gt;</a> result;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      result.qw = 0.0;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#218"></a><span class="lineno">  218</span>&#160;          result.qz = fCoeff*this-&gt;qz;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      <span class="keywordflow">if</span> (std::abs(this-&gt;qw) &lt; 1.0)</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      {</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        T fAngle = acos(this-&gt;qw);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        T fSin = sin(fAngle);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <span class="keywordflow">if</span> (std::abs(fSin) &gt;= 1e-3)</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        {</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;          T fCoeff = fAngle/fSin;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;          result.qx = fCoeff*this-&gt;qx;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;          result.qy = fCoeff*this-&gt;qy;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;          result.qz = fCoeff*this-&gt;qz;</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;          <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        }</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      }</div>
@@ -273,13 +282,13 @@
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;      <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    }</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
-<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Quaternion.html#a4499891bd03946c0db84444368df2027">  237</a></span>&#160;    <span class="keyword">public</span>: <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quaternion&lt;T&gt;</a> <a class="code" href="classgz_1_1math_1_1Quaternion.html#a4499891bd03946c0db84444368df2027" title="Return the exponent.">Exp</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Quaternion.html#a4499891bd03946c0db84444368df2027">  237</a></span>&#160;    <span class="keyword">public</span>: <a class="code" href="classgz_1_1math_1_1Quaternion.html" title="A quaternion class that represents 3D rotations and orientations. Four scalar values,...">Quaternion&lt;T&gt;</a> <a class="code" href="classgz_1_1math_1_1Quaternion.html#a4499891bd03946c0db84444368df2027" title="Return the exponent.">Exp</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      T fAngle = sqrt(this-&gt;qx*this-&gt;qx+</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;          this-&gt;qy*this-&gt;qy+this-&gt;qz*this-&gt;qz);</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      T fSin = sin(fAngle);</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quaternion&lt;T&gt;</a> result;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      <a class="code" href="classgz_1_1math_1_1Quaternion.html" title="A quaternion class that represents 3D rotations and orientations. Four scalar values,...">Quaternion&lt;T&gt;</a> result;</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;      result.qw = cos(fAngle);</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      <span class="keywordflow">if</span> (std::abs(fSin) &gt;= 1e-3)</div>
@@ -322,9 +331,9 @@
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      }</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    }</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
-<div class="line"><a name="l00289"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Quaternion.html#a8ba7bacba5ea64ce1d50df76a32f6222">  289</a></span>&#160;    <span class="keyword">public</span>: <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quaternion&lt;T&gt;</a> <a class="code" href="classgz_1_1math_1_1Quaternion.html#a8ba7bacba5ea64ce1d50df76a32f6222" title="Gets a normalized version of this quaternion.">Normalized</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Quaternion.html#a8ba7bacba5ea64ce1d50df76a32f6222">  289</a></span>&#160;    <span class="keyword">public</span>: <a class="code" href="classgz_1_1math_1_1Quaternion.html" title="A quaternion class that represents 3D rotations and orientations. Four scalar values,...">Quaternion&lt;T&gt;</a> <a class="code" href="classgz_1_1math_1_1Quaternion.html#a8ba7bacba5ea64ce1d50df76a32f6222" title="Gets a normalized version of this quaternion.">Normalized</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quaternion&lt;T&gt;</a> result = *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      <a class="code" href="classgz_1_1math_1_1Quaternion.html" title="A quaternion class that represents 3D rotations and orientations. Four scalar values,...">Quaternion&lt;T&gt;</a> result = *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      result.<a class="code" href="classgz_1_1math_1_1Quaternion.html#af279e0f0ff720ee54d6733674dfda50a" title="Normalize the quaternion.">Normalize</a>();</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    }</div>
@@ -419,7 +428,7 @@
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;      T tol = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(1e-15);</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160; </div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;      <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quaternion&lt;T&gt;</a> copy = *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;      <a class="code" href="classgz_1_1math_1_1Quaternion.html" title="A quaternion class that represents 3D rotations and orientations. Four scalar values,...">Quaternion&lt;T&gt;</a> copy = *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;      T squ;</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;      T sqx;</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;      T sqy;</div>
@@ -479,14 +488,14 @@
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;      <span class="keywordflow">return</span> vec;</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    }</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160; </div>
-<div class="line"><a name="l00494"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Quaternion.html#aab7a155912aa0d198913dfb5bfb87a86">  494</a></span>&#160;    <span class="keyword">public</span>: <span class="keyword">static</span> <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quaternion&lt;T&gt;</a> <a class="code" href="classgz_1_1math_1_1Quaternion.html#aab7a155912aa0d198913dfb5bfb87a86" title="Convert Euler angles to a quaternion.">EulerToQuaternion</a>(<span class="keyword">const</span> <a class="code" href="classgz_1_1math_1_1Vector3.html" title="The Vector3 class represents the generic vector containing 3 elements. Since it&#39;s commonly used to ke...">Vector3&lt;T&gt;</a> &amp;_vec)</div>
+<div class="line"><a name="l00494"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Quaternion.html#aab7a155912aa0d198913dfb5bfb87a86">  494</a></span>&#160;    <span class="keyword">public</span>: <span class="keyword">static</span> <a class="code" href="classgz_1_1math_1_1Quaternion.html" title="A quaternion class that represents 3D rotations and orientations. Four scalar values,...">Quaternion&lt;T&gt;</a> <a class="code" href="classgz_1_1math_1_1Quaternion.html#aab7a155912aa0d198913dfb5bfb87a86" title="Convert Euler angles to a quaternion.">EulerToQuaternion</a>(<span class="keyword">const</span> <a class="code" href="classgz_1_1math_1_1Vector3.html" title="The Vector3 class represents the generic vector containing 3 elements. Since it&#39;s commonly used to ke...">Vector3&lt;T&gt;</a> &amp;_vec)</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    {</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;      <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quaternion&lt;T&gt;</a> result;</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;      <a class="code" href="classgz_1_1math_1_1Quaternion.html" title="A quaternion class that represents 3D rotations and orientations. Four scalar values,...">Quaternion&lt;T&gt;</a> result;</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;      result.<a class="code" href="classgz_1_1math_1_1Quaternion.html#a18c06748094f822c716a864af1ed7583" title="Set the quaternion from Euler angles. The order of operations is roll, pitch, yaw around a fixed body...">SetFromEuler</a>(_vec);</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;      <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    }</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160; </div>
-<div class="line"><a name="l00506"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Quaternion.html#afbee6563f9fa2e87dee781802af27923">  506</a></span>&#160;    <span class="keyword">public</span>: <span class="keyword">static</span> <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quaternion&lt;T&gt;</a> <a class="code" href="classgz_1_1math_1_1Quaternion.html#afbee6563f9fa2e87dee781802af27923" title="Convert Euler angles, in radians, to a quaternion.">EulerToQuaternion</a>(T _x, T _y, T _z)</div>
+<div class="line"><a name="l00506"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Quaternion.html#afbee6563f9fa2e87dee781802af27923">  506</a></span>&#160;    <span class="keyword">public</span>: <span class="keyword">static</span> <a class="code" href="classgz_1_1math_1_1Quaternion.html" title="A quaternion class that represents 3D rotations and orientations. Four scalar values,...">Quaternion&lt;T&gt;</a> <a class="code" href="classgz_1_1math_1_1Quaternion.html#afbee6563f9fa2e87dee781802af27923" title="Convert Euler angles, in radians, to a quaternion.">EulerToQuaternion</a>(T _x, T _y, T _z)</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    {</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;      <span class="keywordflow">return</span> EulerToQuaternion(<a class="code" href="classgz_1_1math_1_1Vector3.html" title="The Vector3 class represents the generic vector containing 3 elements. Since it&#39;s commonly used to ke...">Vector3&lt;T&gt;</a>(_x, _y, _z));</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    }</div>
@@ -627,7 +636,7 @@
 <div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;          }</div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        }</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160; </div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        <span class="keyword">const</span> <a class="code" href="classgz_1_1math_1_1Vector3.html" title="The Vector3 class represents the generic vector containing 3 elements. Since it&#39;s commonly used to ke...">Vector3&lt;T&gt;</a> axis(_v1.<a class="code" href="classgz_1_1math_1_1Vector3.html#a304424f098727d9eacc755637addfd05" title="Return the cross product of this vector with another vector.">Cross</a>(other).Normalize());</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        <span class="keyword">const</span> <a class="code" href="classgz_1_1math_1_1Vector3.html" title="The Vector3 class represents the generic vector containing 3 elements. Since it&#39;s commonly used to ke...">Vector3&lt;T&gt;</a> axis(_v1.<a class="code" href="classgz_1_1math_1_1Vector3.html#a304424f098727d9eacc755637addfd05" title="Return the cross product of this vector with another vector.">Cross</a>(other).<a class="code" href="classgz_1_1math_1_1Vector3.html#a0262c5cea6ab9b6e87b2bd579fb95af5" title="Normalize the vector length.">Normalize</a>());</div>
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160; </div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;        qw = 0;</div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;        qx = axis.<a class="code" href="classgz_1_1math_1_1Vector3.html#ae6b656e82256821b0ef79462ca0079b8" title="Get the x value.">X</a>();</div>
@@ -658,21 +667,9 @@
 <div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;      this-&gt;SetFromAxisAngle(axis.<a class="code" href="classgz_1_1math_1_1Vector3.html#ae6b656e82256821b0ef79462ca0079b8" title="Get the x value.">X</a>(), axis.<a class="code" href="classgz_1_1math_1_1Vector3.html#aecdad7e976b3ed74a1828eac4d958db6" title="Get the y value.">Y</a>(), axis.<a class="code" href="classgz_1_1math_1_1Vector3.html#a253c4659f98e0cffd70ae20bbada9c48" title="Get the z value.">Z</a>(), angle);</div>
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    }</div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160; </div>
-<div class="line"><a name="l00730"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Quaternion.html#abef99099238258accb55d8d866e0f818">  730</a></span>&#160;    <span class="keyword">public</span>: <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quaternion&lt;T&gt;</a> <a class="code" href="classgz_1_1math_1_1Quaternion.html#abef99099238258accb55d8d866e0f818" title="Addition operator.">operator+</a>(<span class="keyword">const</span> <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quaternion&lt;T&gt;</a> &amp;_qt)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00730"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Quaternion.html#abef99099238258accb55d8d866e0f818">  730</a></span>&#160;    <span class="keyword">public</span>: <a class="code" href="classgz_1_1math_1_1Quaternion.html" title="A quaternion class that represents 3D rotations and orientations. Four scalar values,...">Quaternion&lt;T&gt;</a> <a class="code" href="classgz_1_1math_1_1Quaternion.html#abef99099238258accb55d8d866e0f818" title="Addition operator.">operator+</a>(<span class="keyword">const</span> <a class="code" href="classgz_1_1math_1_1Quaternion.html" title="A quaternion class that represents 3D rotations and orientations. Four scalar values,...">Quaternion&lt;T&gt;</a> &amp;_qt)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;      <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quaternion&lt;T&gt;</a> result(this-&gt;qw + _qt.qw, this-&gt;qx + _qt.qx,</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;                           this-&gt;qy + _qt.qy, this-&gt;qz + _qt.qz);</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;      <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    }</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160; </div>
-<div class="line"><a name="l00740"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Quaternion.html#af6f3c66f18283590ba733c66a7c554b1">  740</a></span>&#160;    <span class="keyword">public</span>: <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quaternion&lt;T&gt;</a> <a class="code" href="classgz_1_1math_1_1Quaternion.html#af6f3c66f18283590ba733c66a7c554b1" title="Addition set operator.">operator+=</a>(<span class="keyword">const</span> <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quaternion&lt;T&gt;</a> &amp;_qt)</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    {</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;      *<span class="keyword">this</span> = *<span class="keyword">this</span> + _qt;</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160; </div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;    }</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160; </div>
-<div class="line"><a name="l00750"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Quaternion.html#abd34223449312ffb117690751fa3c84b">  750</a></span>&#160;    <span class="keyword">public</span>: <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quate32</span>&#160;      <a class="code" href="classgz_1_1math_1_1Quaternion.html" title="A quaternion class that represents 3D rotations and orientations. Four scalar values,...">Quaternion&lt;T&gt;</a> result(this-&gt;qw + _qt.qw, this-&gt;qx + _qt.qx,</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;      <a class="code" href="classgz_1_1math_1_1Quaternion.html" title="A quaternion class that represents 3D rotations and orientations. Four scalar values,...">Quaternion&lt;T&gt;</a> result(this-&gt;qw + _qt.qw, this-&gt;qx + _qt.qx,</div>
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;                           this-&gt;qy + _qt.qy, this-&gt;qz + _qt.qz);</div>
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;      <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    }</div>
