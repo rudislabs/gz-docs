@@ -258,7 +258,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a92d7f54dda72f413e82c1e5a2b47a4e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the radius of the surface.  <a href="classgz_1_1math_1_1SphericalCoordinates.html#a92d7f54dda72f413e82c1e5a2b47a4e2">More...</a><br /></td></tr>
 <tr class="separator:a92d7f54dda72f413e82c1e5a2b47a4e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07acc02c0832e00e0a124b80b73d5d01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgz_1_1math_1_1SphericalCoordinates.html#a07acc02c0832e00e0a124b80b73d5d01">UpdateTransformationMatrix</a> ()</td></tr>
-<tr class="memdesc:a07acc02c0832e00e0a124b80b73d5d01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update coordinate transformation matrix with reference location.  <a href="classgz_1_1math_1_1SphericalCoordinates.html#a07acc02c0832e00e0a124b80b73d5d01">More...</a><br /></td></tr>
+<tr class="memdesc:a07acc02c0832e00e0a124b80b73d5d01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update coordinate transformation matrix with reference location.  <a href="classgz_1_1math_1_1SphericalCoordinates.html#a077acc02c0832e00e0a124b80b73d5d01">More...</a><br /></td></tr>
 <tr class="separator:a07acc02c0832e00e0a124b80b73d5d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ed785fd88dc6d6da0df052d878cf806"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegz_1_1math.html#a1f05093f5ee1a9ecdd54476792e4c206">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgz_1_1math_1_1SphericalCoordinates.html#a2ed785fd88dc6d6da0df052d878cf806">VelocityTransform</a> (const <a class="el" href="namespacegz_1_1math.html#a1f05093f5ee1a9ecdd54476792e4c206">Vector3d</a> &amp;_vel, const <a class="el" href="classgz_1_1math_1_1SphericalCoordinates.html#af532ebccf30da4696c48ec61f6b4d663">CoordinateType</a> &amp;_in, const <a class="el" href="classgz_1_1math_1_1SphericalCoordinates.html#af532ebccf30da4696c48ec61f6b4d663">CoordinateType</a> &amp;_out) const</td></tr>
 <tr class="memdesc:a2ed785fd88dc6d6da0df052d878cf806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert between velocity in SPHERICAL/ECEF/LOCAL/GLOBAL frame Spherical coordinates use radians, while the other frames use meters.  <a href="classgz_1_1math_1_1SphericalCoordinates.html#a2ed785fd88dc6d6da0df052d878cf806">More...</a><br /></td></tr>
@@ -770,7 +770,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Convert a Cartesian velocity vector in the local frame to a global Cartesian frame with components East, North, Up. This is a wrapper around <code>VelocityTransform(_xyz, LOCAL, GLOBAL)</code> </p>
+<p>Convert a Cartesian velocity vector in the local frame to a global Cartesian frame with components East, North, Up. This is a wrapper aroun <code>VelocityTransform(_xyz, LOCAL, GLOBAL)</code> </p>
 <p>There's a known bug with this computation that can't be fixed on version 6 to avoid behaviour changes. Directly call <code>VelocityTransform(_xyz, LOCAL2, GLOBAL)</code> for correct results.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1369,3 +1369,4 @@ Static Public Member Functions</h2></td></tr>
     </main>
   </div>
 </body>
+
