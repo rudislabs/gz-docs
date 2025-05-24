@@ -336,23 +336,6 @@
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> idx = 0;</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0; j &lt; _height; ++j)</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        {</div>
-<div class="line"><a name="l00283"></a><span class="lineno">v)))</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;              max = v;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <span class="keywordflow">if</span> (v &lt; min &amp;&amp; !<a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/math/isinf.html">std::isinf</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(v)))</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;              min = v;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;          }</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        }</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        min = <a class="codeRef" href="https://gazebosim.org/api/math/7/namespacegz_1_1math.html#a0d579ce4e0e806e81e22381fe1c5c947">math::equal</a>(_min, <a class="codeRef" href="http://en.cppreference.com/w/cpp/types/numeric_limits.html">std::numeric_limits&lt;T&gt;::max</a>()) ? min : _min;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        max = <a class="codeRef" href="https://gazebosim.org/api/math/7/namespacegz_1_1math.html#a0d579ce4e0e806e81e22381fe1c5c947">math::equal</a>(_max, <a class="codeRef" href="http://en.cppreference.com/w/cpp/types/numeric_limits.html">std::numeric_limits&lt;T&gt;::lowest</a>()) ? max : _max;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="comment">// convert to rgb image</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <span class="comment">// color is grayscale, i.e. r == b == g</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="keywordtype">double</span> range = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(max - min);</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="keywordflow">if</span> (<a class="codeRef" href="https://gazebosim.org/api/math/7/namespacegz_1_1math.html#a0d579ce4e0e806e81e22381fe1c5c947">gz::math::equal</a>(range, 0.0))</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;          range = 1.0;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> idx = 0;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0; j &lt; _height; ++j)</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        {</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;          <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; _width; ++i)</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;          {</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            <span class="keyword">auto</span> v = buffer[idx++];</div>

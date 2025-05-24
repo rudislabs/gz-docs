@@ -402,7 +402,7 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a34ef659755e21515b805c0120eb9187b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegz_1_1common.html#a34ef659755e21515b805c0120eb9187b">ConnectionPtr</a> = <a class="elRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="classgz_1_1common_1_1Connection.html">Connection</a> &gt;</td></tr>
 <tr class="separator:a34ef659755e21515b805c0120eb9187b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3882c12f75ef6a08376e49eb26677033"><td class="memTemplParams" colspan="2">template&lt;typename To , typename From &gt; </td></tr>
-<tr class="memitem:a3882c12f75ef6a08376e49eb26677033"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegz_1_1common.html#a3882c12f75ef6a08376e49eb26677033">ConstCompatible</a> = detail::ConstCompatible&lt; o, From &gt;</td></tr>
+<tr class="memitem:a3882c12f75ef6a08376e49eb26677033"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegz_1_1common.html#a3882c12f75ef6a08376e49eb26677033">ConstCompatible</a> = detail::ConstCompatible&lt; To, From &gt;</td></tr>
 <tr class="memdesc:a3882c12f75ef6a08376e49eb26677033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains a static constexpr field named <code>value</code> which will be true if the type <code>From</code> has a const-quality less than or equal to the type <code>To</code>.  <a href="namespacegz_1_1common.html#a3882c12f75ef6a08376e49eb26677033">More...</a><br /></td></tr>
 <tr class="separator:a3882c12f75ef6a08376e49eb26677033"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c78259418ddd2272e02aeb49811b4d2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegz_1_1common.html#a5c78259418ddd2272e02aeb49811b4d2">ConstPluginPtr</a> = <a class="el" href="classgz_1_1common_1_1TemplatePluginPtr.html">TemplatePluginPtr</a>&lt; const <a class="el" href="classgz_1_1common_1_1Plugin.html">Plugin</a> &gt;</td></tr>
@@ -435,26 +435,26 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a218e06376463f78726114f003071fef0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegz_1_1common.html#a218e06376463f78726114f003071fef0">FilesystemWarningOp</a> { <a class="el" href="namespacegz_1_1common.html#a218e06376463f78726114f003071fef0abaf00f20f89e7d7ac71c1ce4d278c0c0">FSWO_LOG_WARNINGS</a> = 0
-, <a class="el" href="namespacegz_1_1common.html#a218e06376463f78726114f003071fef0a9953c9dbc46e6743409dc25de2f5e125">FSWO_SUPPRESS_WARNINGS</a>
+<tr class="memitem:a218e06376463f78726114f003071fef0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegz_1_1common.html#a218e06376463f78726114f003071fef0">FilesystemWarningOp</a> { <a class="el" href="namespacegz_1_1common.html#a218e06376463f78726114f003071fef0abaf00f20f89e7d7ac71c1ce4d278c0c0">FSWO_LOG_WARNINGS</a> = 0, 
+<a class="el" href="namespacegz_1_1common.html#a218e06376463f78726114f003071fef0a9953c9dbc46e6743409dc25de2f5e125">FSWO_SUPPRESS_WARNINGS</a>
  }</td></tr>
 <tr class="memdesc:a218e06376463f78726114f003071fef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options for how to handle errors that occur in functions that manipulate the filesystem.  <a href="namespacegz_1_1common.html#a218e06376463f78726114f003071fef0">More...</a><br /></td></tr>
 <tr class="separator:a218e06376463f78726114f003071fef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3af19a931d89b6e807403c7f23a4a3d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegz_1_1common.html#aa3af19a931d89b6e807403c7f23a4a3d">NodeTransformType</a> { <a class="el" href="namespacegz_1_1common.html#aa3af19a931d89b6e807403c7f23a4a3dabc6501410409b0638909b580970b35f7">TRANSLATE</a>
-, <a class="el" href="namespacegz_1_1common.html#aa3af19a931d89b6e807403c7f23a4a3da3dcfe0046eb5876e287dbf0914819b16">ROTATE</a>
-, <a class="el" href="namespacegz_1_1common.html#aa3af19a931d89b6e807403c7f23a4a3da593be05a10070b4e7e0856e20590eaaf">SCALE</a>
-, <a class="el" href="namespacegz_1_1common.html#aa3af19a931d89b6e807403c7f23a4a3da1d20a1221a789adf82ff0e890a403210">MATRIX</a>
+<tr class="memitem:aa3af19a931d89b6e807403c7f23a4a3d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegz_1_1common.html#aa3af19a931d89b6e807403c7f23a4a3d">NodeTransformType</a> { <a class="el" href="namespacegz_1_1common.html#aa3af19a931d89b6e807403c7f23a4a3dabc6501410409b0638909b580970b35f7">TRANSLATE</a>, 
+<a class="el" href="namespacegz_1_1common.html#aa3af19a931d89b6e807403c7f23a4a3da3dcfe0046eb5876e287dbf0914819b16">ROTATE</a>, 
+<a class="el" href="namespacegz_1_1common.html#aa3af19a931d89b6e807403c7f23a4a3da593be05a10070b4e7e0856e20590eaaf">SCALE</a>, 
+<a class="el" href="namespacegz_1_1common.html#aa3af19a931d89b6e807403c7f23a4a3da1d20a1221a789adf82ff0e890a403210">MATRIX</a>
  }</td></tr>
 <tr class="memdesc:aa3af19a931d89b6e807403c7f23a4a3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of the transform types.  <a href="namespacegz_1_1common.html#aa3af19a931d89b6e807403c7f23a4a3d">More...</a><br /></td></tr>
 <tr class="separator:aa3af19a931d89b6e807403c7f23a4a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ca34bd57b22e84a2763da2b992d0bb0"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegz_1_1common.html#a8ca34bd57b22e84a2763da2b992d0bb0">NormalMapSpace</a> : int { <a class="el" href="namespacegz_1_1common.html#a8ca34bd57b22e84a2763da2b992d0bb0a4da56c3c2d4ee59a3461da5b2ad1a25d">TANGENT</a> = 0
-, <a class="el" href="namespacegz_1_1common.html#a8ca34bd57b22e84a2763da2b992d0bb0a8eee8e217391199668cbac89472ace53">OBJECT</a> = 1
+<tr class="memitem:a8ca34bd57b22e84a2763da2b992d0bb0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegz_1_1common.html#a8ca34bd57b22e84a2763da2b992d0bb0">NormalMapSpace</a> : int { <a class="el" href="namespacegz_1_1common.html#a8ca34bd57b22e84a2763da2b992d0bb0a4da56c3c2d4ee59a3461da5b2ad1a25d">TANGENT</a> = 0, 
+<a class="el" href="namespacegz_1_1common.html#a8ca34bd57b22e84a2763da2b992d0bb0a8eee8e217391199668cbac89472ace53">OBJECT</a> = 1
  }</td></tr>
 <tr class="memdesc:a8ca34bd57b22e84a2763da2b992d0bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Space the normal map is defined in.  <a href="namespacegz_1_1common.html#a8ca34bd57b22e84a2763da2b992d0bb0">More...</a><br /></td></tr>
 <tr class="separator:a8ca34bd57b22e84a2763da2b992d0bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18ae24a143a8cca4587c3b3928d6079f"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegz_1_1common.html#a18ae24a143a8cca4587c3b3928d6079f">PbrType</a> : int { <a class="el" href="namespacegz_1_1common.html#a18ae24a143a8cca4587c3b3928d6079fab50339a10e1de285ac99d4c3990b8693">NONE</a> = 0
-, <a class="el" href="namespacegz_1_1common.html#a18ae24a143a8cca4587c3b3928d6079fa74108a89672c573afee1fae6de8e4e0b">METAL</a> = 1
-, <a class="el" href="namespacegz_1_1common.html#a18ae24a143a8cca4587c3b3928d6079fa8149300093da5e2ff693d">SPECULAR</a> = 2
+<tr class="memitem:a18ae24a143a8cca4587c3b3928d6079f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegz_1_1common.html#a18ae24a143a8cca4587c3b3928d6079f">PbrType</a> : int { <a class="el" href="namespacegz_1_1common.html#a18ae24a143a8cca4587c3b3928d6079fab50339a10e1de285ac99d4c3990b8693">NONE</a> = 0, 
+<a class="el" href="namespacegz_1_1common.html#a18ae24a143a8cca4587c3b3928d6079fa74108a89672c573afee1fae6de8e4e0b">METAL</a> = 1, 
+<a class="el" href="namespacegz_1_1common.html#a18ae24a143a8cca4587c3b3928d6079fa0df54c320628149300093da5e2ff693d">SPECULAR</a> = 2
  }</td></tr>
 <tr class="memdesc:a18ae24a143a8cca4587c3b3928d6079f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of PBR workflow.  <a href="namespacegz_1_1common.html#a18ae24a143a8cca4587c3b3928d6079f">More...</a><br /></td></tr>
 <tr class="separator:a18ae24a143a8cca4587c3b3928d6079f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1978,7 +1978,9 @@ Variables</h2></td></tr>
           <td></td>
         </tr>
       </table>
-</div><div class="memdocheck if the given path is a file. </p>
+</div><div class="memdoc">
+
+<p>Check if the given path is a file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">_path</td><td>Path to a file. </td></tr>
@@ -2393,7 +2395,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Move a file. a file. </p>
+<p>Move a file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">_existingFilename</td><td>Full path to an existing file. </td></tr>

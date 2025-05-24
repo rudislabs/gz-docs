@@ -230,14 +230,7 @@
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="keyword">public</span>: <span class="keyword">virtual</span> <a class="code" href="classgz_1_1common_1_1EventT.html#af79efb8cf43ea445fb12dac1619f7cc7" title="Destructor.">~EventT</a>();</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <span class="keyword">public</span>: <a class="codeRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" title="STL class.">ConnectionPtr</a> <a class="code" href="classgz_1_1comame.html">std::is_same&lt;typename CallbackT::result_type, void&gt;::value</a>,</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;          <span class="stringliteral">&quot;Event callback must have void return type&quot;</span>);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <span class="keyword">public</span>: <a class="code" href="classgz_1_1common_1_1EventT.html#a19a251ac79129d997b7b36cdc5f6b946" title="Constructor.">EventT</a>();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="keyword">public</span>: <span class="keyword">virtual</span> <a class="code" href="classgz_1_1common_1_1EventT.html#af79efb8cf43ea445fb12dac1619f7cc7" title="Destructor.">~EventT</a>();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <span class="keyword">public</span>: <a class="codeRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">ConnectionPtr</a> <a class="code" href="classgz_1_1common_1_1EventT.html#abf68768feadc05a88bbd4b490a42b1e7" title="Connect a callback to this event.">Connect</a>(<span class="keyword">const</span> <a class="codeRef" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">CallbackT</a> &amp;_subscriber);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <span class="keyword">public</span>: <a class="codeRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" title="STL class.">ConnectionPtr</a> <a class="code" href="classgz_1_1common_1_1EventT.html#abf68768feadc05a88bbd4b490a42b1e7" title="Connect a callback to this event.">Connect</a>(<span class="keyword">const</span> <a class="codeRef" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">CallbackT</a> &amp;_subscriber);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <span class="keyword">public</span>: <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classgz_1_1common_1_1EventT.html#ab3037ea15f03867f5d330d381906d580" title="Disconnect a callback to this event.">Disconnect</a>(<span class="keywordtype">int</span> _id);</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
@@ -267,7 +260,7 @@
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      <span class="keyword">private</span>: <span class="keyword">class </span>EventConnection</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      {</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keyword">public</span>: EventConnection(<span class="keywordtype">bool</span> _on, <span class="keyword">const</span> <a class="codeRef" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function&lt;T&gt;</a> &amp;_cb,</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                        <span class="keyword">const</span> <a class="codeRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">ConnectionPtr</a> &amp;_publicConn)</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                        <span class="keyword">const</span> <a class="codeRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" title="STL class.">ConnectionPtr</a> &amp;_publicConn)</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            : callback(_cb), publicConnection(_publicConn)</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        {</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;          <span class="comment">// Windows Visual Studio 2012 does not have atomic_bool constructor,</span></div>
@@ -279,14 +272,14 @@
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keyword">public</span>: <a class="codeRef" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function&lt;T&gt;</a> callback;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keyword">public</span>: <a class="codeRef" href="http://en.cppreference.com/w/cpp/memory/weak_ptr.html">std::weak_ptr&lt;Connection&gt;</a> publicConnection;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keyword">public</span>: <a class="codeRef" href="http://en.cppreference.com/w/cpp/memory/weak_ptr.html" title="STL class.">std::weak_ptr&lt;Connection&gt;</a> publicConnection;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      };</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      <span class="keyword">typedef</span> <a class="codeRef" href="http://en.cppreference.com/w/cpp/container/map.html">std::map&lt;int, std::unique_ptr&lt;EventConnection&gt;</a>&gt; EvtConnectionMap;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      <span class="keyword">typedef</span> <a class="codeRef" href="http://en.cppreference.com/w/cpp/container/map.html" title="STL class.">std::map&lt;int, std::unique_ptr&lt;EventConnection&gt;</a>&gt; EvtConnectionMap;</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      <span class="keyword">private</span>: EvtConnectionMap connections;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <span class="keyword">private</span>: <a class="codeRef" href="http://en.cppreference.com/w/cpp/thread/mutex.html">std::mutex</a> mutex;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <span class="keyword">private</span>: <a class="codeRef" href="http://en.cppreference.com/w/cpp/thread/mutex.html" title="STL class.">std::mutex</a> mutex;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      <span class="keyword">private</span>: <a class="codeRef" href="http://en.cppreference.com/w/cpp/container/list.html">std::list&lt;typename EvtConnectionMap::const_iterator&gt;</a></div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;              connectionsToRemove;</div>
@@ -315,7 +308,7 @@
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    }</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> N&gt;</div>
-<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="classgz_1_1common_1_1EventT.html#abf68768feadc05a88bbd4b490a42b1e7">  223</a></span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">ConnectionPtr</a> <a class="code" href="classgz_1_1common_1_1EventT.html#abf68768feadc05a88bbd4b490a42b1e7" title="Connect a callback to this event.">EventT&lt;T, N&gt;::Connect</a>(<span class="keyword">const</span> <a class="codeRef" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function&lt;T&gt;</a> &amp;_subscriber)</div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="classgz_1_1common_1_1EventT.html#abf68768feadc05a88bbd4b490a42b1e7">  223</a></span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" title="STL class.">ConnectionPtr</a> <a class="code" href="classgz_1_1common_1_1EventT.html#abf68768feadc05a88bbd4b490a42b1e7" title="Connect a callback to this event.">EventT&lt;T, N&gt;::Connect</a>(<span class="keyword">const</span> <a class="codeRef" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function&lt;T&gt;</a> &amp;_subscriber)</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    {</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;      <span class="keywordtype">int</span> index = 0;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;      <span class="keywordflow">if</span> (!this-&gt;connections.empty())</div>
@@ -359,7 +352,7 @@
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> N&gt;</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgz_1_1common_1_1EventT.html" title="A class for event processing.">EventT&lt;T, N&gt;::Cleanup</a>()</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    {</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      <a class="codeRef" href="http://en.cppreference.com/w/cpp/thread/lock_guard.html">std::lock_guard&lt;std::mutex&gt;</a> lock(this-&gt;mutex);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      <a class="codeRef" href="http://en.cppreference.com/w/cpp/thread/lock_guard.html" title="STL class.">std::lock_guard&lt;std::mutex&gt;</a> lock(this-&gt;mutex);</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <span class="comment">// Remove all queue connections.</span></div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;conn : this-&gt;connectionsToRemove)</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        this-&gt;connections.erase(conn);</div>
