@@ -1089,37 +1089,7 @@ Examples</h2>
 <p>Return the rotation in Euler angles, in radians. </p>
 <dl class="section return"><dt>Returns</dt><dd>This quaternion as Euler angles. </dd></dl>
 
-<p class="reference">References <a class="el" href="gz_2math_2Helpers_8hh.html#a0ac174a9cc1f9be9b33f931461bea361">GZ_PI</a>, <a class="el" href="classgz_1_1math_1_1Vector3.html#ae6b656e82256821b0ef79462ca0079b8">Vector3&lt; T &gt;::X()</a>, <a class="el" href="classgz_1_1math_1_1Vector3.html#aecdad7e976b3ed74a1828eac4d958db6">Vector3&lt; T &gt;::Y()</a>, and <a class="el" href="classgz_1_1math_1_1Vector3.html#a253c4659f98e0cffd70ae20bbada9c48">Vector3&lt; T &gt;::Z()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classgz_1_1math_1_1Quaternion.html#acb4d8341c02d721c109e9e7b13260358">Quaternion&lt; T &gt;::Pitch()</a>, <a class="el" href="classgz_1_1math_1_1Quaternion.html#aa6d129633232523dfcb4ce5fa0ab1ed5">Quaternion&lt; T &gt;::Roll()</a>, and <a class="el" href="classgz_1_1math_1_1Quaternion.html#a7d80cfe87e46d0c34c92f594dd0cb2aa">Quaternion&lt; T &gt;::Yaw()</a>.</p>
-
-</div>
-</div>
-<a id="a12db5beedccc77e6cf13804fb154f16e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12db5beedccc77e6cf13804fb154f16e">&#9670;&nbsp;</a></span>Euler() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Euler </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classgz_1_1math_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>_vec</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set the quaternion from Euler angles. The order of operations is roll, pitch, yaw around a fixed body frame axis (the original frame of the object before rotation is applied). Roll is a rotation about x, pitch is about y, yaw is about z. </p>
+<p class="reference">References <a class="el" href="gz_2math_2Helpers_8hh.html#a0ac174a9cc1f9be9b33f931461bea361">GZ_PI</a>, <a class="el" href="classgz_1_1math_1_1Vector3.html#ae6b656e82256821b0ef79462ca0079b8">Vector3&lt; T &gt;::X()</a>, <a cobject before rotation is applied). Roll is a rotation about x, pitch is about y, yaw is about z. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">_vec</td><td>Euler angle </td></tr>
@@ -1127,8 +1097,6 @@ Examples</h2>
   </dd>
 </dl>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>Use <a class="el" href="classgz_1_1math_1_1Quaternion.html#a18c06748094f822c716a864af1ed7583" title="Set the quaternion from Euler angles. The order of operations is roll, pitch, yaw around a fixed body...">SetFromEuler(const Vector3&lt;T&gt; &amp;)</a> </dd></dl>
-
-<p class="reference">References <a class="el" href="classgz_1_1math_1_1Quaternion.html#a18c06748094f822c716a864af1ed7583">Quaternion&lt; T &gt;::SetFromEuler()</a>.</p>
 
 </div>
 </div>
@@ -1183,8 +1151,6 @@ Examples</h2>
 </dl>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>Use <a class="el" href="classgz_1_1math_1_1Quaternion.html#a1ad9bd946d762ce60994979cec1bfd4e" title="Set the quaternion from Euler angles.">SetFromEuler(T, T, T)</a> </dd></dl>
 
-<p class="reference">References <a class="el" href="classgz_1_1math_1_1Quaternion.html#a18c06748094f822c716a864af1ed7583">Quaternion&lt; T &gt;::SetFromEuler()</a>.</p>
-
 </div>
 </div>
 <a id="aab7a155912aa0d198913dfb5bfb87a86"></a>
@@ -1220,9 +1186,7 @@ Examples</h2>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The resulting quaternion </dd></dl>
 
-<p class="reference">References <a class="el" href="classgz_1_1math_1_1Quaternion.html#a18c06748094f822c716a864af1ed7583">Quaternion&lt; T &gt;::SetFromEuler()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classgz_1_1math_1_1Quaternion.html#afbee6563f9fa2e87dee781802af27923">Quaternion&lt; T &gt;::EulerToQuaternion()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classgz_1_1math_1_1Quaternion.html#afbee6563f9fa2e87dee781802af27923">Quaternion&lt; Precision &gt;::EulerToQuaternion()</a>.</p>
 
 </div>
 </div>
@@ -1276,8 +1240,6 @@ Examples</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The resulting quaternion. </dd></dl>
-
-<p class="reference">References <a class="el" href="classgz_1_1math_1_1Quaternion.html#aab7a155912aa0d198913dfb5bfb87a86">Quaternion&lt; T &gt;::EulerToQuaternion()</a>.</p>
 
 </div>
 </div>
@@ -1345,6 +1307,52 @@ Examples</h2>
 </div><div class="memdoc">
 
 <p>Set this quaternion to represent rotation from vector _v1 to vector _v2, so that _v2.Normalize() == this * _v1.Normalize() holds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_v1</td><td>The first vector. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_v2</td><td>The second vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Implementation inspired by <a href="http://stackoverflow.com/a/11741520/1076564">http://stackoverflow.com/a/11741520/1076564</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>Use <a class="el" href="classgz_1_1math_1_1Quaternion.html#afe0d5ea374e6fa4d77664561e1bfa965" title="Set this quaternion to represent rotation from vector _v1 to vector _v2, so that _v2....">SetFrom2Axes(const Vector3&lt;T&gt; &amp;, const Vector3&lt;T&gt; &amp;)</a> </dd></dl>
+
+</div>
+</div>
+<a id="acf8f12607d6f55cecd66d8c1f8e07649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf8f12607d6f55cecd66d8c1f8e07649">&#9670;&nbsp;</a></span>Integrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgz_1_1math_1_1Quaternion.html">Quaternion</a>&lt;T&gt; Integrate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgz_1_1math_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>_angularVelocity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>_deltaT</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Integrate quaternion for constant angular velocity vector along specified interval <code>_deltaT</code>. Implementation based on: <a href="http://physicsforgames.blogspot.com/2010/02/quaternions.html">http://represent rotation from vector _v1 to vector _v2, so that _v2.Normalize() == this * _v1.Normalize() holds. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">_v1</td><td>The first vector. </td></tr>
