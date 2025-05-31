@@ -281,7 +281,8 @@
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
 <div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Plane.html#af6b7b577a42bd66713f3c6816c71fee2">  192</a></span>&#160;    <span class="keyword">public</span>: <a class="code" href="classgz_1_1math_1_1Plane.html#a4013454f1b2c236ff18e572d12436fef" title="Enum used to indicate a side of the plane, no side, or both sides for entities on the plane.">PlaneSide</a> <a class="code" href="classgz_1_1math_1_1Plane.html#af6b7b577a42bd66713f3c6816c71fee2" title="The side of the plane a box is on.">Side</a>(<span class="keyword">const</span> <a class="code" href="classgz_1_1math_1_1AxisAlignedBox.html" title="Mathematical representation of a box that is aligned along an X,Y,Z axis.">math::AxisAlignedBox</a> &amp;_box)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      <span class="keywordtype">doAbsDist = this-&gt;normal.AbsDot(_box.<a class="code" href="classgz_1_1math_1_1AxisAlignedBox.html#a27788a5a8d264642d7e530357a195f8e" title="Get the size of the box.">Size</a>()/2.0);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      <span class="keywordtype">double</span> dist = this-&gt;Distance(_box.<a class="code" href="classgz_1_1math_1_1AxisAlignedBox.html#a51f8dbeb197dd14e19c956b709e416ec" title="Get the box center.">Center</a>());</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      <span class="keywordtype">double</span> maxAbsDist = this-&gt;normal.AbsDot(_box.<a class="code" href="classgz_1_1math_1_1AxisAlignedBox.html#a27788a5a8d264642d7e530357a195f8e" title="Get the size of the box.">Size</a>()/2.0);</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      <span class="keywordflow">if</span> (dist &lt; -maxAbsDist)</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">return</span> NEGATIVE_SIDE;</div>
@@ -335,7 +336,7 @@
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;      <span class="keywordflow">return</span> this-&gt;d;</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keyword">public</span>: <a class="code" href="classgz_1_1math_1_1Plane.html" title="A plane and related functions.">Plane&lt;T&gt;</a> &amp;operator=(<span class="keyword">const</span> <a class="code" href="classgz_1_1math_1_1Plane.html" title="A plane and related functions.">Plane&lt;T&gt;</a> &amp;_p) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Plane.html#a6f44525520aa2834f1b33b4f9c4bbb5a">  261</a></span>&#160;    <span class="keyword">public</span>: <a class="code" href="classgz_1_1math_1_1Plane.html" title="A plane and related functions.">Plane&lt;T&gt;</a> &amp;<a class="code" href="classgz_1_1math_1_1Plane.html#a6f44525520aa2834f1b33b4f9c4bbb5a" title="Equal operator.">operator=</a>(<span class="keyword">const</span> <a class="code" href="classgz_1_1math_1_1Plane.html" title="A plane and related functions.">Plane&lt;T&gt;</a> &amp;_p) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keyword">private</span>: <a class="code" href="classgz_1_1math_1_1Vector3.html" title="The Vector3 class represents the generic vector containing 3 elements. Since it&#39;s commonly used to ke...">Vector3&lt;T&gt;</a> normal;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
@@ -348,14 +349,6 @@
 <div class="line"><a name="l00274"></a><span class="lineno"><a class="line" href="namespacegz_1_1math.html#ae8167e057ec4d8fdbbbf7d2f96247c5f">  274</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classgz_1_1math_1_1Plane.html" title="A plane and related functions.">Plane&lt;double&gt;</a> <a class="code" href="namespacegz_1_1math.html#ae8167e057ec4d8fdbbbf7d2f96247c5f">Planed</a>;</div>
 <div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="namespacegz_1_1math.html#ac0ffa848b66b846a54f4c395ed05abcc">  275</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classgz_1_1math_1_1Plane.html" title="A plane and related functions.">Plane&lt;float&gt;</a> <a class="code" href="namespacegz_1_1math.html#ac0ffa848b66b846a54f4c395ed05abcc">Planef</a>;</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  }  <span class="comment">// namespace GZ_MATH_VERSION_NAMESPACE</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;}  <span class="comment">// namespace gz::math</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor">#endif  // GZ_MATH_PLANE_HH_</span></div>
-</div><!-- fragment --></div><!-- contents -->
-      </div>
-    </main>
-  </div>
-</body>
-"line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  }  <span class="comment">// namespace GZ_MATH_VERSION_NAMESPACE</span></div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;}  <span class="comment">// namespace gz::math</span></div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GZ_MATH_PLANE_HH_</span></div>
 </div><!-- fragment --></div><!-- contents -->
