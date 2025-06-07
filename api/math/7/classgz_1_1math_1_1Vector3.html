@@ -1136,6 +1136,54 @@ class gz::math::Vector3&lt; T &gt;</h3>
         <tr>
           <td class="memname">T MinAbs </td>
           <td>(</td>
+          <td class="p30c8f6b857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56995505b1ed3836a340bd30c8f6b857">&#9670;&nbsp;</a></span>Min() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Min </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgz_1_1math_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>_v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set this vector's components to the minimum of itself and the passed in vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_v</td><td>the minimum clamping vector </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="classgz_1_1math_1_1MassMatrix3.html#aff782a7c82987263aa7a2bdb5989701d">MassMatrix3&lt; T &gt;::SetFromBox()</a>.</p>
+
+</div>
+</div>
+<a id="afdccf55efe7ca5c45f6cb8516624d787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdccf55efe7ca5c45f6cb8516624d787">&#9670;&nbsp;</a></span>MinAbs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T MinAbs </td>
+          <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1149,6 +1197,8 @@ class gz::math::Vector3&lt; T &gt;</h3>
 
 <p>Get the number with the maximum absolute value in the vector. </p>
 <dl class="section return"><dt>Returns</dt><dd>the element with minimum absolute value </dd></dl>
+
+<p class="reference">References <a class="el" href="namespacegz_1_1math.html#a534f4fdec977719c6d87bcb71a944112">gz::math::min()</a>, and <a class="elRef" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min()</a>.</p>
 
 </div>
 </div>
@@ -1203,6 +1253,8 @@ class gz::math::Vector3&lt; T &gt;</h3>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the normal </dd></dl>
 
+<p class="reference">References <a class="el" href="classgz_1_1math_1_1Vector3.html#a304424f098727d9eacc755637addfd05">Vector3&lt; T &gt;::Cross()</a>, and <a class="el" href="classgz_1_1math_1_1Vector3.html#a0262c5cea6ab9b6e87b2bd579fb95af5">Vector3&lt; T &gt;::Normalize()</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="classgz_1_1math_1_1Triangle3.html#a2325f6f523caf4d6781e6338dcc43fa9">Triangle3&lt; T &gt;::Normal()</a>.</p>
 
 </div>
@@ -1233,7 +1285,9 @@ class gz::math::Vector3&lt; T &gt;</h3>
 <p>Normalize the vector length. </p>
 <dl class="section return"><dt>Returns</dt><dd>unit length vector </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classgz_1_1math_1_1Matrix4.html#a76ed14eeeb29f05e40cdd7d84aec5a12">Matrix4&lt; T &gt;::LookAt()</a>, <a class="el" href="classgz_1_1math_1_1Vector3.html#a0b7b9b88230fa13999afd4eb0db76860">Vector3&lt; Precision &gt;::Normal()</a>, and <a class="el" href="classgz_1_1math_1_1Vector3.html#a4bfa2c419d8c07cc107dcd544b9a163a">Vector3&lt; Precision &gt;::Normalized()</a>.</p>
+<p class="reference">References <a class="el" href="classgz_1_1math_1_1Vector3.html#acba1450bd6d761438f1011040665db53">Vector3&lt; T &gt;::Length()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classgz_1_1math_1_1Matrix4.html#a76ed14eeeb29f05e40cdd7d84aec5a12">Matrix4&lt; T &gt;::LookAt()</a>, <a class="el" href="classgz_1_1math_1_1Vector3.html#a0b7b9b88230fa13999afd4eb0db76860">Vector3&lt; T &gt;::Normal()</a>, <a class="el" href="classgz_1_1math_1_1Vector3.html#a4bfa2c419d8c07cc107dcd544b9a163a">Vector3&lt; T &gt;::Normalized()</a>, <a class="el" href="classgz_1_1math_1_1Matrix3.html#afe0d5ea374e6fa4d77664561e1bfa965">Matrix3&lt; T &gt;::SetFrom2Axes()</a>, and <a class="el" href="classgz_1_1math_1_1Quaternion.html#afe0d5ea374e6fa4d77664561e1bfa965">Quaternion&lt; T &gt;::SetFrom2Axes()</a>.</p>
 
 </div>
 </div>
@@ -1262,6 +1316,8 @@ class gz::math::Vector3&lt; T &gt;</h3>
 
 <p>Return a normalized vector. </p>
 <dl class="section return"><dt>Returns</dt><dd>unit length vector </dd></dl>
+
+<p class="reference">References <a class="el" href="classgz_1_1math_1_1Vector3.html#a0262c5cea6ab9b6e87b2bd579fb95af5">Vector3&lt; T &gt;::Normalize()</a>.</p>
 
 </div>
 </div>
@@ -1333,6 +1389,8 @@ class gz::math::Vector3&lt; T &gt;</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a vector </dd></dl>
+
+<p class="reference">References <a class="el" href="classgz_1_1math_1_1Vector3.html#a5cdda4b6f03fbffbabdf2b70ff6a3063">Vector3&lt; T &gt;::Vector3()</a>.</p>
 
 </div>
 </div>
@@ -1510,6 +1568,8 @@ class gz::math::Vector3&lt; T &gt;</h3>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the sum vector </dd></dl>
 
+<p class="reference">References <a class="el" href="classgz_1_1math_1_1Vector3.html#a5cdda4b6f03fbffbabdf2b70ff6a3063">Vector3&lt; T &gt;::Vector3()</a>.</p>
+
 </div>
 </div>
 <a id="a14e611b9bd94741bfa539d365322d42d"></a>
@@ -1608,6 +1668,8 @@ class gz::math::Vector3&lt; T &gt;</h3>
 <p>Negation operator. </p>
 <dl class="section return"><dt>Returns</dt><dd>negative of this vector </dd></dl>
 
+<p class="reference">References <a class="el" href="classgz_1_1math_1_1Vector3.html#a5cdda4b6f03fbffbabdf2b70ff6a3063">Vector3&lt; T &gt;::Vector3()</a>.</p>
+
 </div>
 </div>
 <a id="a057006e6c0df90127e792b2175b248cb"></a>
@@ -1677,6 +1739,8 @@ class gz::math::Vector3&lt; T &gt;</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a vector after the subtraction </dd></dl>
+
+<p class="reference">References <a class="el" href="classgz_1_1math_1_1Vector3.html#a5cdda4b6f03fbffbabdf2b70ff6a3063">Vector3&lt; T &gt;::Vector3()</a>.</p>
 
 </div>
 </div>
@@ -1784,6 +1848,8 @@ class gz::math::Vector3&lt; T &gt;</h3>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a vector </dd></dl>
 
+<p class="reference">References <a class="el" href="classgz_1_1math_1_1Vector3.html#a5cdda4b6f03fbffbabdf2b70ff6a3063">Vector3&lt; T &gt;::Vector3()</a>.</p>
+
 </div>
 </div>
 <a id="a7aeeda901a62be5f07d0a4c5b6ac18df"></a>
@@ -1819,6 +1885,8 @@ class gz::math::Vector3&lt; T &gt;</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a vector </dd></dl>
+
+<p class="reference">References <a class="el" href="classgz_1_1math_1_1Vector3.html#a5cdda4b6f03fbffbabdf2b70ff6a3063">Vector3&lt; T &gt;::Vector3()</a>.</p>
 
 </div>
 </div>
@@ -2032,6 +2100,8 @@ class gz::math::Vector3&lt; T &gt;</h3>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if each component is equal within a default tolerance (1e-3), false otherwise </dd></dl>
 
+<p class="reference">References <a class="el" href="classgz_1_1math_1_1Vector3.html#aff382d06e414af712d6cd65938b32250">Vector3&lt; T &gt;::Equal()</a>.</p>
+
 </div>
 </div>
 <a id="a806d08211ff4cfbd5eefde4e72575bbe"></a>
@@ -2066,6 +2136,8 @@ class gz::math::Vector3&lt; T &gt;</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The value. </dd></dl>
+
+<p class="reference">References <a class="el" href="namespacegz_1_1math.html#ab971b7643c4db5e8a305dee631ca7697">gz::math::clamp()</a>, <a class="el" href="namespacegz_1_1math.html#a868597f0eb34228d0357b8ff6449e443">gz::math::GZ_TWO_SIZE_T</a>, and <a class="el" href="namespacegz_1_1math.html#aeb89769a0418f099e75e086bba4e40de">gz::math::GZ_ZERO_SIZE_T</a>.</p>
 
 </div>
 </div>
@@ -2102,6 +2174,8 @@ class gz::math::Vector3&lt; T &gt;</h3>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The value. </dd></dl>
 
+<p class="reference">References <a class="el" href="namespacegz_1_1math.html#ab971b7643c4db5e8a305dee631ca7697">gz::math::clamp()</a>, <a class="el" href="namespacegz_1_1math.html#a868597f0eb34228d0357b8ff6449e443">gz::math::GZ_TWO_SIZE_T</a>, and <a class="el" href="namespacegz_1_1math.html#aeb89769a0418f099e75e086bba4e40de">gz::math::GZ_ZERO_SIZE_T</a>.</p>
+
 </div>
 </div>
 <a id="a6d053de0e6be29a9b838ac5e7d1f5b54"></a>
@@ -2114,158 +2188,7 @@ class gz::math::Vector3&lt; T &gt;</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classgz_1_1math_1_1Vector3.html">Vector3</a> Perpendicular </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return a vector that is perpendicular to this one. </p>
-<dl class="section return"><dt>Returns</dt><dd>an orthogonal vector </dd></dl>
-
-</div>
-</div>
-<a id="adda289f08205bc1e35cfd0ca35ecfc87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adda289f08205bc1e35cfd0ca35ecfc87">&#9670;&nbsp;</a></span>Round() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classgz_1_1math_1_1Vector3.html">Vector3</a> Round </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Round to near whole number, return the result. </p>
-<dl class="section return"><dt>Returns</dt><dd>the result </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="classgz_1_1math_1_1Vector3.html#a5796302c32ccf2e3b6c66fb08d9189f3">Vector3&lt; Precision &gt;::Rounded()</a>.</p>
-
-</div>
-</div>
-<a id="aeae08385b749c5d457a69c879617423c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeae08385b749c5d457a69c879617423c">&#9670;&nbsp;</a></span>Round() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Round </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_precision</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Round all values to _precision decimal places. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_precision</td><td>the decimal places </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a5796302c32ccf2e3b6c66fb08d9189f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5796302c32ccf2e3b6c66fb08d9189f3">&#9670;&nbsp;</a></span>Rounded()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classgz_1_1math_1_1Vector3.html">Vector3</a> Rounded </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get a rounded version of this vector. </p>
-<dl class="section return"><dt>Returns</dt><dd>a rounded vector </dd></dl>
-
-</div>
-</div>
-<a id="a6bb782c1093a118a3f40e4c869fdf986"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bb782c1093a118a3f40e4c869fdf986">&#9670;&nbsp;</a></span>Set()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Set </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>_x</em> = <code>0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>_y</em> = <code>0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>_z</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set the contents of the vector. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+          <td class="memname"><a class="el" href="classgz_1_1math_1_1Vector3.html">Vparams"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">_x</td><td>value along x </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">_y</td><td>value along y </td></tr>
