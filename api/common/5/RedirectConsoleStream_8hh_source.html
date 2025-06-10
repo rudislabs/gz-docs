@@ -185,10 +185,7 @@
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classtesting_1_1RedirectConsoleStream.html#a21227cd86a99c59acb3e30d5cdcb36e6">   52</a></span>&#160;  <span class="keyword">public</span>: <a class="codeRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> <a class="code" href="classtesting_1_1RedirectConsoleStream.html#a21227cd86a99c59acb3e30d5cdcb36e6" title="Get the contents of the redirected console output This will additionally remove any redirection.">GetString</a>();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classtesting_1_1RedirectConsoleStream.html#a52beef6d7a687d4d109e6cec1606e32e">   56</a></span>&#160;  <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code" href="classtesting_1_1RedirectConsoleStream.html#a52beef6d7a687d4d109e6cec1606e32e" title="Get if the redirection is valid and enabled.">Active</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  GZ_UTILS_UNIQUE_IMPL_PTR(dataPtr)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class=0"></a><span class="lineno">   60</span>&#160;};</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="namespacetesting.html#a8dcf5db0dd0d4c0293d12724317f64ea">   63</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="classtesting_1_1RedirectConsoleStream.html">RedirectConsoleStream</a> <a class="code" href="namespacetesting.html#a8dcf5db0dd0d4c0293d12724317f64ea" title="Redirect standard out to a test-specific temporary path.">RedirectStdout</a>()</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
@@ -200,6 +197,15 @@
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">auto</span> path = <a class="code" href="namespacetesting.html#a3a1475c9d19afa633bee644136e3600c" title="Get the path to a file in a temporary directory.">gz::common::testing::TempPath</a>(<span class="stringliteral">&quot;stderr.out&quot;</span>);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classtesting_1_1RedirectConsoleStream.html">RedirectConsoleStream</a>(StreamSource::STDERR, path);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}  <span class="comment">// namespace gz::common::testing</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif  // GZ_COMMON_TESTING_REDIRECTCONSOLE_STREAM_HH</span></div>
+</div><!-- fragment --></div><!-- contents -->
+      </div>
+    </main>
+  </div>
+</body>
+="lineno">   73</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classtesting_1_1RedirectConsoleStream.html">RedirectConsoleStream</a>(StreamSource::STDERR, path);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}  <span class="comment">// namespace gz::common::testing</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GZ_COMMON_TESTING_REDIRECTCONSOLE_STREAM_HH</span></div>
