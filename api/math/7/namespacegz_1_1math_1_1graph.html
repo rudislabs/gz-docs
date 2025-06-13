@@ -202,7 +202,7 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a9b92ff00d2f2580a16823994b08a4022"><td class="memTemplParams" colspan="2">template&lt;typename V , typename E , typename EdgeType &gt; </td></tr>
 <tr class="memitem:a9b92ff00d2f2580a16823994b08a4022"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="namespacegz_1_1math_1_1graph.html#a1f7010c44b0824e6e2d08c537522e1a0">VertexId</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegz_1_1math_1_1graph.html#a9b92ff00d2f2580a16823994b08a4022">BreadthFirstSort</a> (const <a class="el" href="classgz_1_1math_1_1graph_1_1Graph.html">Graph</a>&lt; V, E, EdgeType &gt; &amp;_graph, const <a class="el" href="namespacegz_1_1math_1_1graph.html#a1f7010c44b0824e6e2d08c537522e1a0">VertexId</a> &amp;_from)</td></tr>
-<tr class="memdesc:a9b92ff00d2f2580a16823994b08a4022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Breadth first sort (BFS). Startting from the vertex == _from, it traverses the graph exploring the neighbors first, before moving to the next level neighbors.  <a href="namespacegz_1_1math_1_1graph.html#a9b92ff00d2f2580a16823994b08a4022">More...</a><br /></td></tr>
+<tr class="memdesc:a9b92ff00d2f2580a16823994b08a4022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Breadth first sort (BFS). Starting from the vertex == _from, it traverses the graph exploring the neighbors first, before moving to the next level neighbors.  <a href="namespacegz_1_1math_1_1graph.html#a9b92ff00d2f2580a16823994b08a4022">More...</a><br /></td></tr>
 <tr class="separator:a9b92ff00d2f2580a16823994b08a4022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61a448fd0197b5e39056c6178a613619"><td class="memTemplParams" colspan="2">template&lt;typename V , typename E &gt; </td></tr>
 <tr class="memitem:a61a448fd0197b5e39056c6178a613619"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="namespacegz_1_1math_1_1graph.html#a6166b5982ebb3b70b794cbdd28aa4c94">UndirectedGraph</a>&lt; V, E &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegz_1_1math_1_1graph.html#a61a448fd0197b5e39056c6178a613619">ConnectedComponents</a> (const <a class="el" href="namespacegz_1_1math_1_1graph.html#a6166b5982ebb3b70b794cbdd28aa4c94">UndirectedGraph</a>&lt; V, E &gt; &amp;_graph)</td></tr>
@@ -526,7 +526,7 @@ Variables</h2></td></tr>
 <p>E.g.: Given the following undirected graph, g, with five vertices: </p><pre class="fragment">         (6)                |
       0-------1             |
       |      /|\            |
-      |     / | \(5)        |
+      |     / | \&zwj;(5)        |
       | (2)/  |  \          |
       |   /   |   2         |
    (1)|  / (2)|  /          |
@@ -534,7 +534,7 @@ Variables</h2></td></tr>
       |/      |/            |
       3-------4             |
          (1)                |
-</pre><p>This is the result of Dijkstra(g, 0):</p>
+</pre><p> This is the result of Dijkstra(g, 0):</p>
 <div class="fragment"><div class="line">================================</div>
 <div class="line">| Dst | Cost | Previous vertex |</div>
 <div class="line">================================</div>
@@ -675,7 +675,7 @@ Variables</h2></td></tr>
 
 <p>Represents an invalid Id. </p>
 
-<p class="reference">Referenced by <a class="el" href="classgz_1_1math_1_1graph_1_1Graph.html#a41bf01a9bf40ee27f08405b404187235">Graph&lt; V, E, EdgeType &gt;::AddEdge()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1Graph.html#a0d827829d28146a07586160b8addaccf">Graph&lt; V, E, EdgeType &gt;::AddVertex()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1Graph.html#a1b2df28d5a426724e36fde045a2398bf">Graph&lt; V, E, EdgeType &gt;::AdjacentsFrom()</a>, <a class="el" href="namespacegz_1_1math_1_1graph.html#aad10f204b8ee7e8cb0d24b4fa0fa52cb">Dijkstra()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1UndirectedEdge.html#a3b388f0e588feccafc684fa8b0cbaf7c">UndirectedEdge&lt; E &gt;::From()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1DirectedEdge.html#a3b388f0e588feccafc684fa8b0cbaf7c">DirectedEdge&lt; E &gt;::From()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1Graph.html#a75226801052d910550bb03bce6df8ab6">Graph&lt; V, E, EdgeType &gt;::IncidentsFrom()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1Graph.html#abd602eb002d37ae71e0b00d8ece51bc5">Graph&lt; V, E, EdgeType &gt;::IncidentsTo()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1Graph.html#ae5d8b54b2405f303d7b6f91879da183f">Graph&lt; V, E, EdgeType &gt;::LinkEdge()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1Graph.html#acded76285173462d9292a6e716854b26">Graph&lt; V, E, EdgeType &gt;::RemoveEdge()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1DirectedEdge.html#a5bac1eb2b06d8a254d21e46600c3eb3d">DirectedEdge&lt; E &gt;::To()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1Vertex.html#a470438bf41ff0f2cc2fc41682c8f839e">Vertex&lt; V &gt;::Valid()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1Edge.html#a470438bf41ff0f2cc2fc41682c8f839e">Edge&lt; E &gt;::Valid()</a>, and <a class="el" href="classgz_1_1math_1_1graph_1_1Edge.html#af13a627a30200b078b9b71a34ffe53ae">Edge&lt; E &gt;::Vertices()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classgz_1_1math_1_1graph_1_1Graph.html#a41bf01a9bf40ee27f08405b404187235">Graph&lt; V, E, EdgeType &gt;::AddEdge()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1Graph.html#a0d827829d28146a07586160b8addaccf">Graph&lt; V, E, EdgeType &gt;::AddVertex()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1Graph.html#a1b2df28d5a426724e36fde045a2398bf">Graph&lt; V, E, EdgeType &gt;::AdjacentsFrom()</a>, <a class="el" href="namespacegz_1_1math_1_1graph.html#aad10f204b8ee7e8cb0d24b4fa0fa52cb">Dijkstra()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1UndirectedEdge.html#a3b388f0e588feccafc684fa8b0cbaf7c">UndirectedEdge&lt; E &gt;::From()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1DirectedEdge.html#a3b388f0e588feccafc684fa8b0cbaf7c">DirectedEdge&lt; E &gt;::From()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1Graph.html#a75226801052d910550bb03bce6df8ab6">Graph&lt; V, E, EdgeType &gt;::IncidentsFrom()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1Graph.html#abd602eb002d37ae71e0b00d8ece51bc5">Graph&lt; V, E, EdgeType &gt;::IncidentsTo()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1Graph.html#ae5d8b54b2405f303d7b6f91879da183f">Graph&lt; V, E, EdgeType &gt;::LinkEdge()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1Graph.html#acded76285173462d9292a6e716854b26">Graph&lt; V, E, EdgeType &gt;::RemoveEdge()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1DirectedEdge.html#a5bac1eb2b06d8a254d21e46600c3eb3d">DirectedEdge&lt; E &gt;::To()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1Edge.html#a470438bf41ff0f2cc2fc41682c8f839e">Edge&lt; E &gt;::Valid()</a>, <a class="el" href="classgz_1_1math_1_1graph_1_1Vertex.html#a470438bf41ff0f2cc2fc41682c8f839e">Vertex&lt; V &gt;::Valid()</a>, and <a class="el" href="classgz_1_1math_1_1graph_1_1Edge.html#af13a627a30200b078b9b71a34ffe53ae">Edge&lt; E &gt;::Vertices()</a>.</p>
 
 </div>
 </div>
@@ -684,4 +684,3 @@ Variables</h2></td></tr>
     </main>
   </div>
 </body>
-ody>
