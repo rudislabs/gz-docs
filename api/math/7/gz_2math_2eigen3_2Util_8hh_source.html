@@ -247,7 +247,6 @@
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// Transform the original cloud to the origin where the principal</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// components correspond to the axes.</span></div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="namespacegz_1_1math.html#afe7ea008ee9e656fb34621264a42e04a">Eigen::Matrix4d</a> projectionTransform(Eigen::Matrix4d::Identity());</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    projectionTransform.block&lt;3, 3&gt;(::Identity());</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    projectionTransform.block&lt;3, 3&gt;(0, 0) = eigenVectorsPCA.transpose();</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    projectionTransform.block&lt;3, 1&gt;(0, 3) =</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      -1.0f * (projectionTransform.block&lt;3, 3&gt;(0, 0) * centroid);</div>
@@ -288,7 +287,13 @@
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordflow">return</span> box;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  }</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}  <span class="comment">// namespace gz::math::eigen3</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GZ_MATH_EIGEN3_UTIL_HH_</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#endif  // GZ_MATH_EIGEN3_UTIL_HH_</span></div>
+</div><!-- fragment --></div><!-- contents -->
+      </div>
+    </main>
+  </div>
+</body>
+or">#endif  </span><span class="comment">// GZ_MATH_EIGEN3_UTIL_HH_</span></div>
 </div><!-- fragment --></div><!-- contents -->
       </div>
     </main>
