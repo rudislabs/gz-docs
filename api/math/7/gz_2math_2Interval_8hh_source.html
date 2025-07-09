@@ -277,7 +277,7 @@
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        {</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        }</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      }</div>
+<div class="line"><a name="l0018}</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <span class="keywordflow">if</span> (!this-&gt;rightClosed &amp;&amp; _other.rightClosed)</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      {</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordflow">if</span> (this-&gt;rightValue &lt;= _other.rightValue)</div>
@@ -342,8 +342,8 @@
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      <span class="keywordflow">return</span> !this-&gt;Contains(_other) || !_other.<a class="code" href="classgz_1_1math_1_1Interval.html#a3d6cd207f46254de49d4baae563e3a6f" title="Check if the interval contains _value">Contains</a>(*<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    }</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
-<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Interval.html#ad6446afca224c2eb453cbfee76687bd1">  264</a></span>&#160;    <span class="keyword">public</span>: <span class="keyword">friend</span> <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;<a class="code" href="classgz_1_1math_1_1Interval.html#ad6446afca224c2eb453cbfee76687bd1" title="Stream insertion operator.">operator&lt;&lt;</a>(</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;_out, <span class="keyword">const</span> <a class="code" href="classgz_1_1math_1_1Interval.html" title="The Interval class represents a range of real numbers. Intervals may be open (a, b),...">gz::math::Interval&lt;T&gt;</a> &amp;_interval)</div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Interval.html#ad6446afca224c2eb453cbfee76687bd1">  264</a></span>&#160;    <span class="keyword">public</span>: <span class="keyword">friend</span> <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html" title="STL class.">std::ostream</a> &amp;<a class="code" href="classgz_1_1math_1_1Interval.html#ad6446afca224c2eb453cbfee76687bd1" title="Stream insertion operator.">operator&lt;&lt;</a>(</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html" title="STL class.">std::ostream</a> &amp;_out, <span class="keyword">const</span> <a class="code" href="classgz_1_1math_1_1Interval.html" title="The Interval class represents a range of real numbers. Intervals may be open (a, b),...">gz::math::Interval&lt;T&gt;</a> &amp;_interval)</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    {</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      <span class="keywordflow">return</span> _out &lt;&lt; (_interval.leftClosed ? <span class="stringliteral">&quot;[&quot;</span> : <span class="stringliteral">&quot;(&quot;</span>)</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                  &lt;&lt; _interval.leftValue &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; _interval.rightValue</div>
@@ -369,8 +369,13 @@
 <div class="line"><a name="l00292"></a><span class="lineno"><a class="line" href="namespacegz_1_1math.html#aec35a5a1208d0efd4ab3997ca0a5e5e1">  292</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classgz_1_1math_1_1Interval.html" title="The Interval class represents a range of real numbers. Intervals may be open (a, b),...">Intervald</a> = <a class="code" href="classgz_1_1math_1_1Interval.html" title="The Interval class represents a range of real numbers. Intervals may be open (a, b),...">Interval&lt;double&gt;</a>;</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  }  <span class="comment">// namespace GZ_MATH_VERSION_NAMESPACE</span></div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;}  <span class="comment">// namespace gz::math</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GZ_MATH_INTERVAL_HH_</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="preprocessor">#endif  // GZ_MATH_INTERVAL_HH_</span></div>
 </div><!-- fragment --></div><!-- contents -->
+      </div>
+    </main>
+  </div>
+</body>
+
       </div>
     </main>
   </div>
