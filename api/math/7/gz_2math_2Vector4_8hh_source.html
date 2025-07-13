@@ -546,11 +546,7 @@
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;      <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == _pt);</div>
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    }</div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160; </div>
-<div class="line"><a name="l00563"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Vector4.html#a33b7dcc502aae627fbc56bcfecf33af1">  563</a></span>&#160;    <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code" href="classgz_1_1math_1_1Vector4.html#a33b7dcc502aae627fbc56bcfecf33af1" title="See if a point is finite (e.g., not nan)">IsFinite</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;      <span class="comment">// std::isfinite works with floating point values,</span></div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;      <span class="comment">// need to explicit cast to avoid ambiguity in vc++.</span></div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;      <span class="keywordflow">return</span> <a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/math/isfinite.html">std::isfinite</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(this-&gt;data[0])) &amp;&amp;</div>
+<div class="line"><a name="l00563"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Vector4.html#a33b7dcc502aae627fbc56bcfecf33af1">  563</a></span>&#160;    <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code" href="classgz_1_1math_1_1Vector4.html#a33b7dcc502aae627fbc56bcfecf33af1" title="See if a point is finite (e.g., no.html">std::isfinite</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(this-&gt;data[0])) &amp;&amp;</div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;             <a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/math/isfinite.html">std::isfinite</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(this-&gt;data[1])) &amp;&amp;</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;             <a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/math/isfinite.html">std::isfinite</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(this-&gt;data[2])) &amp;&amp;</div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;             <a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/math/isfinite.html">std::isfinite</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(this-&gt;data[3]));</div>
@@ -587,6 +583,11 @@
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    }</div>
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160; </div>
 <div class="line"><a name="l00621"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Vector4.html#ae6b656e82256821b0ef79462ca0079b8">  621</a></span>&#160;    <span class="keyword">public</span>: T <a class="code" href="classgz_1_1math_1_1Vector4.html#ae6b656e82256821b0ef79462ca0079b8" title="Get the x value.">X</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;      <span class="keywordflow">return</span> this-&gt;data[0];</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    }</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160; </div>
+<div class="line"><a name="l00628"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Vector4.html#aecdad7e976b3ed74a1828eac4d958db6">  628</a></span>&#160;    <span class="keyword">public</span> title="Get the x value.">X</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;      <span class="keywordflow">return</span> this-&gt;data[0];</div>
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    }</div>
