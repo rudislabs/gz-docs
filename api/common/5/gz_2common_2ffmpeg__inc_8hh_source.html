@@ -274,18 +274,12 @@
 <div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="namespacegz_1_1common.html#ab02121dd7084675f9d05b795277cdfa1">  146</a></span>&#160;    inline <a class="code" href="namespacestd.html" title="STL namespace.">std</a>::<span class="keywordtype">string</span> <a class="code" href="namespacegz_1_1common.html#ab02121dd7084675f9d05b795277cdfa1">av_err2str_cpp</a>(<span class="keywordtype">int</span> errnum)</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    {</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      thread_local <span class="keywordtype">char</span> buf[<a class="code" href="gz_2common_2ffmpeg__inc_8hh.html#a326c3f741a7adb148cdeaad68eea713d">AV_ERROR_MAX_STRING_SIZE</a>];</div>
-<div class="line"><a name="l00149"></a><spanreturn</span> av_make_error_string(buf, <a class="code" href="gz_2common_2ffmpeg__inc_8hh.html#a326c3f741a7adb148cdeaad68eea713d">AV_ERROR_MAX_STRING_SIZE</a>, errnum);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      memset(buf, 0, <span class="keyword">sizeof</span>(buf));</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      <span class="comment">// lavu 51.58.100</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <span class="keywordflow">return</span> av_make_error_string(buf, <a class="code" href="gz_2common_2ffmpeg__inc_8hh.html#a326c3f741a7adb148cdeaad68eea713d">AV_ERROR_MAX_STRING_SIZE</a>, errnum);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  }</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">#endif</span></div>
-</div><!-- fragment --></div><!-- contents -->
-      </div>
-    </main>
-  </div>
-</body>
-</a><span class="lineno">  154</span>&#160;}</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
