@@ -300,6 +300,7 @@
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    }</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
 <div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1MassMatrix3.html#a6ebb4d32d13a764b20d98339336d8df6">  223</a></span>&#160;    <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code" href="classgz_1_1math_1_1MassMatrix3.html#a6ebb4d32d13a764b20d98339336d8df6" title="Set IYZ.">SetIyz</a>(<span class="keyword">const</span> T &amp;_v)</div>
+ title="Set IYZ.">SetIyz</a>(<span class="keyword">const</span> T &amp;_v)</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    {</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;      this-&gt;Ixyxzyz.Z(_v);</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;      <span class="keywordflow">return</span> this-&gt;IsValid();</div>
@@ -323,7 +324,7 @@
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      <span class="keywordflow">return</span> this-&gt;IsValid();</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    }</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keyword">public</span>: <a class="code" href="classgz_1_1math_1_1MassMatrix3.html" title="A class for inertial information about a rigid body consisting of the scalar mass and a 3x3 symmetric...">MassMatrix3</a> &amp;operator=(<span class="keyword">const</span> <a class="code" href="classgz_1_1math_1_1MassMatrix3.html" title="A class for inertial information about a rigid body consisting of the scalar mass and a 3x3 symmetric...">MassMatrix3&lt;T&gt;</a> &amp;_massMatrix)</div>
+<div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1MassMatrix3.html#a81490874dc2d7aba8363eb2f7b4ee5a8">  257</a></span>&#160;    <span class="keyword">public</span>: <a class="code" href="classgz_1_1math_1_1MassMatrix3.html" title="A class for inertial information about a rigid body consisting of the scalar mass and a 3x3 symmetric...">MassMatrix3</a> &amp;<a class="code" href="classgz_1_1math_1_1MassMatrix3.html#a81490874dc2d7aba8363eb2f7b4ee5a8" title="Equal operator.">operator=</a>(<span class="keyword">const</span> <a class="code" href="classgz_1_1math_1_1MassMatrix3.html" title="A class for inertial information about a rigid body consisting of the scalar mass and a 3x3 symmetric...">MassMatrix3&lt;T&gt;</a> &amp;_massMatrix)</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;      = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
 <div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1MassMatrix3.html#a436addfcbbddd2969edab347c21b997e">  264</a></span>&#160;    <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code" href="classgz_1_1math_1_1MassMatrix3.html#a436addfcbbddd2969edab347c21b997e" title="Equality comparison operator.">operator==</a>(<span class="keyword">const</span> <a class="code" href="classgz_1_1math_1_1MassMatrix3.html" title="A class for inertial information about a rigid body consisting of the scalar mass and a 3x3 symmetric...">MassMatrix3&lt;T&gt;</a> &amp;_m)<span class="keyword"> const</span></div>
@@ -427,8 +428,6 @@
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;      <span class="keywordflow">if</span> (this-&gt;Ixyxzyz.Equal(<a class="code" href="classgz_1_1math_1_1Vector3.html" title="The Vector3 class represents the generic vector containing 3 elements. Since it&#39;s commonly used to ke...">Vector3&lt;T&gt;::Zero</a>, tol))</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;      {</div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        <span class="comment">// Matrix is already diagonalized, return diagonal moments</span></div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        <span class="keywordflow">return</span> this-&gt;Ixxyyzz;</div>
-<div class="line"><a name="l004775</span>&#160;        <span class="comment">// Matrix is already diagonalized, return diagonal moments</span></div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        <span class="keywordflow">return</span> this-&gt;Ixxyyzz;</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;      }</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160; </div>
