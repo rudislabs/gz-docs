@@ -1,7 +1,7 @@
-/* The standard CSS for doxygen 1.8.17 */
+/* The standard CSS for doxygen 1.9.1 */
 
 body, table, div, p, dl {
-	font: 400 14px/22px Roboto,sans-serif;
+	font: 400 14px//22px Roboto,sans-serif;
 }
 
 p.reference, p.definition {
@@ -1742,6 +1742,34 @@ th.markdownTableHeadCenter, td.markdownTableBodyCenter {
 }
 
 .DocNodeLTR {
+  text-align: left;
+  direction: ltr;
+}
+
+table.DocNodeRTL {
+   width: auto;
+   margin-right: 0;
+   margin-left: auto;
+}
+
+table.DocNodeLTR {
+   width: auto;
+   margin-right: auto;
+   margin-left: 0;
+}
+
+tt, code, kbd, samp
+{
+  display: inline-block;
+  direction:ltr; 
+}
+/* @end */
+
+u {
+	text-decoration: underline;
+}
+
+odeLTR {
   text-align: left;
   direction: ltr;
 }
