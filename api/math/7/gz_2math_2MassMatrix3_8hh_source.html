@@ -428,8 +428,6 @@
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;      {</div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        <span class="comment">// Matrix is already diagonalized, return diagonal moments</span></div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        <span class="keywordflow">return</span> this-&gt;Ixxyyzz;</div>
-<div class="line"><a name="l004775</span>&#160;        <span class="comment">// Matrix is already diagonalized, return diagonal moments</span></div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        <span class="keywordflow">return</span> this-&gt;Ixxyyzz;</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;      }</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160; </div>
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;      <span class="comment">// Algorithm based on http://arxiv.org/abs/1306.6291v4</span></div>
@@ -477,7 +475,7 @@
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classgz_1_1math_1_1Vector3.html" title="The Vector3 class represents the generic vector containing 3 elements. Since it&#39;s commonly used to ke...">Vector3&lt;T&gt;</a>(moment0, moment1, moment2);</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    }</div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160; </div>
-<div class="line"><a name="l00535"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1MassMatrix3.html#a2f5873ac88cab23f7391e6c34eb79730">  535</a></span>&#160;    <span class="keyword">public</span>: <a class="code" href="classgz_1_1math_1_1Quaternion.html" title="A quaternion class that represents 3D rotations and orientations. Four scalar values,...">Quaternion&lt;T&gt;</a> <a class="code" href="classgz_1_1math_1_1MassMatrix3.html#a2f5873ac88cab23f7391e6c34eb79730" title="Compute rotational offset of principal axes.">PrincipalAxesOffset</a>(<span class="keyword">const</span> T _tol = 1e-6)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00535"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1MassMatrix3.html#a2f5873ac88cab23f7391e6c34eb79730">  535</a></span>&#160;    <span class="keyword">public</span>: <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quaternion&lt;T&gt;</a> <a class="code" href="classgz_1_1math_1_1MassMatrix3.html#a2f5873ac88cab23f7391e6c34eb79730" title="Compute rotational offset of principal axes.">PrincipalAxesOffset</a>(<span class="keyword">const</span> T _tol = 1e-6)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;      <a class="code" href="classgz_1_1math_1_1Vector3.html" title="The Vector3 class represents the generic vector containing 3 elements. Since it&#39;s commonly used to ke...">Vector3&lt;T&gt;</a> moments = this-&gt;PrincipalMoments(_tol);</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;      <span class="comment">// Compute tolerance relative to maximum value of inertia diagonal</span></div>
@@ -604,7 +602,7 @@
 <div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;        }</div>
 <div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160; </div>
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;        <span class="comment">// I determined these arguments using trial and error</span></div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;        <a class="code" href="classgz_1_1math_1_1Quaternion.html" title="A quaternion class that represents 3D rotations and orientations. Four scalar values,...">Quaternion&lt;T&gt;</a> result = <a class="code" href="classgz_1_1math_1_1Quaternion.html" title="A quaternion class that represents 3D rotations and orientations. Four scalar values,...">Quaternion&lt;T&gt;</a>(-phi1, -phi2, -phi3).<a class="code" href="classgz_1_1math_1_1Quaternion.html#a724dd60575e5faeb80563af1710c0c0e" title="Get the inverse of this quaternion.">Inverse</a>();</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;        <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quaternion&lt;T&gt;</a> result = <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quaternion&lt;T&gt;</a>(-phi1, -phi2, -phi3).<a class="code" href="classgz_1_1math_1_1Quaternion.html#a724dd60575e5faeb80563af1710c0c0e" title="Get the inverse of this quaternion.">Inverse</a>();</div>
 <div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160; </div>
 <div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;        <span class="comment">// Previous equations assume repeated moments are at the beginning</span></div>
 <div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;        <span class="comment">// of the moments vector (moments[0] == moments[1]).</span></div>
@@ -617,7 +615,7 @@
 <div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;        <span class="comment">//                   [-1  0  0]</span></div>
 <div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;        <span class="comment">// That is equivalent to a 90 degree pitch</span></div>
 <div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;        <span class="keywordflow">if</span> (unequalMoment == 0)</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;          result *= <a class="code" href="classgz_1_1math_1_1Quaternion.html" title="A quaternion class that represents 3D rotations and orientations. Four scalar values,...">Quaternion&lt;T&gt;</a>(0, <a class="code" href="gz_2math_2Helpers_8hh.html#aa2bdfee89d3492a2a8cb8772cf5aebc3">GZ_PI_2</a>, 0);</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;          result *= <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quaternion&lt;T&gt;</a>(0, <a class="code" href="gz_2math_2Helpers_8hh.html#aa2bdfee89d3492a2a8cb8772cf5aebc3">GZ_PI_2</a>, 0);</div>
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160; </div>
 <div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;      }</div>
@@ -661,7 +659,11 @@
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;      <span class="comment">// The paragraph prior to equation 5.16 describes how to choose</span></div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;      <span class="comment">// the candidate value of phi1 based on the length</span></div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;      <span class="comment">// of the f1 and f2 vectors.</span></div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;      <span class="comment">// * The case of |f1| == |f2|== 0 and f2 != 0, then phi1 = phi12</span></div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;      <span class="comment">// * The case of |f1| == |f2| == 0 implies a repeated moment,</span></div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;      <span class="comment">//   which should not be possible at this point in the code</span></div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;      <span class="comment">// * When |f1| != 0 and |f2| != 0, then one should choose the</span></div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;      <span class="comment">//   value of phi2 so that phi11 = phi12</span></div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;      <span class="comment">// * When |f1| == 0 and f2 != 0, then phi1 = phi12</span></div>
 <div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;      <span class="comment">//   phi11 can be ignored, and either sign of phi2, phi3 can be used</span></div>
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;      <span class="comment">// * When |f2| == 0 and f1 != 0, then phi1 = phi11</span></div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;      <span class="comment">//   phi12 can be ignored, and either sign of phi2, phi3 can be used</span></div>

@@ -394,12 +394,6 @@
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
 <div class="line"><a name="l00384"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Quaternion.html#a18c06748094f822c716a864af1ed7583">  384</a></span>&#160;    <span class="keyword">public</span>: <span class="keywordtype">void</span> <a class="code" href="classgz_1_1math_1_1Quaternion.html#a18c06748094f822c716a864af1ed7583" title="Set the quaternion from Euler angles. The order of operations is roll, pitch, yaw around a fixed body...">SetFromEuler</a>(<span class="keyword">const</span> <a class="code" href="classgz_1_1math_1_1Vector3.html" title="The Vector3 class represents the generic vector containing 3 elements. Since it&#39;s commonly used to ke...">Vector3&lt;T&gt;</a> &amp;_vec)</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    {</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;      this-&gt;SetFromEuler(_vec.<a class="code" href="classgz_1_1math_1_1Vector3.html#ae6b656e82256821b0ef79462ca0079b8" title="Get the x value.">X</a>(), _vec.<a class="code" href="classgz_1_1math_1_1Vector3.html#aecdad7e976b3ed74a1828eac4d958db6" title="Get{</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;      this-&gt;SetFromEuler(_vec);</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    }</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
-<div class="line"><a name="l00384"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Quaternion.html#a18c06748094f822c716a864af1ed7583">  384</a></span>&#160;    <span class="keyword">public</span>: <span class="keywordtype">void</span> <a class="code" href="classgz_1_1math_1_1Quaternion.html#a18c06748094f822c716a864af1ed7583" title="Set the quaternion from Euler angles. The order of operations is roll, pitch, yaw around a fixed body...">SetFromEuler</a>(<span class="keyword">const</span> <a class="code" href="classgz_1_1math_1_1Vector3.html" title="The Vector3 class represents the generic vector containing 3 elements. Since it&#39;s commonly used to ke...">Vector3&lt;T&gt;</a> &amp;_vec)</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    {</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;      this-&gt;SetFromEuler(_vec.<a class="code" href="classgz_1_1math_1_1Vector3.html#ae6b656e82256821b0ef79462ca0079b8" title="Get the x value.">X</a>(), _vec.<a class="code" href="classgz_1_1math_1_1Vector3.html#aecdad7e976b3ed74a1828eac4d958db6" title="Get the y value.">Y</a>(), _vec.<a class="code" href="classgz_1_1math_1_1Vector3.html#a253c4659f98e0cffd70ae20bbada9c48" title="Get the z value.">Z</a>());</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    }</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160; </div>
@@ -434,7 +428,7 @@
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;      T tol = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(1e-15);</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160; </div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;      <a class="code" href="classgz_1_1math_1_1Quaternion.html" title="A quaternion class that represents 3D rotations and orientations. Four scalar values,...">Quaternion&lt;T&gt;</a> copy = *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;      <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quaternion&lt;T&gt;</a> copy = *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;      T squ;</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;      T sqx;</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;      T sqy;</div>
@@ -482,7 +476,18 @@
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;      }</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;      <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;      {</div>
-<div class="line"><90"></a><span class="lineno">  490</span>&#160; </div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;        <span class="comment">// Roll</span></div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        vec.<a class="code" href="classgz_1_1math_1_1Vector3.html#ae6b656e82256821b0ef79462ca0079b8" title="Get the x value.">X</a>(T(atan2(2 * (copy.qy*copy.qz + copy.qw*copy.qx),</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;                    squ - sqx - sqy + sqz)));</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160; </div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        <span class="comment">// Yaw</span></div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;        vec.<a class="code" href="classgz_1_1math_1_1Vector3.html#a253c4659f98e0cffd70ae20bbada9c48" title="Get the z value.">Z</a>(T(atan2(2 * (copy.qx*copy.qy + copy.qw*copy.qz),</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;                    squ + sqx - sqy - sqz)));</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;      }</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160; </div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;      <span class="keywordflow">return</span> vec;</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    }</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160; </div>
 <div class="line"><a name="l00494"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Quaternion.html#aab7a155912aa0d198913dfb5bfb87a86">  494</a></span>&#160;    <span class="keyword">public</span>: <span class="keyword">static</span> <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quaternion&lt;T&gt;</a> <a class="code" href="classgz_1_1math_1_1Quaternion.html#aab7a155912aa0d198913dfb5bfb87a86" title="Convert Euler angles to a quaternion.">EulerToQuaternion</a>(<span class="keyword">const</span> <a class="code" href="classgz_1_1math_1_1Vector3.html" title="The Vector3 class represents the generic vector containing 3 elements. Since it&#39;s commonly used to ke...">Vector3&lt;T&gt;</a> &amp;_vec)</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    {</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;      <a class="code" href="classgz_1_1math_1_1Quaternion.html">Quaternion&lt;T&gt;</a> result;</div>
