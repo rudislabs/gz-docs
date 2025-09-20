@@ -147,7 +147,7 @@
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2016 Open Source Robotics Foundation</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * yyou may not use this file except in compliance with the License.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * You may obtain a copy of the License at</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *     http://www.apache.org/licenses/LICENSE-2.0</span></div>
@@ -180,14 +180,23 @@
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classgz_1_1common_1_1OBJLoader.html">   37</a></span>&#160;    <span class="keyword">class </span>GZ_COMMON_GRAPHICS_VISIBLE <a class="code" href="classgz_1_1common_1_1OBJLoader.html" title="Class used to load obj mesh files.">OBJLoader</a> : <span class="keyword">public</span> <a class="code" href="classgz_1_1common_1_1MeshLoader.html" title="Base class for loading meshes.">MeshLoader</a></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classgz_1_1common_1_1OBJLoader.html#a4033363cadea61d5344a74b779aaad27">   40</a></span>&#160;      <span class="keyword">public</span>: <a class="code" href="classgz_1_1common_1_1OBJLoader.html#a4033363cadea61d5344a74b779aaad27" title="Constructor.">OBJLoader</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keyword">public</span>: <a class="code" href="classgz_1_1common_1_1OBJLoader.html" title="Class used to load obj mesh files.">OBJLoader</a>();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classgz_1_1common_1_1OBJLoader.html#aa925fe883e4d322022a23c5763d38906">   43</a></span>&#160;      <span class="keyword">public</span>: <span class="keyword">virtual</span> <a class="code" href="classgz_1_1common_1_1OBJLoader.html#aa925fe883e4d322022a23c5763d38906" title="Destructor.">~OBJLoader</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keyword">public</span>: <span class="keyword">virtual</span> ~<a class="code" href="classgz_1_1common_1_1OBJLoader.html" title="Class used to load obj mesh files.">OBJLoader</a>();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classgz_1_1common_1_1OBJLoader.html#a9be1e4c4d009dbbdd9a146ed97ce541a">   48</a></span>&#160;      <span class="keyword">public</span>: <span class="keyword">virtual</span> <a class="code" href="classgz_1_1common_1_1Mesh.html" title="A 3D mesh.">Mesh</a> *<a class="code" href="classgz_1_1common_1_1OBJLoader.html#a9be1e4c4d009dbbdd9a146ed97ce541a" title="Load a mesh.">Load</a>(<span class="keyword">const</span> <a class="codeRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_filename);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keyword">public</span>: <span class="keyword">virtual</span> <a class="code" href="classgz_1_1common_1_1Mesh.html" title="A 3D mesh.">Mesh</a> *Load(<span class="keyword">const</span> <a class="codeRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html" title="STL class.">std::string</a> &amp;_filename);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      GZ_UTILS_IMPL_PTR(dataPtr)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    };</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+      </div>
+    </main>
+  </div>
+</body>
+span>&#160;    };</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>

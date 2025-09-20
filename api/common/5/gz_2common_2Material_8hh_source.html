@@ -278,15 +278,24 @@
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
 <div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="classgz_1_1common_1_1Material.html#a1fd30b1bb9e39a53fd8c9ea25254c461">  233</a></span>&#160;      <span class="keyword">public</span>: <span class="keywordtype">void</span> <a class="code" href="classgz_1_1common_1_1Material.html#a1fd30b1bb9e39a53fd8c9ea25254c461" title="Set the shading mode param[in] the shading mode.">SetShade</a>(<a class="code" href="classgz_1_1common_1_1Material.html#af49ab4b65513d2c0077f76b2227326e9">ShadeMode</a> _b);</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
-<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="classgz_1_1common_1_1Material.html#a8aad3374ab348f28e05fca027b7cff3d">  237</a></span>&#160;      <span class="keyword">public</span>: <a class="code" href="classgz_1_1common_1_1Material.html#af49ab4b65513d2c0077f76b2227326e9">ShadeMode</a> <a class="code" href="classgz_1_1common_1_1Material.html#a8aad3374ab348f28e05fca027b7cff3d" title="Get the shading mode.">Shade</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
-<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="classgz_1_1common_1_1Material.html#a5927586e24c048252a3e6c2e27378f8d">  241</a></span>&#160;      <span class="keyword">public</span>: <span class="keywordtype">void</span> <a class="code" href="classgz_1_1common_1_1Material.html#a5927586e24c048252a3e6c2e27378f8d" title="Set the point size.">SetPointSize</a>(<span class="keywordtype">double</span> _size);</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
-<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="classgz_1_1common_1_1Material.html#ac8f6de9789b17ce19fe70b53ecc59add">  245</a></span>&#160;      <span class="keyword">public</span>: <span class="keywordtype">double</span> <a class="code" href="classgz_1_1common_1_1Material.html#ac8f6de9789b17ce19fe70b53ecc59add" title="Get the point size.">PointSize</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
-<div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="classgz_1_1common_1_1Material.html#a4273ff4fa4eeb4d69e0b8cfa9eff6b28">  249</a></span>&#160;      <span class="keyword">public</span>: <span class="keywordtype">void</span> <a class="code" href="classgz_1_1common_1_1Material.html#a4273ff4fa4eeb4d69e0b8cfa9eff6b28" title="Set depth write.">SetDepthWrite</a>(<span class="keywordtype">bool</span> _value);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
-<div class="line"><a name="l00253"></a><span class="lineno"><a class="line" href="classgz_1_1common_1_1Material.html#a6138458899946b7d281b5ab6bac1d6a0">  253</a></span>&#160;      <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code" href="classgz_1_1common_1_1Material.html#a6138458899946b7d281b5ab6bac1d6a0" title="Get depth write.">DepthWrite</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="classgz_1_1common_1_1Material.html#a8aad3374ab348f28e05fca027b7cff3d">  237</a></span>&#160;      <span cl">RenderOrder</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                _out &lt;&lt; <span class="stringliteral">&quot;  BlendMode: &quot;</span> &lt;&lt; _m.<a class="code" href="classgz_1_1common_1_1Material.html#a717549fd42e6c695050030c19be93956" title="Get the blend mode string.">BlendStr</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                _out &lt;&lt; <span class="stringliteral">&quot;  ShadeMode: &quot;</span> &lt;&lt; _m.<a class="code" href="classgz_1_1common_1_1Material.html#a4857cb7326f5730cfec72efefbcb00d5" title="Get the shade mode string.">ShadeStr</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                _out &lt;&lt; <span class="stringliteral">&quot;  DepthWrite: &quot;</span> &lt;&lt; _m.<a class="code" href="classgz_1_1common_1_1Material.html#a6138458899946b7d281b5ab6bac1d6a0" title="Get depth write.">DepthWrite</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                <span class="keywordflow">return</span> _out;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;              }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      GZ_UTILS_UNIQUE_IMPL_PTR(dataPtr)</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    };</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  }</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;}</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+      </div>
+    </main>
+  </div>
+</body>
+public</span>: <span class="keywordtype">bool</span> <a class="code" href="classgz_1_1common_1_1Material.html#a6138458899946b7d281b5ab6bac1d6a0" title="Get depth write.">DepthWrite</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
 <div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="classgz_1_1common_1_1Material.html#ac65e83c7a0722826ddb208c05f58b407">  257</a></span>&#160;      <span class="keyword">public</span>: <span class="keywordtype">void</span> <a class="code" href="classgz_1_1common_1_1Material.html#ac65e83c7a0722826ddb208c05f58b407" title="Set lighting enabled.">SetLighting</a>(<span class="keywordtype">bool</span> _value);</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
