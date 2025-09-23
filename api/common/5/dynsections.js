@@ -57,6 +57,18 @@ function toggleLevel(level)
     if (l<level+1) {
       i.removeClass('iconfopen iconfclosed').addClass('iconfopen');
       a.html('&#9660;');
+  ).filter(':visible:even').addClass('even');
+}
+
+function toggleLevel(level)
+{
+  $('table.directory tr').each(function() {
+    var l = this.id.split('_').length-1;
+    var i = $('#img'+this.id.substring(3));
+    var a = $('#arr'+this.id.substring(3));
+    if (l<level+1) {
+      i.removeClass('iconfopen iconfclosed').addClass('iconfopen');
+      a.html('&#9660;');
       $(this).show();
     } else if (l==level+1) {
       i.removeClass('iconfclosed iconfopen').addClass('iconfclosed');
