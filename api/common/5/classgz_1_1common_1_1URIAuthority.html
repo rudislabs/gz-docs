@@ -209,6 +209,7 @@ Static Public Member Functions</h2></td></tr>
 <p>A <a class="el" href="classgz_1_1common_1_1URI.html" title="A complete URI which has the following components:">URI</a> Authority requires the existence of host information, except when a Scheme is <code>file</code>. When a scheme is <code>file</code>, then the following are considered valid URIs and equivalent:</p>
 <ul>
 <li><a href="file:/abs/path">file:/abs/path</a></li>
+
 <li><a href="file:///abs/path">file:///abs/path</a></li>
 </ul>
 <p>Keep in mind that a <a class="el" href="classgz_1_1common_1_1URI.html" title="A complete URI which has the following components:">URI</a> path must start with a forward slash when an authority, as indicated by two forward slashes, is present. This means relative file paths cannot be specified with an empty authority. For example, <code><a href="file://abs/path">file://abs/path</a></code> will result in a host value of <code>abs</code> and the <a class="el" href="classgz_1_1common_1_1URI.html" title="A complete URI which has the following components:">URI</a> path will be <code>/path</code>. You can specify a relative path using <code><a href="file:abs/path">file:abs/path</a></code>.</p>
@@ -627,4 +628,3 @@ Static Public Member Functions</h2></td></tr>
     </main>
   </div>
 </body>
-
