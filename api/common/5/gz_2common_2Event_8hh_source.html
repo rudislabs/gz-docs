@@ -347,26 +347,20 @@
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        it-&gt;second-&gt;callback = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        this-&gt;connectionsToRemove.push_back(it);</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      }</div>
+<div class="line"><a name="l00266"is invoked. It&#39;s not clear whether this is a bug in</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="comment">// the implementation of std::function or not. To avoid the crash,</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="comment">// we call the destructor here by setting `callback = nullptr` because</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="comment">// it is likely that EventT::Disconnect is called before the shared</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="comment">// library is unloaded via Connection::~Connection.</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        it-&gt;second-&gt;callback = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        this-&gt;connectionsToRemove.push_back(it);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      }</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    }</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> N&gt;</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgz_1_1common_1_1EventT.html" title="A class for event processing.">EventT&lt;T, N&gt;::Cleanup</a>()</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    {</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      <a class="codeRef" href="http://en.cppreference.com/w/cpp/thread/lock_guard.html" title="STL class.">std::lock_guard&lt;std::mutex&gt;</a> lock(this-&gt;mutex);</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <span class="comment">// Remove all queue connections.</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;conn : this-&gt;connectionsToRemove)</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        this-&gt;connections.erase(conn);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      this-&gt;connectionsToRemove.clear();</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    }</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  }</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;}</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor">#endif</span></div>
-</div><!-- fragment --></div><!-- contents -->
-      </div>
-    </main>
-  </div>
-</body>
-="http://en.cppreference.com/w/cpp/thread/lock_guard.html">std::lock_guard&lt;std::mutex&gt;</a> lock(this-&gt;mutex);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      <a class="codeRef" href="http://en.cppreference.com/w/cpp/thread/lock_guard.html">std::lock_guard&lt;std::mutex&gt;</a> lock(this-&gt;mutex);</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <span class="comment">// Remove all queue connections.</span></div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;conn : this-&gt;connectionsToRemove)</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        this-&gt;connections.erase(conn);</div>
