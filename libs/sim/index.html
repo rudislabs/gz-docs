@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JKS50SX85K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JKS50SX85K');
+    </script>
+    
     <title>sim &#8212; Gazebo  documentation</title>
   
   
@@ -16,8 +25,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -27,19 +36,19 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/gazebo.css?v=173bdbe0" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/gazebo.css?v=1d42b338" />
   
   <!-- So that users can add custom icons -->
-  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=187304be"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -147,7 +156,7 @@
       <ul class="dropdown-menu">
         <li class="nav-item"><a class="nav-link nav-internal" href="https://rudislabs.github.io/gz-docs/about">About</a></li>
         <li class="nav-item"><a class="nav-link nav-internal" href='https://community.gazebosim.org' title="Discussion forum">Community</a>
-        <li class="nav-item"><a class="nav-link nav-internal" href='https://robotics.stackexchange.org' title="Technical help">Answers</a>
+        <li class="nav-item"><a class="nav-link nav-internal" href='https://robotics.stackexchange.com' title="Technical help">Answers</a>
         <li class="nav-item"><a class="nav-link nav-internal" href="https://blog.openrobotics.org/tag/gazebo">Blog</a>
         <li class="nav-item"><a class="nav-link nav-internal" href="https://rudislabs.github.io/gz-docs/media">Media</a></li>
       </ul>
@@ -243,7 +252,7 @@
       <ul class="dropdown-menu">
         <li class="nav-item"><a class="nav-link nav-internal" href="https://rudislabs.github.io/gz-docs/about">About</a></li>
         <li class="nav-item"><a class="nav-link nav-internal" href='https://community.gazebosim.org' title="Discussion forum">Community</a>
-        <li class="nav-item"><a class="nav-link nav-internal" href='https://robotics.stackexchange.org' title="Technical help">Answers</a>
+        <li class="nav-item"><a class="nav-link nav-internal" href='https://robotics.stackexchange.com' title="Technical help">Answers</a>
         <li class="nav-item"><a class="nav-link nav-internal" href="https://blog.openrobotics.org/tag/gazebo">Blog</a>
         <li class="nav-item"><a class="nav-link nav-internal" href="https://rudislabs.github.io/gz-docs/media">Media</a></li>
       </ul>
@@ -301,9 +310,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -350,17 +364,17 @@
 <h1>sim<a class="headerlink" href="#sim" title="Link to this heading">#</a></h1>
 <ul class="gz-libs-lists simple">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim"><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-code" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"></path></svg> Source Code</a></p></li>
-<li><p><a class="reference external" href="https://gazebosim.org/api/sim/9"><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-description" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"></path></svg> API &amp; Tutorials</a></p></li>
+<li><p><a class="reference external" href="https://gazebosim.org/api/sim/10"><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-description" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"></path></svg> API &amp; Tutorials</a></p></li>
 </ul>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-0">
 Readme</label><div class="sd-tab-content docutils">
 <p class="rubric" id="gazebo-sim-a-robotic-simulator">Gazebo Sim : A Robotic Simulator</p>
-<p><strong>Maintainer:</strong> michael AT openrobotics DOT org</p>
+<p><strong>Maintainer:</strong> arjoc AT intrinsic DOT ai</p>
 <p><a class="reference external" href="https://github.com/gazebosim/gz-sim/issues"><img alt="GitHub open issues" src="https://img.shields.io/github/issues-raw/gazebosim/gz-sim.svg" /></a>
 <a class="reference external" href="https://github.com/gazebosim/gz-sim/pulls"><img alt="GitHub open pull requests" src="https://img.shields.io/github/issues-pr-raw/gazebosim/gz-sim.svg" /></a>
-<a class="reference external" href="https://community.gazebosim.org"><img alt="Discourse topics" src="https://img.shields.io/discourse/https/community.gazebosim.org/topics.svg" /></a>
+<a class="reference external" href="https://discourse.openrobotics.org/c/gazebo"><img alt="Discourse Topics" src="https://img.shields.io/discourse/topics?server=https%3A%2F%2Fdiscourse.openrobotics.org%2F" /></a>
 <a class="reference external" href="https://www.apache.org/licenses/LICENSE-2.0"><img alt="Hex.pm" src="https://img.shields.io/hexpm/l/plug.svg" /></a></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -370,16 +384,16 @@ Readme</label><div class="sd-tab-content docutils">
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Test coverage</p></td>
-<td><p><a class="reference external" href="https://codecov.io/gh/gazebosim/gz-sim/tree/gz-sim9"><img alt="codecov" src="https://codecov.io/gh/gazebosim/gz-sim/tree/gz-sim9/graph/badge.svg" /></a></p></td>
+<td><p><a class="reference external" href="https://codecov.io/gh/gazebosim/gz-sim/tree/gz-sim10"><img alt="codecov" src="https://codecov.io/gh/gazebosim/gz-sim/tree/gz-sim10/graph/badge.svg" /></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Ubuntu Noble</p></td>
-<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_sim-ci-gz-sim9-noble-amd64"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_sim-ci-gz-sim9-noble-amd64" /></a></p></td>
+<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_sim-ci-gz-sim10-noble-amd64"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_sim-ci-gz-sim10-noble-amd64" /></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Homebrew</p></td>
-<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_sim-ci-gz-sim9-homebrew-amd64"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_sim-ci-gz-sim9-homebrew-amd64" /></a></p></td>
+<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_sim-ci-gz-sim10-homebrew-amd64"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_sim-ci-gz-sim10-homebrew-amd64" /></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Windows</p></td>
-<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_sim-9-win/"><img alt="Build Status" src="https://build.osrfoundation.org/job/gz_sim-9-win/badge/icon" /></a></p></td>
+<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_sim-10-cnlwin/"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_sim-10-cnlwin" /></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -427,7 +441,7 @@ Gazebo Sim through socket-based message passing using
 introspection and control.</p></li>
 </ul>
 <p class="rubric" id="install">Install</p>
-<p>See the <a class="reference external" href="https://gazebosim.org/api/sim/9/install.html">installation tutorial</a>.</p>
+<p>For installing Gazebo, see the <a class="reference external" href="https://gazebosim.org/docs/latest/getstarted/">getting started guide</a>. If you want to use <code class="docutils literal notranslate"><span class="pre">libgz-sim</span></code> as a library, see the <a class="reference external" href="https://gazebosim.org/api/sim/9/install.html">installation tutorial</a></p>
 <p class="rubric" id="usage">Usage</p>
 <p>Gazebo Sim can be run from the command line, once <a class="reference internal" href="#install">installed</a>, using:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">gz</span> <span class="n">sim</span>
@@ -487,16 +501,691 @@ in both terminals (as well as any changes to <code class="docutils literal notra
 <a class="reference external" href="https://gazebosim.org/docs/all/contributing/">contribution guide</a>.</p>
 <p class="rubric" id="code-of-conduct">Code of Conduct</p>
 <p>Please see
-<a class="reference external" href="https://github.com/gazebosim/gz-sim/blob/main/CODE_OF_CONDUCT.md">CODE_OF_CONDUCT.md</a>.</p>
+<a class="reference external" href="https://github.com/gazebosim/gz-sim/blob/gz-sim10/CODE_OF_CONDUCT.md">CODE_OF_CONDUCT.md</a>.</p>
 <p class="rubric" id="versioning">Versioning</p>
 <p>This library uses <a class="reference external" href="https://semver.org/">Semantic Versioning</a>. Additionally, this library is part of the <a class="reference external" href="https://gazebosim.org">Gazebo project</a> which periodically releases a versioned set of compatible and complimentary libraries. See the <a class="reference external" href="https://gazebosim.org">Gazebo website</a> for version and release information.</p>
 <p class="rubric" id="license">License</p>
-<p>This library is licensed under <a class="reference external" href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>. See also the <a class="reference external" href="https://github.com/gazebosim/gz-sim/blob/main/LICENSE">LICENSE</a> file.</p>
+<p>This library is licensed under <a class="reference external" href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>. See also the <a class="reference external" href="https://github.com/gazebosim/gz-sim/blob/gz-sim10/LICENSE">LICENSE</a> file.</p>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-1">
 Changelog</label><div class="sd-tab-content docutils">
+<p class="rubric" id="gazebo-sim-10-x">Gazebo Sim 10.x</p>
+<p class="rubric" id="gazebo-sim-10-0-0-2025-09-30">Gazebo Sim 10.0.0 (2025-09-30)</p>
+<ol class="arabic simple">
+<li><p><strong>Baseline:</strong> this includes all changes from 9.3.0 and earlier.</p></li>
+<li><p>Don’t install vendored backward files</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3088">Pull request #3088</a></p></li>
+</ul>
+</li>
+<li><p>Add missing dependencies to package.xml</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3093">Pull request #3093</a></p></li>
+</ul>
+</li>
+<li><p>Add tutorial on wheel slip systems</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3056">Pull request #3056</a></p></li>
+</ul>
+</li>
+<li><p>Set non-unique material to submesh when updating cast shadows property</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3085">Pull request #3085</a></p></li>
+</ul>
+</li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">common::findFile</span></code> when searching for slip map in LookupWheelSlip system</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3087">Pull request #3087</a></p></li>
+</ul>
+</li>
+<li><p>Fix sporadic crash when launching GUI client on windows</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3074">Pull request #3074</a></p></li>
+</ul>
+</li>
+<li><p>Documentation updates</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3081">Pull request #3081</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3054">Pull request #3054</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3042">Pull request #3042</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3040">Pull request #3040</a></p></li>
+</ul>
+</li>
+<li><p>Fix comment for logical camera topic</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3043">Pull request #3043</a></p></li>
+</ul>
+</li>
+<li><p>Disable <code class="docutils literal notranslate"><span class="pre">UtilTest.ResolveSdfWorldFile</span></code> on macOS</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3065">Pull request #3065</a></p></li>
+</ul>
+</li>
+<li><p>Add Null Check for Scene Initialization in <code class="docutils literal notranslate"><span class="pre">onRefreshCamerasImpl</span></code> to Prevent Crash</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3051">Pull request #3051</a></p></li>
+</ul>
+</li>
+<li><p>Fix saving world through GUI</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3052">Pull request #3052</a></p></li>
+</ul>
+</li>
+<li><p>Update logic for setting initial state</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3044">Pull request #3044</a></p></li>
+</ul>
+</li>
+<li><p>Remove obsolete tag from example SDFormat file</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3045">Pull request #3045</a></p></li>
+</ul>
+</li>
+<li><p>[Bazel] Update bazel module to use jetty release branches</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3041">Pull request #3041</a></p></li>
+</ul>
+</li>
+<li><p>Parallel asset download</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2992">Pull request #2992</a></p></li>
+</ul>
+</li>
+<li><p>Adds a system which enables exporting occupancy grids.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2958">Pull request #2958</a></p></li>
+</ul>
+</li>
+<li><p>Add EntitySemantics system that enables setting categories and tags</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3005">Pull request #3005</a></p></li>
+</ul>
+</li>
+<li><p>Add LookupWheelSlip system</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3003">Pull request #3003</a></p></li>
+</ul>
+</li>
+<li><p>Fix UserCommands services so that they return the actual status the executed command</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2999">Pull request #2999</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2996">Pull request #2996</a></p></li>
+</ul>
+</li>
+<li><p>Add missing virtual destructors</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3027">Pull request #3027</a></p></li>
+</ul>
+</li>
+<li><p>Expose APIs for clearing the ECMs internal state tracking addition and removal</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3002">Pull request #3002</a></p></li>
+</ul>
+</li>
+<li><p>Fix compatibility with protobuf v30</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3032">Pull request #3032</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2869">Pull request #2869</a></p></li>
+</ul>
+</li>
+<li><p>Add missing algorithm include</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3022">Pull request #3022</a></p></li>
+</ul>
+</li>
+<li><p>Add param in physics system to enforce fixed constraint</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2984">Pull request #2984</a></p></li>
+</ul>
+</li>
+<li><p>JointController: supported nested joints</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2979">Pull request #2979</a></p></li>
+</ul>
+</li>
+<li><p>Update our usage of workerpools</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2995">Pull request #2995</a></p></li>
+</ul>
+</li>
+<li><p>Update badges in README</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3019">Pull request #3019</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3017">Pull request #3017</a></p></li>
+</ul>
+</li>
+<li><p>Assign new gz-sim maintainer</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3008">Pull request #3008</a></p></li>
+</ul>
+</li>
+<li><p>Add support for loading physics engine plugins from static plugin registry</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2991">Pull request #2991</a></p></li>
+</ul>
+</li>
+<li><p>reset_sensors.cc: fix syntax in Stop</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3000">Pull request #3000</a></p></li>
+</ul>
+</li>
+<li><p>Prevent crash in ApplyForceTorque plugin</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2987">Pull request #2987</a></p></li>
+</ul>
+</li>
+<li><p>Fix crash caused by moving ground_plane</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2980">Pull request #2980</a></p></li>
+</ul>
+</li>
+<li><p>Prevent crash in OpticalTactilePlugin by checking contact data validity after world reset</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2978">Pull request #2978</a></p></li>
+</ul>
+</li>
+<li><p>Fix link in underwater tutorial</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2977">Pull request #2977</a></p></li>
+</ul>
+</li>
+<li><p>Set GZ_IP=127.0.0.1 in cmd tests</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2959">Pull request #2959</a></p></li>
+</ul>
+</li>
+<li><p>Fix cpplint, codespell complaints</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2938">Pull request #2938</a></p></li>
+</ul>
+</li>
+<li><p>Port Websocket server from gz-launch</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2792">Pull request #2792</a></p></li>
+</ul>
+</li>
+<li><p>backwards-cpp support for gz-sim-main and gz-sim-gui</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2927">Pull request #2927</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2919">Pull request #2919</a></p></li>
+</ul>
+</li>
+<li><p>gz-sim-model: workaround cli11 bug</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2921">Pull request #2921</a></p></li>
+</ul>
+</li>
+<li><p>Fix no-GUI Tests</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2928">Pull request #2928</a></p></li>
+</ul>
+</li>
+<li><p>Adds an initial StableBaselines3 RL environment as an example</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2667">Pull request #2667</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2947">Pull request #2947</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2989">Pull request #2989</a></p></li>
+</ul>
+</li>
+<li><p>Fix crash when LiftDrag and AdvancedLiftDrag plugins are added without designating specific entity</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2907">Pull request #2907</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2923">Pull request #2923</a></p></li>
+</ul>
+</li>
+<li><p>Bump gz-cmake and others in jetty</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2910">Pull request #2910</a></p></li>
+</ul>
+</li>
+<li><p>Fixed gui executable wait screen bug</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2905">Pull request #2905</a></p></li>
+</ul>
+</li>
+<li><p>Fix crash when closing Gazebo while a modal dialog is open</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2900">Pull request #2900</a></p></li>
+</ul>
+</li>
+<li><p>Standalone gz sim executable</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2932">Pull request #2932</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2849">Pull request #2849</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2990">Pull request #2990</a></p></li>
+</ul>
+</li>
+<li><p>Disable standalone_gtest_setup example test on mac</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2892">Pull request #2892</a></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Link::AddForceInInertialFrame</span></code> APIs added</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2816">Pull request #2816</a></p></li>
+</ul>
+</li>
+<li><p>Use unique callback function for <code class="docutils literal notranslate"><span class="pre">Node::Subscribe</span></code> calls</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2894">Pull request #2894</a></p></li>
+</ul>
+</li>
+<li><p>Fix Qt warnings on shutdown</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2898">Pull request #2898</a></p></li>
+</ul>
+</li>
+<li><p>tutorials: Added hpc_clusters.md</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2833">Pull request #2833</a></p></li>
+</ul>
+</li>
+<li><p>Migrate to Qt6</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2832">Pull request #2832</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2976">Pull request #2976</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/3025">Pull request #3025</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2870">Pull request #2870</a></p></li>
+</ul>
+</li>
+<li><p>Bump gz-transport and others in jetty</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2857">Pull request #2857</a></p></li>
+</ul>
+</li>
+<li><p>Fix QML warnings from Inertial.qml in Component Inspector</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2830">Pull request #2830</a></p></li>
+</ul>
+</li>
+<li><p>Remove major version from package name</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2726">Pull request #2726</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2843">Pull request #2843</a></p></li>
+</ul>
+</li>
+<li><p>Update GZ_DISTRIBUTION to Jetty</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2834">Pull request #2834</a></p></li>
+</ul>
+</li>
+<li><p>Adding MecanumDrive plugin with Odom and Tf, with Tests.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2297">Pull request #2297</a></p></li>
+</ul>
+</li>
+<li><p>docker-nightly.yml: build from main branch</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2826">Pull request #2826</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="http://Gui.cc">Gui.cc</a>: return “” instead of nullptr</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2819">Pull request #2819</a></p></li>
+</ul>
+</li>
+<li><p>Add support for simulation reset via a publicly callable API</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2648">Pull request #2648</a></p></li>
+</ul>
+</li>
+<li><p>Bumps in jetty: use gz-gui10</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2722">Pull request #2722</a></p></li>
+</ul>
+</li>
+<li><p>Adds support for <code class="docutils literal notranslate"><span class="pre">ISystemReset</span></code> in test fixture</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2647">Pull request #2647</a></p></li>
+</ul>
+</li>
+<li><p>Remove deprecations: tock</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2703">Pull request #2703</a></p></li>
+</ul>
+</li>
+<li><p>Replace systemTimeISO with systemTimeIso</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2691">Pull request #2691</a></p></li>
+</ul>
+</li>
+<li><p>Bump main to sim 10.0.0~pre1</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2644">Pull request #2644</a></p></li>
+</ul>
+</li>
+<li><p>TrackedVehicle: Added docs for body_link option</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2652">Pull request #2652</a></p></li>
+</ul>
+</li>
+</ol>
 <p class="rubric" id="gazebo-sim-9-x">Gazebo Sim 9.x</p>
+<p class="rubric" id="gazebo-sim-9-3-0-2025-07-11">Gazebo Sim 9.3.0 (2025-07-11)</p>
+<ol class="arabic simple">
+<li><p>JointController: allow braking to be disabled in force mode</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2971">Pull request #2971</a></p></li>
+</ul>
+</li>
+<li><p>LiftDrag: allow reversible airfoils</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2970">Pull request #2970</a></p></li>
+</ul>
+</li>
+<li><p>[bazel] Add support for Systems</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2966">Pull request #2966</a></p></li>
+</ul>
+</li>
+<li><p>Add global guard in SelectEntities eventFilter to avoid null pointer crash on render engine failure</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2965">Pull request #2965</a></p></li>
+</ul>
+</li>
+<li><p>JointPositionController: add dynamic PID parameters</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2944">Pull request #2944</a></p></li>
+</ul>
+</li>
+<li><p>Physics System populates link bounding boxes</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2821">Pull request #2821</a></p></li>
+</ul>
+</li>
+<li><p>Fix airspeed calculation under wind influence by wind triangle</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2844">Pull request #2844</a></p></li>
+</ul>
+</li>
+</ol>
+<p class="rubric" id="gazebo-sim-9-2-0-2025-06-18">Gazebo Sim 9.2.0 (2025-06-18)</p>
+<ol class="arabic simple">
+<li><p>Add support to get link AABB from its collisions</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2787">Pull request #2787</a></p></li>
+</ul>
+</li>
+<li><p>Add support for loading System plugin from static plugin registry</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2950">Pull request #2950</a></p></li>
+</ul>
+</li>
+<li><p>Add bazel build for core gz sim library (no gui, physics, systems)</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2933">Pull request #2933</a></p></li>
+</ul>
+</li>
+<li><p>ci.yml: run cppcheck, cpplint on noble</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2935">Pull request #2935</a></p></li>
+</ul>
+</li>
+<li><p>Use HeightmapUtil functions for loading HeightmapData</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2915">Pull request #2915</a></p></li>
+</ul>
+</li>
+<li><p>Fixes issue #2903 - Crash when add liftDrag plugin without designating specific entity</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2913">Pull request #2913</a></p></li>
+</ul>
+</li>
+<li><p>Added codespell as a pre-commit hook.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2853">Pull request #2853</a></p></li>
+</ul>
+</li>
+<li><p>Do not create light visuals on server side</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2888">Pull request #2888</a></p></li>
+</ul>
+</li>
+<li><p>Set GZ_IP=127.0.0.1 in gz cmd tests</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2884">Pull request #2884</a></p></li>
+</ul>
+</li>
+<li><p>[Documentation] Address #2850: Mention <code class="docutils literal notranslate"><span class="pre">GZ_SIM_SYSTEM_PLUGIN_PATH</span></code></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2863">Pull request #2863</a></p></li>
+</ul>
+</li>
+<li><p>Detect running server on startup</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2828">Pull request #2828</a></p></li>
+</ul>
+</li>
+<li><p>Bring back feature for plotting pose attributes from Component Inspector</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2835">Pull request #2835</a></p></li>
+</ul>
+</li>
+<li><p>Remove unneeded mesh_inertia_calculation test expectations</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2808">Pull request #2808</a></p></li>
+</ul>
+</li>
+<li><p>Add more documentation to environmental_sensor.sdf example world</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2836">Pull request #2836</a></p></li>
+</ul>
+</li>
+<li><p>Don’t install vendored backward files</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2838">Pull request #2838</a></p></li>
+</ul>
+</li>
+<li><p>Restrict docker-nightly workflow to base branch</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2827">Pull request #2827</a></p></li>
+</ul>
+</li>
+<li><p>Update custom sensor system example to make the sensor respect update rate</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2817">Pull request #2817</a></p></li>
+</ul>
+</li>
+<li><p>Attempts to print a stacktrace on segfault in our integration tests</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2776">Pull request #2776</a></p></li>
+</ul>
+</li>
+<li><p>Fix initialization of world components when enabling velocity checks</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2777">Pull request #2777</a></p></li>
+</ul>
+</li>
+<li><p>Update auto inertial calculation tutorial</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2782">Pull request #2782</a></p></li>
+</ul>
+</li>
+<li><p>Attempt to correct mass matrix in mesh inertia calculator</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2775">Pull request #2775</a></p></li>
+</ul>
+</li>
+<li><p>Update Windows CI badge in <a class="reference external" href="http://README.md">README.md</a></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2793">Pull request #2793</a></p></li>
+</ul>
+</li>
+<li><p>Cleanup for Visualize Frustum</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2794">Pull request #2794</a></p></li>
+</ul>
+</li>
+<li><p>Fixed GIL release issue with Python System and Python TestFixture.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2618">Pull request #2618</a></p></li>
+</ul>
+</li>
+<li><p>Update LogicalCamera plugin to detect nested models</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2788">Pull request #2788</a></p></li>
+</ul>
+</li>
+<li><p>Register MeshInertialCalculator when loading sim from an SDF string</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2754">Pull request #2754</a></p></li>
+</ul>
+</li>
+<li><p>Break out server constructor</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2638">Pull request #2638</a></p></li>
+</ul>
+</li>
+<li><p>Fix SimtimeArgument test on homebrew</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2783">Pull request #2783</a></p></li>
+</ul>
+</li>
+<li><p>Support mesh optimization params in mesh inertial calculator</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2770">Pull request #2770</a></p></li>
+</ul>
+</li>
+<li><p>New system plugin called <code class="docutils literal notranslate"><span class="pre">DriveToPoseController</span></code></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2679">Pull request #2679</a></p></li>
+</ul>
+</li>
+<li><p>Standalone <code class="docutils literal notranslate"><span class="pre">gz</span> <span class="pre">model</span></code> executable</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2724">Pull request #2724</a></p></li>
+</ul>
+</li>
+<li><p>ADD: publish the wind information to gz and ros topic</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2767">Pull request #2767</a></p></li>
+</ul>
+</li>
+</ol>
+<p class="rubric" id="gazebo-sim-9-1-0-2025-02-12">Gazebo Sim 9.1.0 (2025-02-12)</p>
+<ol class="arabic simple">
+<li><p>Physics: Ray intersections</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2514">Pull request #2514</a></p></li>
+</ul>
+</li>
+<li><p>Improvement for Visualize lidar plugin</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2739">Pull request #2739</a></p></li>
+</ul>
+</li>
+<li><p>Also handle SIGTERM gracefully</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2747">Pull request #2747</a></p></li>
+</ul>
+</li>
+<li><p>Add debug msg to log auto computed inertial values</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2749">Pull request #2749</a></p></li>
+</ul>
+</li>
+<li><p>Reduce/Eliminate <code class="docutils literal notranslate"><span class="pre">sdf::Model</span></code> and <code class="docutils literal notranslate"><span class="pre">sdf::World</span></code> serialization warnings</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2742">Pull request #2742</a></p></li>
+</ul>
+</li>
+<li><p>Visualize Frustum</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2707">Pull request #2707</a></p></li>
+</ul>
+</li>
+<li><p>Update install link</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2745">Pull request #2745</a></p></li>
+</ul>
+</li>
+<li><p>Fix illegal anchor warnings</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2741">Pull request #2741</a></p></li>
+</ul>
+</li>
+<li><p>Fix mesh import filters not displaying correctly on KDE #2731</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2732">Pull request #2732</a></p></li>
+</ul>
+</li>
+<li><p>LinearBatteryPlugin stability improvement</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2725">Pull request #2725</a></p></li>
+</ul>
+</li>
+<li><p>Better use of std::variant</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2714">Pull request #2714</a></p></li>
+</ul>
+</li>
+<li><p>apply_joint_force: Simplified using ComponentDefault</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2630">Pull request #2630</a></p></li>
+</ul>
+</li>
+<li><p>Fix docker nightly build</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2643">Pull request #2643</a></p></li>
+</ul>
+</li>
+<li><p>Fix publishing only top level model pose in pose publisher</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2697">Pull request #2697</a></p></li>
+</ul>
+</li>
+<li><p>Add parameter for adjust current sign in battery plugin</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2696">Pull request #2696</a></p></li>
+</ul>
+</li>
+<li><p>Extend shapes plugin width to include the ellipsoid button</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2699">Pull request #2699</a></p></li>
+</ul>
+</li>
+<li><p>Use same FP limits for TrackedVehicle to avoid self-moving</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2651">Pull request #2651</a></p></li>
+</ul>
+</li>
+<li><p>Link.hh: add Sensor accessor APIs</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2693">Pull request #2693</a></p></li>
+</ul>
+</li>
+<li><p>Remove detachable joints when a model is removed</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2686">Pull request #2686</a></p></li>
+</ul>
+</li>
+<li><p>Improve load times by skipping serialization of entities when unnecessary. (#2596)</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2682">Pull request #2682</a></p></li>
+</ul>
+</li>
+<li><p>check valid pointer</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2674">Pull request #2674</a></p></li>
+</ul>
+</li>
+<li><p>Prepend to PYTHONPATH in tests</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2673">Pull request #2673</a></p></li>
+</ul>
+</li>
+<li><p>Fix crash when multicopter motor system is attached to an empty model</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2653">Pull request #2653</a></p></li>
+</ul>
+</li>
+<li><p>fix custom sensor system example build</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2649">Pull request #2649</a></p></li>
+</ul>
+</li>
+</ol>
 <p class="rubric" id="gazebo-sim-9-0-0-2024-09-25">Gazebo Sim 9.0.0 (2024-09-25)</p>
 <ol class="arabic simple">
 <li><p><strong>Baseline:</strong> this includes all changes from 8.6.0 and earlier.</p></li>
@@ -814,6 +1503,210 @@ Changelog</label><div class="sd-tab-content docutils">
 </li>
 </ol>
 <p class="rubric" id="gazebo-sim-8-x">Gazebo Sim 8.x</p>
+<p class="rubric" id="gazebo-sim-8-9-0-2025-02-10">Gazebo Sim 8.9.0 (2025-02-10)</p>
+<ol class="arabic simple">
+<li><p>Physics: Add components to request and receive Ray intersections</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2514">Pull request #2514</a></p></li>
+</ul>
+</li>
+<li><p>Also handle SIGTERM gracefully</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2747">Pull request #2747</a></p></li>
+</ul>
+</li>
+<li><p>Register MeshInertialCalculator when loading sim from an SDF string</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2754">Pull request #2754</a></p></li>
+</ul>
+</li>
+<li><p>Add debug msg to log auto computed inertial values</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2749">Pull request #2749</a></p></li>
+</ul>
+</li>
+<li><p>Reduce/Eliminate <code class="docutils literal notranslate"><span class="pre">sdf::Model</span></code> and <code class="docutils literal notranslate"><span class="pre">sdf::World</span></code> serialization warnings</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2742">Pull request #2742</a></p></li>
+</ul>
+</li>
+<li><p>Fix illegal anchor warnings</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2741">Pull request #2741</a></p></li>
+</ul>
+</li>
+<li><p>Fix mesh import filters not displaying correctly on KDE #2731 (#2732)</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2736">Pull request #2736</a></p></li>
+</ul>
+</li>
+</ol>
+<p class="rubric" id="gazebo-sim-8-8-0-2025-01-16">Gazebo Sim 8.8.0 (2025-01-16)</p>
+<ol class="arabic simple">
+<li><p>Add parameter for adjusting current sign in battery plugin</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2696">Pull request #2696</a></p></li>
+</ul>
+</li>
+<li><p>Extend shapes plugin width to include the ellipsoid button</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2699">Pull request #2699</a></p></li>
+</ul>
+</li>
+<li><p>Use same FP limits for TrackedVehicle to avoid self-moving</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2651">Pull request #2651</a></p></li>
+</ul>
+</li>
+<li><p>Link.hh: add Sensor accessor APIs</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2693">Pull request #2693</a></p></li>
+</ul>
+</li>
+<li><p>Improve load times by skipping serialization of entities when unnecessary.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2683">Pull request #2683</a></p></li>
+</ul>
+</li>
+<li><p>Prepend to <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> in tests</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2681">Pull request #2681</a></p></li>
+</ul>
+</li>
+<li><p>Fix crash in <code class="docutils literal notranslate"><span class="pre">OpticalTactilePlugin</span></code> by checking for valid visualize pointer</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2674">Pull request #2674</a></p></li>
+</ul>
+</li>
+</ol>
+<p class="rubric" id="gazebo-sim-8-7-0-2024-11-08">Gazebo Sim 8.7.0 (2024-11-08)</p>
+<ol class="arabic simple">
+<li><p>Fix crash when multicopter motor system is attached to an empty model</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2653">Pull request #2653</a></p></li>
+</ul>
+</li>
+<li><p>Backport SystemConfigurePriority to harmonic</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2661">Pull request #2661</a></p></li>
+</ul>
+</li>
+<li><p>Break out server constructor</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2638">Pull request #2638</a></p></li>
+</ul>
+</li>
+<li><p>Add check for valid world pose cmd values</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2640">Pull request #2640</a></p></li>
+</ul>
+</li>
+<li><p>Enabling Global Illumination (GI VCT) for sensors in SDF</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2550">Pull request #2550</a></p></li>
+</ul>
+</li>
+<li><p>Fixed typos in three places</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2599">Pull request #2599</a></p></li>
+</ul>
+</li>
+<li><p>Add point cloud data size sanity check to fix crash</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2549">Pull request #2549</a></p></li>
+</ul>
+</li>
+<li><p>Corrected command to move the kth_freeflyer spacecraft testbed</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2565">Pull request #2565</a></p></li>
+</ul>
+</li>
+<li><p>Backport nonbreaking changes from ionic</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2552">Pull request #2552</a></p></li>
+</ul>
+</li>
+<li><p>clang-tidy fixes: use empty(), fix includes</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2548">Pull request #2548</a></p></li>
+</ul>
+</li>
+<li><p>Check ranges before access</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2540">Pull request #2540</a></p></li>
+</ul>
+</li>
+<li><p>Fixed Odometry Publisher Angular Velocity Singularity in 3D</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2348">Pull request #2348</a></p></li>
+</ul>
+</li>
+<li><p>Revert behavior change introduced in #2452</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2527">Pull request #2527</a></p></li>
+</ul>
+</li>
+<li><p>Specify System::PreUpdate, Update execution order</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2487">Pull request #2487</a></p></li>
+</ul>
+</li>
+<li><p>Force Qt to use xcb plugin on Wayland</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2526">Pull request #2526</a></p></li>
+</ul>
+</li>
+<li><p>Remove unused variable in thruster system</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2524">Pull request #2524</a></p></li>
+</ul>
+</li>
+<li><p>Make sure steering joints exist before updating velocity / odometry in AckermannSteering plugin</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2521">Pull request #2521</a></p></li>
+</ul>
+</li>
+<li><p>Fix ResourceSpawner</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2490">Pull request #2490</a></p></li>
+</ul>
+</li>
+<li><p>gui_system_plugin: clarify description in README</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2253">Pull request #2253</a></p></li>
+</ul>
+</li>
+<li><p>Fix adding system to non-existent entity</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2516">Pull request #2516</a></p></li>
+</ul>
+</li>
+<li><p>Checking linkEnity is empty</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2509">Pull request #2509</a></p></li>
+</ul>
+</li>
+<li><p>Initialize threadsNeedCleanUp</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2503">Pull request #2503</a></p></li>
+</ul>
+</li>
+<li><p>Added support for spacecraft thrusters</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2431">Pull request #2431</a></p></li>
+</ul>
+</li>
+<li><p>Disable rendering tests that are failing on github actions</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2480">Pull request #2480</a></p></li>
+</ul>
+</li>
+<li><p>Consolidate entity creation</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2452">Pull request #2452</a></p></li>
+</ul>
+</li>
+</ol>
 <p class="rubric" id="gazebo-sim-8-6-0-2024-07-25">Gazebo Sim 8.6.0 (2024-07-25)</p>
 <ol class="arabic simple">
 <li><p>Fix error resolving gazebo classic material when loading world</p>
@@ -1762,7 +2655,7 @@ Changelog</label><div class="sd-tab-content docutils">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2190">Pull request #2190</a></p></li>
 </ul>
 </li>
-<li><p>Fix enviroment system loading mechanism</p>
+<li><p>Fix environment system loading mechanism</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1842">Pull request #1842</a></p></li>
 </ul>
@@ -2119,7 +3012,7 @@ Changelog</label><div class="sd-tab-content docutils">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1916">Pull request #1916</a></p></li>
 </ul>
 </li>
-<li><p>Use a queue to track component registration from mulitiple sources</p>
+<li><p>Use a queue to track component registration from multiple sources</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1836">Pull request #1836</a></p></li>
 </ul>
@@ -2229,7 +3122,7 @@ Changelog</label><div class="sd-tab-content docutils">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1908">Pull request #1908</a></p></li>
 </ul>
 </li>
-<li><p>Use a queue to track component registration from mulitiple sources</p>
+<li><p>Use a queue to track component registration from multiple sources</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1836">Pull request #1836</a></p></li>
 </ul>
@@ -2354,7 +3247,7 @@ Changelog</label><div class="sd-tab-content docutils">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1699">Pull request #1699</a></p></li>
 </ul>
 </li>
-<li><p>readd namespaces for Q_ARGS</p>
+<li><p>re-add namespaces for Q_ARGS</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1670">Pull request #1670</a></p></li>
 </ul>
@@ -2561,7 +3454,7 @@ Changelog</label><div class="sd-tab-content docutils">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1771">Pull request #1771</a></p></li>
 </ul>
 </li>
-<li><p>Refactor: Trajectory loading seperated into external function</p>
+<li><p>Refactor: Trajectory loading separated into external function</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1744">Pull request #1744</a></p></li>
 </ul>
@@ -2611,7 +3504,7 @@ Changelog</label><div class="sd-tab-content docutils">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1676">Pull request #1676</a></p></li>
 </ul>
 </li>
-<li><p>Add information about <topic> system paramter</p>
+<li><p>Add information about <topic> system parameter</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1671">Pull request #1671</a></p></li>
 </ul>
@@ -2744,7 +3637,7 @@ Changelog</label><div class="sd-tab-content docutils">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1225">Pull request #1225</a></p></li>
 </ul>
 </li>
-<li><p>Add information about <topic> system paramter</p>
+<li><p>Add information about <topic> system parameter</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1671">Pull request #1671</a></p></li>
 </ul>
@@ -3237,6 +4130,109 @@ Changelog</label><div class="sd-tab-content docutils">
 </li>
 </ol>
 <p class="rubric" id="gazebo-sim-6-x">Gazebo Sim 6.x</p>
+<p class="rubric" id="gazebo-sim-6-17-0-2025-01-10">Gazebo Sim 6.17.0 (2025-01-10)</p>
+<ol class="arabic simple">
+<li><p>Add parameter for adjust current sign in battery plugin</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2696">Pull request #2696</a></p></li>
+</ul>
+</li>
+<li><p>Fix uncontrolled cast of size_t to uint</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2687">Pull request #2687</a></p></li>
+</ul>
+</li>
+<li><p>Improve load times by skipping serialization of entities when unnecessary</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2596">Pull request #2596</a></p></li>
+</ul>
+</li>
+<li><p>Fix crash in OpticalTactilePlugin by checking for valid visualize pointer</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2674">Pull request #2674</a></p></li>
+</ul>
+</li>
+<li><p>Disable detachable_joint integration test case on Windows</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2523">Pull request #2523</a></p></li>
+</ul>
+</li>
+<li><p>Initialize threadsNeedCleanUp</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2503">Pull request #2503</a></p></li>
+</ul>
+</li>
+<li><p>Remove systems if their parent entity is removed</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2232">Pull request #2232</a></p></li>
+</ul>
+</li>
+<li><p>Disable failing testFixture_TEST for MacOS</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2499">Pull request #2499</a></p></li>
+</ul>
+</li>
+<li><p>backport lidar visualization frame_id fix</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2483">Pull request #2483</a></p></li>
+</ul>
+</li>
+<li><p>Fix DLL linkage/visibility issues</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2254">Pull request #2254</a></p></li>
+</ul>
+</li>
+<li><p>Address a few Windows CI Issues</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1911">Pull request #1911</a></p></li>
+</ul>
+</li>
+<li><p>Add GravityEnabled boolean component</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2451">Pull request #2451</a></p></li>
+</ul>
+</li>
+<li><p>Add support for no gravity link</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2398">Pull request #2398</a></p></li>
+</ul>
+</li>
+<li><p>Use VERSION_GREATER_EQUAL in cmake logic</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2418">Pull request #2418</a></p></li>
+</ul>
+</li>
+<li><p>Rephrase cmake comment about CMP0077</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2419">Pull request #2419</a></p></li>
+</ul>
+</li>
+<li><p>Fix bug where iterator was used after the underlying item was erased from the container</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2412">Pull request #2412</a></p></li>
+</ul>
+</li>
+<li><p>Fix namespace and class links in documentation references that use namespace <code class="docutils literal notranslate"><span class="pre">gz</span></code></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2385">Pull request #2385</a></p></li>
+</ul>
+</li>
+<li><p>Fix ModelPhotoShootTest test failures</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/2294">Pull request #2294</a></p></li>
+</ul>
+</li>
+<li><p>Setup rendering environment before cmake runs</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1965">Pull request #1965</a></p></li>
+</ul>
+</li>
+<li><p>Detachable joint: support for nested models of the same name</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1097">Pull request 1097</a></p></li>
+</ul>
+</li>
+</ol>
 <p class="rubric" id="gazebo-sim-6-16-0-2024-01-12">Gazebo Sim 6.16.0 (2024-01-12)</p>
 <ol class="arabic simple">
 <li><p>Allow using plugin file names and environment variables compatible with Garden and later</p>
@@ -3439,7 +4435,7 @@ Changelog</label><div class="sd-tab-content docutils">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1908">Pull request #1908</a></p></li>
 </ul>
 </li>
-<li><p>Use a queue to track component registration from mulitiple sources</p>
+<li><p>Use a queue to track component registration from multiple sources</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1836">Pull request #1836</a></p></li>
 </ul>
@@ -3545,7 +4541,7 @@ Changelog</label><div class="sd-tab-content docutils">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1699">Pull request #1699</a></p></li>
 </ul>
 </li>
-<li><p>Readd namespaces for Q_ARGS</p>
+<li><p>Re-add namespaces for Q_ARGS</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1670">Pull request #1670</a></p></li>
 </ul>
@@ -4368,7 +5364,7 @@ Changelog</label><div class="sd-tab-content docutils">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1347">Pull request #1347</a></p></li>
 </ul>
 </li>
-<li><p>Logs a warning if a mode is not clearly sepecified.</p>
+<li><p>Logs a warning if a mode is not clearly specified.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1307">Pull request #1307</a></p></li>
 </ul>
@@ -5110,7 +6106,7 @@ Changelog</label><div class="sd-tab-content docutils">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/724">Pull request #724</a></p></li>
 </ul>
 </li>
-<li><p>Setting the intiial velocity for a model or joint</p>
+<li><p>Setting the initial velocity for a model or joint</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/693">Pull request #693</a></p></li>
 </ul>
@@ -6115,7 +7111,7 @@ Changelog</label><div class="sd-tab-content docutils">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/703">Pull request #703</a></p></li>
 </ul>
 </li>
-<li><p>Setting the intiial velocity for a model or joint</p>
+<li><p>Setting the initial velocity for a model or joint</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/693">Pull request #693</a></p></li>
 </ul>
@@ -7064,7 +8060,7 @@ gradient.</p>
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/469">pull request 469</a></p></li>
 </ul>
 </li>
-<li><p>Use a <a class="reference external" href="https://en.cppreference.com/w/cpp/thread/promise">std::promise</a>/<a class="reference external" href="https://en.cppreference.com/w/cpp/thread/future">std::future</a> mechanism to avoid waiting in a looop until all <code class="docutils literal notranslate"><span class="pre">stepAck</span></code> messages are received</p>
+<li><p>Use a <a class="reference external" href="https://en.cppreference.com/w/cpp/thread/promise">std::promise</a>/<a class="reference external" href="https://en.cppreference.com/w/cpp/thread/future">std::future</a> mechanism to avoid waiting in a loop until all <code class="docutils literal notranslate"><span class="pre">stepAck</span></code> messages are received</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/470">pull request 470</a></p></li>
 </ul>
@@ -7371,7 +8367,7 @@ gradient.</p>
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1699">Pull request #1699</a></p></li>
 </ul>
 </li>
-<li><p>Readd namespaces for Q_ARGS</p>
+<li><p>Re-add namespaces for Q_ARGS</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/1670">Pull request #1670</a></p></li>
 </ul>
@@ -7633,7 +8629,7 @@ gradient.</p>
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/719">Pull request #719</a></p></li>
 </ul>
 </li>
-<li><p>Setting the intiial velocity for a model or joint</p>
+<li><p>Setting the initial velocity for a model or joint</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-sim/pull/693">Pull request #693</a></p></li>
 </ul>
@@ -8934,7 +9930,7 @@ velocity/force command, and added a recharging trigger.</p>
 <li><p><a class="reference external" href="https://osrf-migration.github.io/ignition-gh-pages/#!/ignitionrobotics/ign-gazebo/pull-requests/518">BitBucket pull request 518</a></p></li>
 </ul>
 </li>
-<li><p>Remove redundent messages when levels get unloaded</p>
+<li><p>Remove redundant messages when levels get unloaded</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://osrf-migration.github.io/ignition-gh-pages/#!/ignitionrobotics/ign-gazebo/pull-requests/522">BitBucket pull request 522</a></p></li>
 </ul>
@@ -9215,7 +10211,7 @@ See the <code class="docutils literal notranslate"><span class="pre">test/perfor
 </ol>
 <p class="rubric" id="gazebo-sim-2-3-0-2019-07-13">Gazebo Sim 2.3.0 (2019-07-13)</p>
 <ol class="arabic simple">
-<li><p>Improve physics system peformance by skipping static model updates.
+<li><p>Improve physics system performance by skipping static model updates.
 Components state information has been incorporated, which is used to
 indicate if a component change is periodic (such as through a physics
 update) or a one-time change (such as through a user command).</p>
@@ -9228,7 +10224,7 @@ update) or a one-time change (such as through a user command).</p>
 <li><p><a class="reference external" href="https://osrf-migration.github.io/ignition-gh-pages/#!/ignitionrobotics/ign-gazebo/pull-requests/370">BitBucket pull request 370</a></p></li>
 </ul>
 </li>
-<li><p>Improve SceneBroadcaster peformance by 1) Limit message generation if
+<li><p>Improve SceneBroadcaster performance by 1) Limit message generation if
 subscribers to pose topics are not present, 2) Set world stats message
 instead of copying the message, 3) Suppress scenegraph updates when there
 are no new entities, 4) Make better use of const functions, 5) Prevent
@@ -9918,8 +10914,8 @@ will replace the environment variables.</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -9929,7 +10925,7 @@ will replace the environment variables.</p>
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     <br/>
   </p>
 </div>
@@ -9941,8 +10937,8 @@ will replace the environment variables.</p>
       
         <div class="footer-item"><p> Brought to you by <a href="https://openrobotics.org">Open Robotics</a>. </p>
 <p> Except where otherwise noted, the gazebosim.org web pages are licensed under <a
-    href="https://creativecommons.org/licenses/by/3.0/us/">Creative Commons
-    Attribution 3.0</a>. </p></div>
+    href="https://creativecommons.org/licenses/by/4.0/us/">Creative Commons
+    Attribution 4.0</a>. </p></div>
       
     </div>
   
@@ -9951,7 +10947,8 @@ will replace the environment variables.</p>
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
 </p></div>
       
     </div>

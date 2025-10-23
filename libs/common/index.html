@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JKS50SX85K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JKS50SX85K');
+    </script>
+    
     <title>common &#8212; Gazebo  documentation</title>
   
   
@@ -16,8 +25,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -27,19 +36,19 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/gazebo.css?v=173bdbe0" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/gazebo.css?v=1d42b338" />
   
   <!-- So that users can add custom icons -->
-  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=187304be"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -147,7 +156,7 @@
       <ul class="dropdown-menu">
         <li class="nav-item"><a class="nav-link nav-internal" href="https://rudislabs.github.io/gz-docs/about">About</a></li>
         <li class="nav-item"><a class="nav-link nav-internal" href='https://community.gazebosim.org' title="Discussion forum">Community</a>
-        <li class="nav-item"><a class="nav-link nav-internal" href='https://robotics.stackexchange.org' title="Technical help">Answers</a>
+        <li class="nav-item"><a class="nav-link nav-internal" href='https://robotics.stackexchange.com' title="Technical help">Answers</a>
         <li class="nav-item"><a class="nav-link nav-internal" href="https://blog.openrobotics.org/tag/gazebo">Blog</a>
         <li class="nav-item"><a class="nav-link nav-internal" href="https://rudislabs.github.io/gz-docs/media">Media</a></li>
       </ul>
@@ -243,7 +252,7 @@
       <ul class="dropdown-menu">
         <li class="nav-item"><a class="nav-link nav-internal" href="https://rudislabs.github.io/gz-docs/about">About</a></li>
         <li class="nav-item"><a class="nav-link nav-internal" href='https://community.gazebosim.org' title="Discussion forum">Community</a>
-        <li class="nav-item"><a class="nav-link nav-internal" href='https://robotics.stackexchange.org' title="Technical help">Answers</a>
+        <li class="nav-item"><a class="nav-link nav-internal" href='https://robotics.stackexchange.com' title="Technical help">Answers</a>
         <li class="nav-item"><a class="nav-link nav-internal" href="https://blog.openrobotics.org/tag/gazebo">Blog</a>
         <li class="nav-item"><a class="nav-link nav-internal" href="https://rudislabs.github.io/gz-docs/media">Media</a></li>
       </ul>
@@ -301,9 +310,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -350,7 +364,7 @@
 <h1>common<a class="headerlink" href="#common" title="Link to this heading">#</a></h1>
 <ul class="gz-libs-lists simple">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-common"><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-code" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"></path></svg> Source Code</a></p></li>
-<li><p><a class="reference external" href="https://gazebosim.org/api/common/6"><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-description" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"></path></svg> API &amp; Tutorials</a></p></li>
+<li><p><a class="reference external" href="https://gazebosim.org/api/common/7"><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-description" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"></path></svg> API &amp; Tutorials</a></p></li>
 </ul>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
@@ -370,16 +384,16 @@ Readme</label><div class="sd-tab-content docutils">
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Test coverage</p></td>
-<td><p><a class="reference external" href="https://codecov.io/gh/gazebosim/gz-common/tree/gz-common6"><img alt="codecov" src="https://codecov.io/gh/gazebosim/gz-common/tree/gz-common6/graph/badge.svg" /></a></p></td>
+<td><p><a class="reference external" href="https://codecov.io/gh/gazebosim/gz-common/tree/gz-common7"><img alt="codecov" src="https://codecov.io/gh/gazebosim/gz-common/tree/gz-common7/graph/badge.svg" /></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Ubuntu Noble</p></td>
-<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_common-ci-gz-common6-noble-amd64"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_common-ci-gz-common6-noble-amd64" /></a></p></td>
+<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_common-ci-gz-common7-noble-amd64"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_common-ci-gz-common7-noble-amd64" /></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Homebrew</p></td>
-<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_common-ci-gz-common6-homebrew-amd64"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_common-ci-gz-common6-homebrew-amd64" /></a></p></td>
+<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_common-ci-gz-common7-homebrew-amd64"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_common-ci-gz-common7-homebrew-amd64" /></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Windows</p></td>
-<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_common-6-win/"><img alt="Build Status" src="https://build.osrfoundation.org/job/gz_common-6-win/badge/icon" /></a></p></td>
+<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_common-7-cnlwin/"><img alt="Build Status" src="https://build.osrfoundation.org/job/gz_common-7-cnlwin/badge/icon" /></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -413,9 +427,9 @@ image, and material representations. Animation processing and BVH loader.</p></l
 visualize run time of various pieces of Gazebo software.</p></li>
 </ul>
 <p class="rubric" id="install">Install</p>
-<p>See the <a class="reference external" href="https://gazebosim.org/api/common/6/install.html">installation tutorial</a>.</p>
+<p>See the <a class="reference external" href="https://gazebosim.org/api/common/7/install.html">installation tutorial</a>.</p>
 <p class="rubric" id="usage">Usage</p>
-<p>Please refer to the <a class="reference external" href="https://github.com/gazebosim/gz-common/tree/gz-common6/examples">examples directory</a>.</p>
+<p>Please refer to the <a class="reference external" href="https://github.com/gazebosim/gz-common/tree/gz-common7/examples">examples directory</a>.</p>
 <p class="rubric" id="folder-structure">Folder Structure</p>
 <p>Refer to the following table for information about important directories and files in this repository.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">+--</span> <span class="n">av</span>                       <span class="n">Header</span> <span class="ow">and</span> <span class="n">source</span> <span class="n">files</span> <span class="k">for</span> <span class="n">the</span> <span class="n">AV</span> <span class="n">component</span><span class="o">.</span>
@@ -424,7 +438,7 @@ visualize run time of various pieces of Gazebo software.</p></li>
 <span class="o">+--</span> <span class="n">geospatial</span>               <span class="n">Geospatial</span> <span class="n">component</span> <span class="k">for</span> <span class="n">heightmap</span> <span class="o">&amp;</span> <span class="n">DEMs</span>
 <span class="o">+--</span> <span class="n">graphics</span>                 <span class="n">Header</span> <span class="ow">and</span> <span class="n">source</span> <span class="n">files</span> <span class="k">for</span> <span class="n">the</span> <span class="n">Graphics</span> <span class="n">component</span><span class="o">.</span>
 <span class="o">+--</span> <span class="n">include</span><span class="o">/</span><span class="n">gz</span><span class="o">/</span><span class="n">common</span>        <span class="n">Header</span> <span class="n">files</span> <span class="k">for</span> <span class="n">the</span> <span class="n">core</span> <span class="n">component</span><span class="o">.</span>
-<span class="o">+--</span> <span class="n">io</span>                       <span class="n">IO</span> <span class="n">component</span><span class="o">.</span> <span class="n">Read</span> <span class="nb">object</span> <span class="kn">from</span> <span class="nn">stream.</span>
+<span class="o">+--</span> <span class="n">io</span>                       <span class="n">IO</span> <span class="n">component</span><span class="o">.</span> <span class="n">Read</span> <span class="nb">object</span> <span class="kn">from</span><span class="w"> </span><span class="nn">stream.</span>
 <span class="o">+--</span> <span class="n">profiler</span>                 <span class="n">Header</span> <span class="ow">and</span> <span class="n">source</span> <span class="n">files</span> <span class="k">for</span> <span class="n">the</span> <span class="n">Profiler</span> <span class="n">component</span><span class="o">.</span>
 <span class="o">+--</span> <span class="n">src</span>                      <span class="n">Core</span> <span class="n">source</span> <span class="n">files</span> <span class="ow">and</span> <span class="n">unit</span> <span class="n">tests</span><span class="o">.</span>
 <span class="o">+--</span> <span class="n">test</span>
@@ -452,7 +466,136 @@ visualize run time of various pieces of Gazebo software.</p></li>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-1">
 Changelog</label><div class="sd-tab-content docutils">
+<p class="rubric" id="gazebo-common-7-x">Gazebo Common 7.x</p>
+<p class="rubric" id="gazebo-common-7-0-0-2025-09-30">Gazebo Common 7.0.0 (2025-09-30)</p>
+<ol class="arabic simple">
+<li><p><strong>Baseline:</strong> this includes all changes from 6.1.0 and earlier.</p></li>
+<li><p>Add function for extracting single channel data from an <code class="docutils literal notranslate"><span class="pre">RGB[A]</span></code> image</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/706">Pull request #706</a></p></li>
+</ul>
+</li>
+<li><p>Documentation updates</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/707">Pull request #707</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/703">Pull request #703</a></p></li>
+</ul>
+</li>
+<li><p>[Bazel] Update bazel module to use jetty release branches</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/705">Pull request #705</a></p></li>
+</ul>
+</li>
+<li><p>Support reading pixel values from color 16 bit images</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/699">Pull request #699</a></p></li>
+</ul>
+</li>
+<li><p>Deprecate <code class="docutils literal notranslate"><span class="pre">MovingWindowFilter</span></code>, use gz-math instead</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/692">Pull request #692</a></p></li>
+</ul>
+</li>
+<li><p>Bump gz-cmake and others in jetty</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/675">Pull request #675</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebo-tooling/release-tools/issues/1309">Tracking issue</a></p></li>
+</ul>
+</li>
+<li><p>Deprecate env() with two parameters</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/653">Pull request #653</a></p></li>
+</ul>
+</li>
+<li><p>Bump main to gz-common 7.0.0~pre1</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/648">Pull request #648</a></p></li>
+</ul>
+</li>
+</ol>
 <p class="rubric" id="gazebo-common-6-x">Gazebo Common 6.x</p>
+<p class="rubric" id="gazebo-common-6-1-0-2025-05-28">Gazebo Common 6.1.0 (2025-05-28)</p>
+<ol class="arabic simple">
+<li><p>Add support for custom profiler</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/682">Pull request #682</a></p></li>
+</ul>
+</li>
+<li><p>Migrate bazel build setup to use bzlmod</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/679">Pull request #679</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/681">Pull request #681</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/683">Pull request #683</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/684">Pull request #684</a></p></li>
+</ul>
+</li>
+<li><p>Add Heightmap utility functions</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/680">Pull request #680</a></p></li>
+</ul>
+</li>
+<li><p>Check valid indices before doing convex decomposition</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/677">Pull request #677</a></p></li>
+</ul>
+</li>
+<li><p>ci: run cppcheck, cpplint on noble</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/669">Pull request #669</a></p></li>
+</ul>
+</li>
+<li><p>Added missing includes</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/672">Pull request #672</a></p></li>
+</ul>
+</li>
+<li><p>Add check for valid indices in submesh</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/667">Pull request #667</a></p></li>
+</ul>
+</li>
+<li><p>Fix C4305 double truncated to float warnings (#666)</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/668">Pull request #668</a></p></li>
+</ul>
+</li>
+<li><p>Add missing include chrono in Event.hh header</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/664">Pull request #664</a></p></li>
+</ul>
+</li>
+</ol>
+<p class="rubric" id="gazebo-common-6-0-2-2025-02-12">Gazebo Common 6.0.2 (2025-02-12)</p>
+<ol class="arabic simple">
+<li><p>Add missing includes</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/660">Pull request #660</a></p></li>
+</ul>
+</li>
+</ol>
+<p class="rubric" id="gazebo-common-6-0-1-2024-12-17">Gazebo Common 6.0.1 (2024-12-17)</p>
+<ol class="arabic simple">
+<li><p>Check normal presence before trying to read asMesh normals</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/654">Pull request #654</a></p></li>
+</ul>
+</li>
+<li><p>Include <code class="docutils literal notranslate"><span class="pre">math::Angle</span></code> since it is used here</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/649">Pull request #649</a></p></li>
+</ul>
+</li>
+<li><p>Adds EoL to example</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/642">Pull request #642</a></p></li>
+</ul>
+</li>
+<li><p>Remove gts references from documentation</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/645">Pull request #645</a></p></li>
+</ul>
+</li>
+</ol>
 <p class="rubric" id="gazebo-common-6-0-0-2024-09-25">Gazebo Common 6.0.0 (2024-09-25)</p>
 <ol class="arabic simple">
 <li><p><strong>Baseline:</strong> this includes all changes from 5.6.0 and earlier.</p></li>
@@ -663,6 +806,87 @@ Changelog</label><div class="sd-tab-content docutils">
 </li>
 </ol>
 <p class="rubric" id="gazebo-common-5-x">Gazebo Common 5.x</p>
+<p class="rubric" id="gazebo-common-5-7-1-2025-01-30">Gazebo Common 5.7.1 (2025-01-30)</p>
+<ol class="arabic simple">
+<li><p>Add include <chrono> for system_clock in Event.hh</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/655">Pull request #655</a></p></li>
+</ul>
+</li>
+<li><p>Check normal presence before trying to read asMesh normals</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/654">Pull request #654</a></p></li>
+</ul>
+</li>
+<li><p>Remove Conda Windows warnings</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/652">Pull request #652</a></p></li>
+</ul>
+</li>
+</ol>
+<p class="rubric" id="gazebo-common-5-7-0-2024-11-08">Gazebo Common 5.7.0 (2024-11-08)</p>
+<ol class="arabic simple">
+<li><p>Fix loading lightmaps from gltf / glb meshes (#630)</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/630">Pull request #630) (#646</a> (#646)</p></li>
+</ul>
+</li>
+<li><p>Fix AssimpLoader collada texture coordinates</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/634">Pull request #634</a></p></li>
+</ul>
+</li>
+<li><p>Remove debug logging introduced accidentally in PR review</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/622">Pull request #622</a></p></li>
+</ul>
+</li>
+<li><p>Fix crash when calling absPath with empty input</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/620">Pull request #620</a></p></li>
+</ul>
+</li>
+<li><p>DEM: Add support for GDAL vsicurl, vsizip support and avoid segfaults with huge VRT datasets</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/597">Pull request #597</a></p></li>
+</ul>
+</li>
+<li><p>SubMesh::RecalculateNormals improvement</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/609">Pull request #609</a></p></li>
+</ul>
+</li>
+<li><p>fix data race tsan issue</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/612">Pull request #612</a></p></li>
+</ul>
+</li>
+<li><p>Generate a more unique texture name for glb embedded textures</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/606">Pull request #606</a></p></li>
+</ul>
+</li>
+<li><p>Add package.xml</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/587">Pull request #587</a></p></li>
+</ul>
+</li>
+<li><p>Fix deprecation warnings</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/603">Pull request #603</a></p></li>
+</ul>
+</li>
+<li><p>Fix macOS workflow and update on-push branches</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/602">Pull request #602</a></p></li>
+</ul>
+</li>
+<li><p>Fix compatibility with FFmpeg5.0</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-common/pull/581">Pull request #581</a></p></li>
+</ul>
+</li>
+</ol>
 <p class="rubric" id="gazebo-common-5-6-0-2024-04-23">Gazebo Common 5.6.0 (2024-04-23)</p>
 <ol class="arabic simple">
 <li><p>Clarify units for the DEM classes</p>
@@ -2722,8 +2946,8 @@ be found <a class="reference external" href="https://en.wikipedia.org/wiki/Unifo
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -2733,7 +2957,7 @@ be found <a class="reference external" href="https://en.wikipedia.org/wiki/Unifo
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     <br/>
   </p>
 </div>
@@ -2745,8 +2969,8 @@ be found <a class="reference external" href="https://en.wikipedia.org/wiki/Unifo
       
         <div class="footer-item"><p> Brought to you by <a href="https://openrobotics.org">Open Robotics</a>. </p>
 <p> Except where otherwise noted, the gazebosim.org web pages are licensed under <a
-    href="https://creativecommons.org/licenses/by/3.0/us/">Creative Commons
-    Attribution 3.0</a>. </p></div>
+    href="https://creativecommons.org/licenses/by/4.0/us/">Creative Commons
+    Attribution 4.0</a>. </p></div>
       
     </div>
   
@@ -2755,7 +2979,8 @@ be found <a class="reference external" href="https://en.wikipedia.org/wiki/Unifo
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
 </p></div>
       
     </div>

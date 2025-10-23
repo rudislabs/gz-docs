@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JKS50SX85K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JKS50SX85K');
+    </script>
+    
     <title>cmake &#8212; Gazebo  documentation</title>
   
   
@@ -16,8 +25,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -27,19 +36,19 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/gazebo.css?v=173bdbe0" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/gazebo.css?v=1d42b338" />
   
   <!-- So that users can add custom icons -->
-  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=187304be"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -147,7 +156,7 @@
       <ul class="dropdown-menu">
         <li class="nav-item"><a class="nav-link nav-internal" href="https://rudislabs.github.io/gz-docs/about">About</a></li>
         <li class="nav-item"><a class="nav-link nav-internal" href='https://community.gazebosim.org' title="Discussion forum">Community</a>
-        <li class="nav-item"><a class="nav-link nav-internal" href='https://robotics.stackexchange.org' title="Technical help">Answers</a>
+        <li class="nav-item"><a class="nav-link nav-internal" href='https://robotics.stackexchange.com' title="Technical help">Answers</a>
         <li class="nav-item"><a class="nav-link nav-internal" href="https://blog.openrobotics.org/tag/gazebo">Blog</a>
         <li class="nav-item"><a class="nav-link nav-internal" href="https://rudislabs.github.io/gz-docs/media">Media</a></li>
       </ul>
@@ -243,7 +252,7 @@
       <ul class="dropdown-menu">
         <li class="nav-item"><a class="nav-link nav-internal" href="https://rudislabs.github.io/gz-docs/about">About</a></li>
         <li class="nav-item"><a class="nav-link nav-internal" href='https://community.gazebosim.org' title="Discussion forum">Community</a>
-        <li class="nav-item"><a class="nav-link nav-internal" href='https://robotics.stackexchange.org' title="Technical help">Answers</a>
+        <li class="nav-item"><a class="nav-link nav-internal" href='https://robotics.stackexchange.com' title="Technical help">Answers</a>
         <li class="nav-item"><a class="nav-link nav-internal" href="https://blog.openrobotics.org/tag/gazebo">Blog</a>
         <li class="nav-item"><a class="nav-link nav-internal" href="https://rudislabs.github.io/gz-docs/media">Media</a></li>
       </ul>
@@ -301,9 +310,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -350,7 +364,7 @@
 <h1>cmake<a class="headerlink" href="#cmake" title="Link to this heading">#</a></h1>
 <ul class="gz-libs-lists simple">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake"><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-code" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"></path></svg> Source Code</a></p></li>
-<li><p><a class="reference external" href="https://gazebosim.org/api/cmake/4"><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-description" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"></path></svg> API &amp; Tutorials</a></p></li>
+<li><p><a class="reference external" href="https://gazebosim.org/api/cmake/5"><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-description" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"></path></svg> API &amp; Tutorials</a></p></li>
 </ul>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
@@ -370,13 +384,13 @@ Readme</label><div class="sd-tab-content docutils">
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Ubuntu Noble</p></td>
-<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_cmake-ci-gz-cmake4-noble-amd64"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_cmake-ci-gz-cmake4-noble-amd64" /></a></p></td>
+<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_cmake-ci-gz-cmake5-noble-amd64"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_cmake-ci-gz-cmake5-noble-amd64" /></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Homebrew</p></td>
-<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_cmake-ci-gz-cmake4-homebrew-amd64"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_cmake-ci-gz-cmake4-homebrew-amd64" /></a></p></td>
+<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_cmake-ci-gz-cmake5-homebrew-amd64"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_cmake-ci-gz-cmake5-homebrew-amd64" /></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Windows</p></td>
-<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_cmake-4-win"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_cmake-4-win" /></a></p></td>
+<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_cmake-5-cnlwin"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_cmake-5-cnlwin" /></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -409,39 +423,39 @@ Readme</label><div class="sd-tab-content docutils">
 <p>The <a class="reference internal" href="#source-install">Source Install</a> instructions should be used if you need the very latest software improvements, you need to modify the code, or you plan to make a contribution.</p>
 <p class="rubric" id="binary-install">Binary Install</p>
 <p>On Ubuntu systems, <code class="docutils literal notranslate"><span class="pre">apt-get</span></code> can be used to install <code class="docutils literal notranslate"><span class="pre">gz-cmake</span></code>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt install libgz-cmake&lt;#&gt;-dev
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>libgz-cmake&lt;<span class="c1">#&gt;-dev</span>
 </pre></div>
 </div>
 <p>Be sure to replace <code class="docutils literal notranslate"><span class="pre">&lt;#&gt;</span></code> with a number value, such as <code class="docutils literal notranslate"><span class="pre">1</span></code> or <code class="docutils literal notranslate"><span class="pre">2</span></code>, depending on which version you need.</p>
 <p class="rubric" id="source-install">Source Install</p>
 <p class="rubric" id="prerequisites">Prerequisites</p>
 <p>The only prerequisite of <code class="docutils literal notranslate"><span class="pre">gz-cmake</span></code> is <code class="docutils literal notranslate"><span class="pre">cmake</span></code>. Ubuntu users can install cmake with the package manager:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt install cmake
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>cmake
 </pre></div>
 </div>
 <p class="rubric" id="building-from-source">Building from source</p>
 <p>To build and install from source, you can clone the repo and use cmake to install the modules as though this is a regular cmake project:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/gazebosim/gz-cmake
-$ cd gz-cmake
-$ mkdir build
-$ cd build
-$ cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install/dir
-$ make -j8
-$ make install
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/gazebosim/gz-cmake
+<span class="nb">cd</span><span class="w"> </span>gz-cmake
+mkdir<span class="w"> </span>build
+<span class="nb">cd</span><span class="w"> </span>build
+cmake<span class="w"> </span>..<span class="w"> </span>-DCMAKE_INSTALL_PREFIX<span class="o">=</span>/path/to/install/dir
+make<span class="w"> </span>-j8
+make<span class="w"> </span>install
 </pre></div>
 </div>
 <p>Replace <code class="docutils literal notranslate"><span class="pre">/path/to/install/dir</span></code> to whatever directory you want to install this package to.</p>
 <p class="rubric" id="usage">Usage</p>
 <p>Documentation can be accessed at <a class="reference external" href="https://gazebosim.org/libs/cmake">https://gazebosim.org/libs/cmake</a></p>
-<p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/tree/gz-cmake4/examples">Examples</a> are available in this repository.</p>
-<p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/tree/gz-cmake4/tutorials">Tutorials</a> are also available in this repository.</p>
+<p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/tree/gz-cmake5/examples">Examples</a> are available in this repository.</p>
+<p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/tree/gz-cmake5/tutorials">Tutorials</a> are also available in this repository.</p>
 <p class="rubric" id="documentation">Documentation</p>
-<p>Documentation for <code class="docutils literal notranslate"><span class="pre">gz-cmake</span></code> can be found within the source code, and also in the <a class="reference external" href="https://github.com/gazebosim/gz-cmake/blob/gz-cmake4/Migration.md">MIGRATION.md guide</a>.</p>
+<p>Documentation for <code class="docutils literal notranslate"><span class="pre">gz-cmake</span></code> can be found within the source code, and also in the <a class="reference external" href="https://github.com/gazebosim/gz-cmake/blob/gz-cmake5/Migration.md">MIGRATION.md guide</a>.</p>
 <p class="rubric" id="testing">Testing</p>
 <p>A fuller suite of tests in the <code class="docutils literal notranslate"><span class="pre">examples</span></code> directory can be enabled by building with <code class="docutils literal notranslate"><span class="pre">BUILDSYSTEM_TESTING</span></code> enabled.
 Tests can be run by building the <code class="docutils literal notranslate"><span class="pre">test</span></code> target. From your build directory you can run:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cmake .. -DBUILDSYSTEM_TESTING=1
-$ make test
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake<span class="w"> </span>..<span class="w"> </span>-DBUILDSYSTEM_TESTING<span class="o">=</span><span class="m">1</span>
+make<span class="w"> </span><span class="nb">test</span>
 </pre></div>
 </div>
 <p class="rubric" id="folder-structure">Folder Structure</p>
@@ -469,7 +483,101 @@ $ make test
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-1">
 Changelog</label><div class="sd-tab-content docutils">
+<p class="rubric" id="gazebo-cmake-5-x">Gazebo CMake 5.x</p>
+<p class="rubric" id="gazebo-cmake-5-0-0-2025-09-30">Gazebo CMake 5.0.0 (2025-09-30)</p>
+<ol class="arabic simple">
+<li><p><strong>Baseline:</strong> this includes all changes from 4.2.0 and earlier.</p></li>
+<li><p>Update code snippet formatting in README</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/502">Pull request #502</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/503">Pull request #503</a></p></li>
+</ul>
+</li>
+<li><p>Remove utilities headers and cmake target</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/501">Pull request #501</a></p></li>
+</ul>
+</li>
+<li><p>Replace <code class="docutils literal notranslate"><span class="pre">join_paths</span></code> with <code class="docutils literal notranslate"><span class="pre">cmake_path(APPEND)</span></code></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/498">Pull request #498</a></p></li>
+</ul>
+</li>
+<li><p>Infrastructure</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/496">Pull request #496</a></p></li>
+</ul>
+</li>
+<li><p>Bump gz-cmake and others in jetty</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/493">Pull request #493</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebo-tooling/release-tools/issues/1309">Tracking issue</a></p></li>
+</ul>
+</li>
+<li><p>Avoid warnings on unused <code class="docutils literal notranslate"><span class="pre">CMAKE_BUILD_TYPE</span></code> on Windows (#487)</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/487">Pull request #487</a></p></li>
+</ul>
+</li>
+<li><p>Bump main to gz-cmake 5.0.0~pre1</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/462">Pull request #462</a></p></li>
+</ul>
+</li>
+</ol>
 <p class="rubric" id="gazebo-cmake-4-x">Gazebo CMake 4.x</p>
+<p class="rubric" id="gazebo-cmake-4-2-0-2025-04-25">Gazebo CMake 4.2.0 (2025-04-25)</p>
+<ol class="arabic simple">
+<li><p><strong>Baseline:</strong> this includes all changes from 4.1.1 and earlier.</p></li>
+<li><p>Doxygen: use <code class="docutils literal notranslate"><span class="pre">MARKDOWN_ID_STYLE</span></code> = GITHUB</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/491">Pull request #491</a></p></li>
+</ul>
+</li>
+<li><p>Avoid warnings on unused <code class="docutils literal notranslate"><span class="pre">CMAKE_BUILD_TYPE</span></code> on Windows</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/487">Pull request #487</a></p></li>
+</ul>
+</li>
+<li><p>Integrate Ogre-Next 3.x.x built from source</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/468">Pull request #468</a></p></li>
+</ul>
+</li>
+<li><p>Reduce example names to be able to run Conda CI on Windows (gz-cmake4)</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/476">Pull request #476</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/478">Pull request #478</a></p></li>
+</ul>
+</li>
+</ol>
+<p class="rubric" id="gazebo-cmake-4-1-1-2025-02-24">Gazebo CMake 4.1.1 (2025-02-24)</p>
+<ol class="arabic simple">
+<li><p>Normalize header install path</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/467">Pull request #467</a></p></li>
+</ul>
+</li>
+<li><p>Ensure that find_package(TinyXML2) defines tinyxml2::tinyxml2 even on case insensitive filesystems</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/465">Pull request #465</a></p></li>
+</ul>
+</li>
+</ol>
+<p class="rubric" id="gazebo-cmake-4-1-0-2024-11-01">Gazebo CMake 4.1.0 (2024-11-01)</p>
+<ol class="arabic simple">
+<li><p>Update add-to-project version in triage.yml</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/448">Pull request #448</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/459">Pull request #459</a></p></li>
+</ul>
+</li>
+<li><p>Helper to get version number from package.xml</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/456">Pull request #456</a></p></li>
+</ul>
+</li>
+</ol>
 <p class="rubric" id="gazebo-cmake-4-0-0-2024-09-25">Gazebo CMake 4.0.0 (2024-09-25)</p>
 <ol class="arabic simple">
 <li><p>Miscellaneous documentation fixes</p>
@@ -550,6 +658,33 @@ Changelog</label><div class="sd-tab-content docutils">
 </li>
 </ol>
 <p class="rubric" id="gazebo-cmake-3-x">Gazebo CMake 3.x</p>
+<p class="rubric" id="gazebo-cmake-3-5-5-2025-02-27">Gazebo CMake 3.5.5 (2025-02-27)</p>
+<ol class="arabic simple">
+<li><p>Normalize header install path</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/467">Pull request #467</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/474">Pull request #474</a></p></li>
+</ul>
+</li>
+<li><p>Only find python if needed</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/473">Pull request #473</a></p></li>
+</ul>
+</li>
+</ol>
+<p class="rubric" id="gazebo-cmake-3-5-4-2025-01-30">Gazebo CMake 3.5.4 (2025-01-30)</p>
+<ol class="arabic simple">
+<li><p>Accept arbitrary capitalization for coverage build type</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/435">Pull request #435</a></p></li>
+</ul>
+</li>
+<li><p>Fix link for Sanitizer Builds tutorial</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/433">Pull request #433</a></p></li>
+</ul>
+</li>
+</ol>
 <p class="rubric" id="gazebo-cmake-3-5-3-2024-05-02">Gazebo CMake 3.5.3 (2024-05-02)</p>
 <ol class="arabic simple">
 <li><p>Fix installation of Ign*.cmake modules on newer versions of CMake</p>
@@ -905,6 +1040,47 @@ Changelog</label><div class="sd-tab-content docutils">
 </li>
 </ol>
 <p class="rubric" id="gazebo-cmake-2-x">Gazebo CMake 2.x</p>
+<p class="rubric" id="gazebo-cmake-2-17-3-2025-xx-xx">Gazebo CMake 2.17.3 (2025-XX-XX)</p>
+<ol class="arabic simple">
+<li><p>Normalize header install path (backport)</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/481">Pull request #481</a></p></li>
+</ul>
+</li>
+<li><p>Support for Windows conda-forge ogre-next recipe (gz-cmake2)</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/464">Pull request #464</a></p></li>
+</ul>
+</li>
+<li><p>Reduce example names to be able to run Conda CI on Windows (gz-cmake2)</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/463">Pull request #463</a></p></li>
+</ul>
+</li>
+<li><p>Accept arbitrary capitalization for coverage build type</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/435">Pull request #435</a></p></li>
+</ul>
+</li>
+</ol>
+<p class="rubric" id="gazebo-cmake-2-17-2-2024-05-07">Gazebo CMake 2.17.2 (2024-05-07)</p>
+<ol class="arabic simple">
+<li><p>Backport #402: Replace <code class="docutils literal notranslate"><span class="pre">exec_program</span></code> with <code class="docutils literal notranslate"><span class="pre">execute_process</span></code></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/402">Pull request #402</a></p></li>
+</ul>
+</li>
+<li><p>Remove &#64;mxgrey as codeowner and assign maintainership to &#64;scpeters</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/414">Pull request #414</a></p></li>
+</ul>
+</li>
+<li><p>Update github action workflows</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-cmake/pull/395">Pull request #395</a></p></li>
+</ul>
+</li>
+</ol>
 <p class="rubric" id="gazebo-cmake-2-17-1-2023-08-31">Gazebo CMake 2.17.1 (2023-08-31)</p>
 <ol class="arabic simple">
 <li><p>FindIgnOgre*: fix LIBRARY_DIRS and PLUGINDIR resolution when using pkgconfig</p>
@@ -1669,8 +1845,8 @@ Changelog</label><div class="sd-tab-content docutils">
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -1680,7 +1856,7 @@ Changelog</label><div class="sd-tab-content docutils">
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     <br/>
   </p>
 </div>
@@ -1692,8 +1868,8 @@ Changelog</label><div class="sd-tab-content docutils">
       
         <div class="footer-item"><p> Brought to you by <a href="https://openrobotics.org">Open Robotics</a>. </p>
 <p> Except where otherwise noted, the gazebosim.org web pages are licensed under <a
-    href="https://creativecommons.org/licenses/by/3.0/us/">Creative Commons
-    Attribution 3.0</a>. </p></div>
+    href="https://creativecommons.org/licenses/by/4.0/us/">Creative Commons
+    Attribution 4.0</a>. </p></div>
       
     </div>
   
@@ -1702,7 +1878,8 @@ Changelog</label><div class="sd-tab-content docutils">
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
 </p></div>
       
     </div>

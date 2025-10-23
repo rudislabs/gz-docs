@@ -1,7 +1,12 @@
 # Gazebo Garden
 
-Gazebo Garden will be the 7th major release of Gazebo. It will be a
+Gazebo Garden was the 7th major release of Gazebo. It was a
 short-term release.
+
+:::{warning}
+Garden has reached end-of-life on November 2024. This page exists for archival purposes.
+Please refer to the latest supported version.
+:::
 
 ## Binary installation instructions
 
@@ -66,6 +71,7 @@ Gazebo Garden is the first major release that [uses the Gazebo brand instead of 
 So if you are upgrading from a prior release (e.g. Fortress), you will need to do some steps to migrate your packages.
 
 - [Guide for Migrating From Ignition](migration_from_ignition)
+
 
 ```{toctree}
 :hidden:

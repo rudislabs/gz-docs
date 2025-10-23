@@ -2,7 +2,7 @@
 
 {.gz-libs-lists}
 - [{material-regular}`code;2em` Source Code](https://github.com/gazebosim/gz-sensors)
-- [{material-regular}`description;2em` API & Tutorials](https://gazebosim.org/api/sensors/9)
+- [{material-regular}`description;2em` API & Tutorials](https://gazebosim.org/api/sensors/10)
 
 ::::{tab-set}
 
@@ -21,7 +21,7 @@ Build | Status
 Test coverage | [![codecov](https://codecov.io/gh/gazebosim/gz-sensors/tree/gz-sensors9/graph/badge.svg)](https://codecov.io/gh/gazebosim/gz-sensors/tree/gz-sensors9)
 Ubuntu Noble | [![Build Status](https://build.osrfoundation.org/buildStatus/icon?job=gz_sensors-ci-gz-sensors9-noble-amd64)](https://build.osrfoundation.org/job/gz_sensors-ci-gz-sensors9-noble-amd64)
 Homebrew      | [![Build Status](https://build.osrfoundation.org/buildStatus/icon?job=gz_sensors-ci-gz-sensors9-homebrew-amd64)](https://build.osrfoundation.org/job/gz_sensors-ci-gz-sensors9-homebrew-amd64)
-Windows       | [![Build Status](https://build.osrfoundation.org/buildStatus/icon?job=gz_sensors-9-win)](https://build.osrfoundation.org/job/gz_sensors-9-win/)
+Windows       | [![Build Status](https://build.osrfoundation.org/buildStatus/icon?job=gz_sensors-9-cnlwin)](https://build.osrfoundation.org/job/gz_sensors-9-cnlwin/)
 
 Gazebo Sensors, a component of [Gazebo](https://gazebosim.org),
 provides numerous sensor models
@@ -52,13 +52,37 @@ configured at run time to mimic specific real-world sensors. A noise model
 is also provided that can be used to introduce Gaussian or custom noise
 models into sensor streams.
 
+## Supported Sensors
+
+| **Sensor Name**           | **API Link**                                                                                                 | **SDF Element**                                                                                      | **Notes**                                          |
+|---------------------------|-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| **Air Pressure Sensor**   | [AirPressureSensor](https://gazebosim.org/api/sensors/9/classgz_1_1sensors_1_1AirPressureSensor.html)        | [`<air_pressure>`](http://sdformat.org/spec?ver=1.12&elem=sensor#sensor_air_pressure)                | Measures atmospheric pressure                      |
+| **Air Speed Sensor**      | [AirSpeedSensor](https://gazebosim.org/api/sensors/9/classgz_1_1sensors_1_1AirSpeedSensor.html)              | [`<air_speed>`](http://sdformat.org/spec?ver=1.12&elem=sensor#sensor_air_speed)                                                                                  | Measures the speed of air relative to the sensor    |
+| **Altimeter**             | [AltimeterSensor](https://gazebosim.org/api/sensors/9/classgz_1_1sensors_1_1AltimeterSensor.html)            | [`<altimeter>`](http://sdformat.org/spec?ver=1.12&elem=sensor#sensor_altimeter)                      | Measures altitude above a reference point          |
+| **Bounding Box Camera**   | [BoundingBoxCameraSensor](https://gazebosim.org/api/sensors/9/classgz_1_1sensors_1_1BoundingBoxCameraSensor.html) | [`<camera>`](http://sdformat.org/spec?ver=1.12&elem=sensor#sensor_camera)                         | Captures images with bounding box annotations      |
+| **Camera**                | [CameraSensor](https://gazebosim.org/api/sensors/9/classgz_1_1sensors_1_1CameraSensor.html)                  | [`<camera>`](http://sdformat.org/spec?ver=1.12&elem=sensor#sensor_camera)                           | Captures standard RGB images                       |
+| **Depth Camera**          | [DepthCameraSensor](https://gazebosim.org/api/sensors/9/classgz_1_1sensors_1_1DepthCameraSensor.html)        | [`<depth_camera>`](http://sdformat.org/spec?ver=1.12&elem=sensor#camera_depth_camera)              | Captures depth information                         |
+| **Doppler Velocity Log**  | [DopplerVelocityLog](https://gazebosim.org/api/sensors/9/classgz_1_1sensors_1_1DopplerVelocityLog.html)      | N/A                                | Measures relative velocity of an underwater vehicle |
+| **Force-Torque**          | [ForceTorqueSensor](https://gazebosim.org/api/sensors/9/classgz_1_1sensors_1_1ForceTorqueSensor.html)        | [`<force_torque>`](http://sdformat.org/spec?ver=1.12&elem=sensor#sensor_force_torque)              | Measures forces and torques on a joint             |
+| **GPU Lidar**             | [GpuLidarSensor](https://gazebosim.org/api/sensors/9/classgz_1_1sensors_1_1GpuLidarSensor.html)              | [`<lidar>`](http://sdformat.org/spec?ver=1.12&elem=sensor#sensor_lidar)                            | Simulates a 3D laser scanner using GPU acceleration|
+| **IMU**                   | [ImuSensor](https://gazebosim.org/api/sensors/9/classgz_1_1sensors_1_1ImuSensor.html)                        | [`<imu>`](http://sdformat.org/spec?ver=1.12&elem=sensor#sensor_imu)                                | Measures linear acceleration and angular velocity  |
+| **Logical Camera**        | [LogicalCameraSensor](https://gazebosim.org/api/sensors/9/classgz_1_1sensors_1_1LogicalCameraSensor.html)    | [`<logical_camera>`](http://sdformat.org/spec?ver=1.12&elem=sensor#sensor_logical_camera)          | Detects models within a specified volume           |
+| **Magnetometer**          | [MagnetometerSensor](https://gazebosim.org/api/sensors/9/classgz_1_1sensors_1_1MagnetometerSensor.html)      | [`<magnetometer>`](http://sdformat.org/spec?ver=1.12&elem=sensor#sensor_magnetometer)              | Measures magnetic field strength and direction     |
+| **NavSat (GPS)**          | [NavSatSensor](https://gazebosim.org/api/sensors/9/classgz_1_1sensors_1_1NavSatSensor.html)                  | [`<navsat>`](http://sdformat.org/spec?ver=1.12&elem=sensor#sensor_navsat)                          | Simulates GPS-like positioning sensor              |
+| **RGBD Camera**           | [RGBDCameraSensor](https://gazebosim.org/api/sensors/7/classgz_1_1sensors_1_1RgbdCameraSensor.html)          | [`<camera>`](http://sdformat.org/spec?ver=1.12&elem=sensor#sensor_camera) | Captures RGB + Depth streams                       |
+| **Segmentation Camera**   | [SegmentationCameraSensor](https://gazebosim.org/api/sensors/9/classgz_1_1sensors_1_1SegmentationCameraSensor.html) | [`<camera>`](http://sdformat.org/spec?ver=1.12&elem=sensor#sensor_camera)              | Captures labeled segmentation images               |
+| **Thermal Camera**        | [ThermalCameraSensor](https://gazebosim.org/api/sensors/7/classgz_1_1sensors_1_1ThermalCameraSensor.html)    | [`<camera>`](http://sdformat.org/spec?ver=1.12&elem=sensor#sensor_camera)                         | Detects heat signature                             |
+| **Wide Angle Camera**     | [WideAngleCameraSensor](https://gazebosim.org/api/sensors/8/classgz_1_1sensors_1_1WideAngleCameraSensor.html)| [`<camera>`](http://sdformat.org/spec?ver=1.12&elem=sensor#sensor_camera)                         | Captures wide field of view                        |
+
 # Install
 
-See the [installation tutorial](https://gazebosim.org/api/sensors/9/installation.html).
+See the [installation tutorial](https://gazebosim.org/api/sensors/10/installation.html).
 
 # Usage
 
-Please refer to the [examples directory](https://github.com/gazebosim/gz-sensors/tree/main/examples).
+Please refer to the [examples directory](https://github.com/gazebosim/gz-sensors/tree/gz-sensors10/examples).
+
+A list of sensors and SDF examples can be found in the [SDF specification](http://sdformat.org/spec?ver=1.12&elem=sensor)
 
 # Folder Structure
 
@@ -98,7 +122,92 @@ This library is licensed under [Apache 2.0](https://www.apache.org/licenses/LICE
 :::
 
 :::{tab-item} Changelog
+## Gazebo Sensors 10
+
+### Gazebo Sensors 10.0.0 (2025-09-30)
+
+1. **Baseline:** this includes all changes from 9.2.0 and earlier.
+
+1. Update boundingbox_camera.md with the proper projection matrix
+    * [Pull request #552](https://github.com/gazebosim/gz-sensors/pull/552)
+
+1. Update bazel module to use jetty release branches
+    * [Pull request #551](https://github.com/gazebosim/gz-sensors/pull/551)
+
+1. Add missing includes
+    * [Pull request #544](https://github.com/gazebosim/gz-sensors/pull/544)
+
+1. [Bazel] Fix downstream build errors with -Werror
+    * [Pull request #537](https://github.com/gazebosim/gz-sensors/pull/537)
+
+1. Fix flaky test in DepthCameraSensorTest::ImagesWithBuiltinSDF
+    * [Pull request #536](https://github.com/gazebosim/gz-sensors/pull/536)
+
+1. [Bazel] Remove rendering from core and force-torque targets
+    * [Pull request #535](https://github.com/gazebosim/gz-sensors/pull/535)
+
+1. Better GZ_PROFILE instrumentation for rendering sensors
+    * [Pull request #532](https://github.com/gazebosim/gz-sensors/pull/532)
+
+1. Bump gz-cmake and others in jetty
+    * [Pull request #525](https://github.com/gazebosim/gz-sensors/pull/525)
+
+1. Update API to return const references to strings
+    * [Pull request #526](https://github.com/gazebosim/gz-sensors/pull/526)
+
+1. Clarify min and max temperature of thermal camera
+    * [Pull request #523](https://github.com/gazebosim/gz-sensors/pull/523)
+
+1. Bump gz-transport and others in jetty
+    * [Pull request #515](https://github.com/gazebosim/gz-sensors/pull/515)
+
+1. ci.yml: use noble, disable jammy
+    * [Pull request #516](https://github.com/gazebosim/gz-sensors/pull/516)
+
+1. Remove major version from package name
+    * [Pull request #513](https://github.com/gazebosim/gz-sensors/pull/513)
+
+1. Replace calls to Getlement wit FindElement in examples/cutom_sensor/Odometer.cc
+    * [Pull request #508](https://github.com/gazebosim/gz-sensors/pull/508)
+
+1. Bump main to sensors 10.0.0~pre1
+    * [Pull request #476](https://github.com/gazebosim/gz-sensors/pull/476)
+
 ## Gazebo Sensors 9
+
+### Gazebo Sensors 9.2.0 (2026-06-26)
+
+1. **Baseline:** this includes all changes from 9.1.0 and earlier.
+
+1. Add bazel build support
+    * [Pull request #529](https://github.com/gazebosim/gz-sensors/pull/529)
+
+1. Update CameraSensor.cc - Allow min HFOV of 0.001 rad
+    * [Pull request #520](https://github.com/gazebosim/gz-sensors/pull/520)
+
+1. ci.yml: check doxygen on 24.04
+    * [Pull request #519](https://github.com/gazebosim/gz-sensors/pull/519)
+
+1. Fix airspeed calculation under wind influence by wind triangle
+    * [Pull request #512 ](https://github.com/gazebosim/gz-sensors/pull/512)
+    * Contributor: Ching-Hsiang Wu
+
+1. Add list of supported sensors with API and SDF links to README
+    * [Pull request #511](https://github.com/gazebosim/gz-sensors/pull/511)
+
+1. Update README.md - Link to SDF Spec
+    * [Pull request #505](https://github.com/gazebosim/gz-sensors/pull/505)
+
+### Gazebo Sensors 9.1.0 (2025-02-12)
+
+1. Enable packing w/o padding for pointclouds
+    * [Pull request #493](https://github.com/gazebosim/gz-sensors/pull/493)
+
+1. Add support for L8 and L16 image formats in WideAngleCameraSensor
+    * [Pull request #494](https://github.com/gazebosim/gz-sensors/pull/494)
+
+1. Check camera resolution
+    * [Pull request #480](https://github.com/gazebosim/gz-sensors/pull/480)
 
 ### Gazebo Sensors 9.0.0 (2024-09-25)
 
@@ -166,6 +275,34 @@ This library is licensed under [Apache 2.0](https://www.apache.org/licenses/LICE
     * [Pull request #390](https://github.com/gazebosim/gz-sensors/pull/390)
 
 ## Gazebo Sensors 8
+
+### Gazebo Sensors 8.2.2 (2025-01-30)
+
+1. Check camera resolution (#480)
+    * [Pull request #483](https://github.com/gazebosim/gz-sensors/pull/483)
+
+### Gazebo Sensors 8.2.1 (2024-11-08)
+
+1. RgbdCameraSensor: add missing include
+    * [Pull request #464](https://github.com/gazebosim/gz-sensors/pull/464)
+
+1. Fix frame_id in rgbd_camera
+    * [Pull request #458](https://github.com/gazebosim/gz-sensors/pull/458)
+
+1. Remove unused variable in DopplerVelocityLog
+    * [Pull request #453](https://github.com/gazebosim/gz-sensors/pull/453)
+
+1. Skip apply noise / distortion if parameters are 0s
+    * [Pull request #450](https://github.com/gazebosim/gz-sensors/pull/450)
+
+1. Publish lidar scan only if there are lidar scan connections
+    * [Pull request #447](https://github.com/gazebosim/gz-sensors/pull/447)
+
+1. Backport frame id fixes
+    * [Pull request #446](https://github.com/gazebosim/gz-sensors/pull/446)
+
+1. Fix boundingbox_camera integration test
+    * [Pull request #443](https://github.com/gazebosim/gz-sensors/pull/443)
 
 ### Gazebo Sensors 8.2.0 (2024-06-14)
 

@@ -9,7 +9,7 @@
 :::{tab-item} Readme
 # Gazebo Tools: Entrypoint to Gazebo's command line interface
 
-**Maintainer:** caguero AT openrobotics DOT org
+**Maintainer:** caguero AT honurobotics DOT com
 
 [![GitHub open issues](https://img.shields.io/github/issues-raw/gazebosim/gz-tools.svg)](https://github.com/gazebosim/gz-tools/issues)
 [![GitHub open pull requests](https://img.shields.io/github/issues-pr-raw/gazebosim/gz-tools.svg)](https://github.com/gazebosim/gz-tools/pulls)
@@ -21,7 +21,7 @@ Build | Status
 Test coverage | [![codecov](https://codecov.io/gh/gazebosim/gz-tools/branch/ign-tools2/graph/badge.svg)](https://codecov.io/gh/gazebosim/gz-tools)
 Ubuntu Jammy  | [![Build Status](https://build.osrfoundation.org/buildStatus/icon?job=gz_tools-ci-gz-tools2-jammy-amd64)](https://build.osrfoundation.org/job/gz_tools-ci-gz-tools2-jammy-amd64)
 Homebrew      | [![Build Status](https://build.osrfoundation.org/buildStatus/icon?job=gz_tools-ci-gz-tools2-homebrew-amd64)](https://build.osrfoundation.org/job/gz_tools-ci-gz-tools2-homebrew-amd64)
-Windows       | [![Build Status](https://build.osrfoundation.org/buildStatus/icon?job=gz_tools-2-win)](https://build.osrfoundation.org/job/gz_tools-2-win)
+Windows       | [![Build Status](https://build.osrfoundation.org/buildStatus/icon?job=gz_tools-2-clowin)](https://build.osrfoundation.org/job/gz_tools-2-clowin)
 
 Gazebo Tools provide the `gz` command line tool that accepts multiple
 subcommands. Each subcommand is implemented in a plugin that belongs to a
@@ -73,6 +73,37 @@ This library is licensed under [Apache 2.0](https://www.apache.org/licenses/LICE
 ## Gazebo Tools 2.x
 
 ### Gazebo Tools 2.X.X (20XX-XX-XX)
+
+### Gazebo Tools 2.0.3 (2025-08-25)
+
+1. Update install.md with GPG key addition via trusted.gpg.d and add instructions to install Gazebo CMake from source
+    * [Pull request #144](https://github.com/gazebosim/gz-tools/pull/144)
+
+1. Support gz-cmake without major version
+    * [Pull request #161](https://github.com/gazebosim/gz-tools/pull/161)
+
+1. Add GitHub CI for 24.04
+    * [Pull request #160](https://github.com/gazebosim/gz-tools/pull/160)
+
+1. gz-tools2: support gz-cmake5
+    * [Pull request #158](https://github.com/gazebosim/gz-tools/pull/158)
+
+1. Fix spelling errors
+    * [Pull request #152](https://github.com/gazebosim/gz-tools/pull/152)
+
+1. Update maintainer email
+    * [Pull request #149](https://github.com/gazebosim/gz-tools/pull/149)
+
+### Gazebo Tools 2.0.2 (2025-01-30)
+
+1. Add colcon.pkg with gz-cmake4 dependency
+    * [Pull request #142](https://github.com/gazebosim/gz-tools/pull/142)
+
+1. Fix dll search paths for Ruby on Windows
+    * [Pull request #140](https://github.com/gazebosim/gz-tools/pull/140)
+
+1. Add package.xml
+    * [Pull request #136](https://github.com/gazebosim/gz-tools/pull/136)
 
 ### Gazebo Tools 2.0.1 (2024-03-28)
 
@@ -225,7 +256,7 @@ This library is licensed under [Apache 2.0](https://www.apache.org/licenses/LICE
 1. Clean up gz-tools.pc file
     * [Pull request #40](https://github.com/gazebosim/gz-tools/pull/40)
 
-1. Fix cmake warning and error mesage types
+1. Fix cmake warning and error message types
     * [Pull request #41](https://github.com/gazebosim/gz-tools/pull/41)
 
 1. Infrastructure updates

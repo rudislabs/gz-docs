@@ -2,7 +2,7 @@
 
 {.gz-libs-lists}
 - [{material-regular}`code;2em` Source Code](https://github.com/gazebosim/gz-rendering)
-- [{material-regular}`description;2em` API & Tutorials](https://gazebosim.org/api/rendering/9)
+- [{material-regular}`description;2em` API & Tutorials](https://gazebosim.org/api/rendering/10)
 
 ::::{tab-set}
 
@@ -18,10 +18,10 @@
 
 Build | Status
 -- | --
-Test coverage | [![codecov](https://codecov.io/gh/gazebosim/gz-rendering/tree/gz-rendering9/graph/badge.svg)](https://codecov.io/gh/gazebosim/gz-rendering/tree/gz-rendering9)
-Ubuntu Noble  | [![Build Status](https://build.osrfoundation.org/buildStatus/icon?job=gz_rendering-ci-gz-rendering9-noble-amd64)](https://build.osrfoundation.org/job/gz_rendering-ci-gz-rendering9-noble-amd64)
-Homebrew      | [![Build Status](https://build.osrfoundation.org/buildStatus/icon?job=gz_rendering-ci-gz-rendering9-homebrew-amd64)](https://build.osrfoundation.org/job/gz_rendering-ci-gz-rendering9-homebrew-amd64)
-Windows       | [![Build Status](https://build.osrfoundation.org/buildStatus/icon?job=gz_rendering-9-win)](https://build.osrfoundation.org/job/gz_rendering-9-win)
+Test coverage | [![codecov](https://codecov.io/gh/gazebosim/gz-rendering/tree/gz-rendering10/graph/badge.svg)](https://codecov.io/gh/gazebosim/gz-rendering/tree/gz-rendering10)
+Ubuntu Noble  | [![Build Status](https://build.osrfoundation.org/buildStatus/icon?job=gz_rendering-ci-gz-rendering10-noble-amd64)](https://build.osrfoundation.org/job/gz_rendering-ci-gz-rendering10-noble-amd64)
+Homebrew      | [![Build Status](https://build.osrfoundation.org/buildStatus/icon?job=gz_rendering-ci-gz-rendering10-homebrew-amd64)](https://build.osrfoundation.org/job/gz_rendering-ci-gz-rendering10-homebrew-amd64)
+Windows       | [![Build Status](https://build.osrfoundation.org/buildStatus/icon?job=gz_rendering-10-cnlwin)](https://build.osrfoundation.org/job/gz_rendering-10-cnlwin)
 
 Gazebo Rendering is a C++ library designed to provide an abstraction
 for different rendering engines. It offers unified APIs for creating
@@ -56,12 +56,12 @@ of libraries designed to rapidly develop robot applications.
 
 # Install
 
-See the [installation tutorial](https://gazebosim.org/api/rendering/9/installation.html).
+See the [installation tutorial](https://gazebosim.org/api/rendering/10/installation.html).
 
 # Usage
 
 The Gazebo Rendering API can be found in the documentation. See the
-[installation tutorial](https://gazebosim.org/api/rendering/9/installation.html)
+[installation tutorial](https://gazebosim.org/api/rendering/10/installation.html)
 on how to build the documentation files using Doxygen.
 
 You can also take a look at the sample applications in the `examples` folder.
@@ -108,9 +108,130 @@ This library is licensed under [Apache 2.0](https://www.apache.org/licenses/LICE
 :::
 
 :::{tab-item} Changelog
-## Gazebo Rendering
+# Gazebo Rendering
+
+### Gazebo Rendering 10.X
+
+### Gazebo Rendering 10.0.0 (2025-09-30)
+
+1. **Baseline:** this includes all changes from 9.3.0 and earlier.
+
+1. Prevent material destruction if setting the same material to a submesh
+    * [Pull request #1168](https://github.com/gazebosim/gz-rendering/pull/1168)
+
+1. Add a note about glut dependency in installation tutorial
+    * [Pull request #1163](https://github.com/gazebosim/gz-rendering/pull/1163)
+
+1. [Bazel] Update bazel module to use jetty release branches
+    * [Pull request #1161](https://github.com/gazebosim/gz-rendering/pull/1161)
+
+1. Enable doxygen CI check on noble
+    * [Pull request #1129](https://github.com/gazebosim/gz-rendering/pull/1129)
+
+1. Remove symlinks of versioned to unversioned engine libraries
+    * [Pull request #1142](https://github.com/gazebosim/gz-rendering/pull/1142)
+
+1. Fix clamp of temperature in thermal camera output
+    * [Pull request #1136](https://github.com/gazebosim/gz-rendering/pull/1136)
+
+1. Bump gz-cmake and others in jetty
+    * [Pull request #1131](https://github.com/gazebosim/gz-rendering/pull/1131)
+
+1. Remove deprecations: tock
+    * [Pull request #1091](https://github.com/gazebosim/gz-rendering/pull/1091)
+
+1. Add release dates to Changelog
+    * [Pull request #1086](https://github.com/gazebosim/gz-rendering/pull/1086)
+
+1. Bump main to rendering 10.0.0~pre1
+    * [Pull request #1079](https://github.com/gazebosim/gz-rendering/pull/1079)
 
 ### Gazebo Rendering 9.X
+
+### Gazebo Rendering 9.4.0 (2025-09-05)
+
+1. Add bazel build for ogre2 engine
+    * [Pull request #1157](https://github.com/gazebosim/gz-rendering/pull/1157)
+
+### Gazebo Rendering 9.3.0 (2025-07-25)
+
+1. Guard against bad memory access in RenderPassSystem
+    * [Pull request #1153](https://github.com/gazebosim/gz-rendering/pull/1153)
+
+1. Enable loading a render engine plugin from the static plugin registry
+    * [Pull request #1152](https://github.com/gazebosim/gz-rendering/pull/1152)
+
+1. Fix user settings of thermal camera being ignored
+    * [Pull request #1138](https://github.com/gazebosim/gz-rendering/pull/1138)
+
+1. CppCheck fixes
+    * [Pull request #1148](https://github.com/gazebosim/gz-rendering/pull/1148)
+
+### Gazebo Rendering 9.2.0 (2025-06-06)
+
+1. Disable a couple of tests on windows
+    * [Pull request #1126](https://github.com/gazebosim/gz-rendering/pull/1126)
+
+1. Enable bazel build (core only)
+    * [Pull request #1144](https://github.com/gazebosim/gz-rendering/pull/1144)
+
+1. Hide Ogre and Ogre2 external window on MacOS and Windows
+    * [Pull request #1141](https://github.com/gazebosim/gz-rendering/pull/1141)
+
+1. Fix clamp of temperature in thermal camera output (#1133)
+    * [Pull request #1135](https://github.com/gazebosim/gz-rendering/pull/1135)
+
+1. Change to std::get_if for gz::rendering::Variant for throwless behaviour
+    * [Pull request #1124](https://github.com/gazebosim/gz-rendering/pull/1124)
+
+1. Added missing includes
+    * [Pull request #1128](https://github.com/gazebosim/gz-rendering/pull/1128)
+
+1. Add sanity check for valid submesh indices
+    * [Pull request #1123](https://github.com/gazebosim/gz-rendering/pull/1123)
+
+1. Remove unused variable in OgreRenderingEngine.cc
+    * [Pull request #1119](https://github.com/gazebosim/gz-rendering/pull/1119)
+
+1. Fix spelling issues in documentation
+    * [Pull request #1114](https://github.com/gazebosim/gz-rendering/pull/1114)
+    * [Pull request #1115](https://github.com/gazebosim/gz-rendering/pull/1115)
+
+1. Remove ClearMaterialsCache call when a material is destroyed in ogre2
+    * [Pull request #1110](https://github.com/gazebosim/gz-rendering/pull/1110)
+
+### Gazebo Rendering 9.1.0 (2025-01-27)
+
+1. Visualize Frustum
+    * [Pull request #1095](https://github.com/gazebosim/gz-rendering/pull/1095)
+    * [Pull request #1102](https://github.com/gazebosim/gz-rendering/pull/1102)
+
+1. Fix RenderingIface_TEST for ogre2 when there is no display
+    * [Pull request #1098](https://github.com/gazebosim/gz-rendering/pull/1098)
+
+1. Extend wide angle cameras to support L8 and L16 image formats
+    * [Pull request #1097](https://github.com/gazebosim/gz-rendering/pull/1097)
+
+1. Better approach to use std::variant
+    * [Pull request #1093](https://github.com/gazebosim/gz-rendering/pull/1093)
+
+1. Do not create wirebox with empty AABB (ogre)
+    * [Pull request #1083](https://github.com/gazebosim/gz-rendering/pull/1083)
+
+1. Check valid camera near far clip distances
+    * [Pull request #1082](https://github.com/gazebosim/gz-rendering/pull/1082)
+
+1. Fix Windows github action workflow
+    * [Pull request #1080](https://github.com/gazebosim/gz-rendering/pull/1080)
+
+1. Unload rendering plugin also on Windows
+    * [Pull request #1074](https://github.com/gazebosim/gz-rendering/pull/1074)
+
+1. Fix running rendering tests in GZ_ENABLE_RELOCATABLE_INSTALL is ON
+    * [Pull request #1073](https://github.com/gazebosim/gz-rendering/pull/1073)
+
+1. Fix installation with GZ_ENABLE_RELOCATABLE_INSTALL=ON
+    * [Pull request #1071](https://github.com/gazebosim/gz-rendering/pull/1071)
 
 ### Gazebo Rendering 9.0.0 (2024-09-25)
 
@@ -235,9 +356,55 @@ This library is licensed under [Apache 2.0](https://www.apache.org/licenses/LICE
 1. Add projection matrix set/get functions to Ogre Depth camera
     * [Pull request #928](https://github.com/gazebosim/gz-rendering/pull/928)
 
-### Gazebo Rendering 8.X
+## Gazebo Rendering 8.X
 
-### Gazebo Rendering 8.2.0
+### Gazebo Rendering 8.2.2 (2025-01-30)
+
+1. Fix RenderingIface_TEST for ogre2 when there is no display
+    * [Pull request #1098](https://github.com/gazebosim/gz-rendering/pull/1098)
+
+1. Better approach to use std::variant
+    * [Pull request #1093](https://github.com/gazebosim/gz-rendering/pull/1093)
+
+### Gazebo Rendering 8.2.1 (2024-11-08)
+
+1. Update code for loading normal and albedo maps from image data
+    * [Pull request #1068](https://github.com/gazebosim/gz-rendering/pull/1068)
+
+1. Check for zero quaternion value in MoveToHelper
+    * [Pull request #1076](https://github.com/gazebosim/gz-rendering/pull/1076)
+
+1. Fix waves 'double' to 'float' truncation warning
+    * [Pull request #1065](https://github.com/gazebosim/gz-rendering/pull/1065)
+
+1. Install Roboto fonts to ogre plugin
+    * [Pull request #1035](https://github.com/gazebosim/gz-rendering/pull/1035)
+
+1. Fixed integer underflow in OgreDistortionPass
+    * [Pull request #994](https://github.com/gazebosim/gz-rendering/pull/994)
+
+1. Add gamma correction to simple_demo_qml example
+    * [Pull request #1019](https://github.com/gazebosim/gz-rendering/pull/1019)
+
+1. Optimization: remove extra copy of data buffer in Ogre2GpuRays and Ogre2DepthCamera
+    * [Pull request #1022](https://github.com/gazebosim/gz-rendering/pull/1022)
+
+1. Fix crash when wide angle camera FOV is > 180
+    * [Pull request #1016](https://github.com/gazebosim/gz-rendering/pull/1016)
+
+1. Fix debug builds of gz-rendering-ogre2 plugin
+    * [Pull request #1014](https://github.com/gazebosim/gz-rendering/pull/1014)
+
+1. Fix lidar 1st pass texture resolution calculation for FOV < 90 degrees
+    * [Pull request #1012](https://github.com/gazebosim/gz-rendering/pull/1012)
+
+1. Use single cubemap camera in lidar
+    * [Pull request #1013](https://github.com/gazebosim/gz-rendering/pull/1013)
+
+1. Parse correctly OGRE2_RESOURCE_PATH on Windows
+    * [Pull request #996](https://github.com/gazebosim/gz-rendering/pull/996)
+
+### Gazebo Rendering 8.2.0 (2024-06-19)
 
 1. Backport: Adding cone primitives.
     * [Pull request #1003](https://github.com/gazebosim/gz-rendering/pull/1003)
@@ -907,7 +1074,7 @@ This library is licensed under [Apache 2.0](https://www.apache.org/licenses/LICE
 1. Increased Marker coverage
     * [Pull request #738](https://github.com/gazebosim/ign-rendering/pull/738)
 
-1. Added shaderType converage
+1. Added shaderType coverage
     * [Pull request #740](https://github.com/gazebosim/ign-rendering/pull/740)
 
 1. Improved grid coverage
@@ -936,7 +1103,7 @@ This library is licensed under [Apache 2.0](https://www.apache.org/licenses/LICE
 1. Update Marker test
     * [Pull request #673](https://github.com/gazebosim/gz-rendering/pull/673)
 
-1. Increase TransformControl test converage
+1. Increase TransformControl test coverage
     * [Pull request #668](https://github.com/gazebosim/gz-rendering/pull/668)
 
 1. Enable ogre2 heightmap test

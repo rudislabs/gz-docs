@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JKS50SX85K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JKS50SX85K');
+    </script>
+    
     <title>physics &#8212; Gazebo  documentation</title>
   
   
@@ -16,8 +25,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -27,19 +36,19 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/gazebo.css?v=173bdbe0" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/gazebo.css?v=1d42b338" />
   
   <!-- So that users can add custom icons -->
-  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=187304be"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -147,7 +156,7 @@
       <ul class="dropdown-menu">
         <li class="nav-item"><a class="nav-link nav-internal" href="https://rudislabs.github.io/gz-docs/about">About</a></li>
         <li class="nav-item"><a class="nav-link nav-internal" href='https://community.gazebosim.org' title="Discussion forum">Community</a>
-        <li class="nav-item"><a class="nav-link nav-internal" href='https://robotics.stackexchange.org' title="Technical help">Answers</a>
+        <li class="nav-item"><a class="nav-link nav-internal" href='https://robotics.stackexchange.com' title="Technical help">Answers</a>
         <li class="nav-item"><a class="nav-link nav-internal" href="https://blog.openrobotics.org/tag/gazebo">Blog</a>
         <li class="nav-item"><a class="nav-link nav-internal" href="https://rudislabs.github.io/gz-docs/media">Media</a></li>
       </ul>
@@ -243,7 +252,7 @@
       <ul class="dropdown-menu">
         <li class="nav-item"><a class="nav-link nav-internal" href="https://rudislabs.github.io/gz-docs/about">About</a></li>
         <li class="nav-item"><a class="nav-link nav-internal" href='https://community.gazebosim.org' title="Discussion forum">Community</a>
-        <li class="nav-item"><a class="nav-link nav-internal" href='https://robotics.stackexchange.org' title="Technical help">Answers</a>
+        <li class="nav-item"><a class="nav-link nav-internal" href='https://robotics.stackexchange.com' title="Technical help">Answers</a>
         <li class="nav-item"><a class="nav-link nav-internal" href="https://blog.openrobotics.org/tag/gazebo">Blog</a>
         <li class="nav-item"><a class="nav-link nav-internal" href="https://rudislabs.github.io/gz-docs/media">Media</a></li>
       </ul>
@@ -301,9 +310,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -350,7 +364,7 @@
 <h1>physics<a class="headerlink" href="#physics" title="Link to this heading">#</a></h1>
 <ul class="gz-libs-lists simple">
 <li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics"><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-code" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"></path></svg> Source Code</a></p></li>
-<li><p><a class="reference external" href="https://gazebosim.org/api/physics/8"><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-description" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"></path></svg> API &amp; Tutorials</a></p></li>
+<li><p><a class="reference external" href="https://gazebosim.org/api/physics/9"><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-description" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"></path></svg> API &amp; Tutorials</a></p></li>
 </ul>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
@@ -370,16 +384,16 @@ Readme</label><div class="sd-tab-content docutils">
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Test coverage</p></td>
-<td><p><a class="reference external" href="https://codecov.io/gh/gazebosim/gz-physics/tree/gz-physics8"><img alt="codecov" src="https://codecov.io/gh/gazebosim/gz-physics/tree/gz-physics8/graph/badge.svg" /></a></p></td>
+<td><p><a class="reference external" href="https://codecov.io/gh/gazebosim/gz-physics/tree/gz-physics9"><img alt="codecov" src="https://codecov.io/gh/gazebosim/gz-physics/tree/gz-physics9/graph/badge.svg" /></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Ubuntu Noble</p></td>
-<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_physics-ci-gz-physics8-noble-amd64"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_physics-ci-gz-physics8-noble-amd64" /></a></p></td>
+<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_physics-ci-gz-physics9-noble-amd64"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_physics-ci-gz-physics9-noble-amd64" /></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Homebrew</p></td>
-<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_physics-ci-gz-physics8-homebrew-amd64"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_physics-ci-gz-physics8-homebrew-amd64" /></a></p></td>
+<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_physics-ci-gz-physics9-homebrew-amd64"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_physics-ci-gz-physics9-homebrew-amd64" /></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Windows</p></td>
-<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_physics-8-win"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_physics-8-win" /></a></p></td>
+<td><p><a class="reference external" href="https://build.osrfoundation.org/job/gz_physics-9-cnlwin"><img alt="Build Status" src="https://build.osrfoundation.org/buildStatus/icon?job=gz_physics-9-cnlwin" /></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -429,7 +443,7 @@ at runtime.</p></li>
 <p class="rubric" id="install">Install</p>
 <p>See the <a class="reference external" href="https://gazebosim.org/api/physics/8/installation.html">installation tutorial</a>.</p>
 <p class="rubric" id="usage">Usage</p>
-<p>Please refer to the <a class="reference external" href="https://github.com/gazebosim/gz-physics/raw/gz-physics8/examples/">examples directory</a>.</p>
+<p>Please refer to the <a class="reference external" href="https://github.com/gazebosim/gz-physics/raw/gz-physics9/examples/">examples directory</a>.</p>
 <p class="rubric" id="documentation">Documentation</p>
 <p>API and tutorials can be found at <a class="reference external" href="https://gazebosim.org/libs/physics">https://gazebosim.org/libs/physics</a>.</p>
 <p>On Ubuntu, you can also generate the documentation from a clone of this repository by following these steps.</p>
@@ -441,12 +455,12 @@ at runtime.</p></li>
 </li>
 <li><p>Install dependencies</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">add</span><span class="o">-</span><span class="n">repository</span> <span class="o">-</span><span class="n">s</span> <span class="s2">&quot;deb http://packages.osrfoundation.org/gazebo/ubuntu-stable $(lsb_release -c -s) main&quot;</span>
-<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">build</span><span class="o">-</span><span class="n">dep</span> <span class="o">-</span><span class="n">y</span> <span class="n">libgz</span><span class="o">-</span><span class="n">physics8</span><span class="o">-</span><span class="n">dev</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">build</span><span class="o">-</span><span class="n">dep</span> <span class="o">-</span><span class="n">y</span> <span class="n">libgz</span><span class="o">-</span><span class="n">physics9</span><span class="o">-</span><span class="n">dev</span>
 </pre></div>
 </div>
 </li>
 <li><p>Clone the repository</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">gazebosim</span><span class="o">/</span><span class="n">gz</span><span class="o">-</span><span class="n">physics</span> <span class="o">-</span><span class="n">b</span> <span class="n">gz</span><span class="o">-</span><span class="n">physics8</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">gazebosim</span><span class="o">/</span><span class="n">gz</span><span class="o">-</span><span class="n">physics</span> <span class="o">-</span><span class="n">b</span> <span class="n">gz</span><span class="o">-</span><span class="n">physics9</span>
 </pre></div>
 </div>
 </li>
@@ -514,12 +528,228 @@ at runtime.</p></li>
 <p class="rubric" id="versioning">Versioning</p>
 <p>This library uses <a class="reference external" href="https://semver.org/">Semantic Versioning</a>. Additionally, this library is part of the <a class="reference external" href="https://gazebosim.org">Gazebo project</a> which periodically releases a versioned set of compatible and complementary libraries. See the <a class="reference external" href="https://gazebosim.org">Gazebo website</a> for version and release information.</p>
 <p class="rubric" id="license">License</p>
-<p>This library is licensed under <a class="reference external" href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>. See also the <a class="reference external" href="https://github.com/gazebosim/gz-physics/blob/main/LICENSE">LICENSE</a> file.</p>
+<p>This library is licensed under <a class="reference external" href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>. See also the <a class="reference external" href="https://github.com/gazebosim/gz-physics/blob/gz-physics9/LICENSE">LICENSE</a> file.</p>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-1">
 Changelog</label><div class="sd-tab-content docutils">
+<p class="rubric" id="gazebo-physics-9-x">Gazebo Physics 9.x</p>
+<p class="rubric" id="gazebo-physics-9-0-0-2025-09-30">Gazebo Physics 9.0.0 (2025-09-30)</p>
+<ol class="arabic simple">
+<li><p><strong>Baseline:</strong> this includes all changes from 8.3.0 and earlier.</p></li>
+<li><p>Fix crash when recursively deleting nested models</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/781">Pull request #781</a></p></li>
+</ul>
+</li>
+<li><p>Update <code class="docutils literal notranslate"><span class="pre">09_use_custom_engine.md</span></code> build commands</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/780">Pull request #780</a></p></li>
+</ul>
+</li>
+<li><p>Fix spelling in simulation concepts tutorial</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/778">Pull request #778</a></p></li>
+</ul>
+</li>
+<li><p>Fix path in physics plugin implementation tutorial</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/777">Pull request #777</a></p></li>
+</ul>
+</li>
+<li><p>[Bazel] Update bazel module to use jetty release branches</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/776">Pull request #776</a></p></li>
+</ul>
+</li>
+<li><p>bullet-featherstone: Add Kinematic feature</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/618">Pull request #618</a></p></li>
+</ul>
+</li>
+<li><p>Fix model frame data</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/651">Pull request #651</a></p></li>
+</ul>
+</li>
+<li><p>bullet-featherstone: Fix joint frame data pose</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/650">Pull request #650</a></p></li>
+</ul>
+</li>
+<li><p>bullet-featherstone: Fix model frame data pose</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/649">Pull request #649</a></p></li>
+</ul>
+</li>
+<li><p>Add check for valid freegroup link in dartsim</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/765">Pull request #765</a></p></li>
+</ul>
+</li>
+<li><p>Bump dependency versions of gz-cmake and others in jetty and remove version from package names</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/743">Pull request #743</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/747">Pull request #747</a></p></li>
+</ul>
+</li>
+<li><p>Fix two warnings in gz_physics-main-cnlwin</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/734">Pull request #734</a></p></li>
+</ul>
+</li>
+<li><p>Remove deprecations from config.hh and dartsim SDF Features test</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/705">Pull request #705</a></p></li>
+</ul>
+</li>
+<li><p>Bump major version to 9</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/696">Pull request #696</a></p></li>
+</ul>
+</li>
+</ol>
 <p class="rubric" id="gazebo-physics-8-x">Gazebo Physics 8.x</p>
+<p class="rubric" id="gazebo-physics-8-3-0-2025-07-25">Gazebo Physics 8.3.0 (2025-07-25)</p>
+<ol class="arabic simple">
+<li><p>Add support for static physics engine plugins libs</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/761">Pull request #761</a></p></li>
+</ul>
+</li>
+<li><p>Add feature to weld child to parent in a fixed joint</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/759">Pull request #759</a></p></li>
+</ul>
+</li>
+<li><p>BallJoint: apply axis properties to ball joints</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/753">Pull request #753</a></p></li>
+</ul>
+</li>
+<li><p>[bazel] Fix linker error</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/755">Pull request #755</a></p></li>
+</ul>
+</li>
+</ol>
+<p class="rubric" id="gazebo-physics-8-2-0-2025-06-26">Gazebo Physics 8.2.0 (2025-06-26)</p>
+<ol class="arabic simple">
+<li><p><strong>Baseline:</strong> this includes all changes from 8.1.0 and earlier.</p></li>
+<li><p>Add bazel build files</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/748">Pull request #748</a></p></li>
+</ul>
+</li>
+<li><p>Features to change joint properties at run-time</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/723">Pull request #723</a></p></li>
+</ul>
+</li>
+<li><p>Add joint damping support in bullet-featherstone plugin</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/738">Pull request #738</a></p></li>
+</ul>
+</li>
+<li><p>Clean up comment in joint wrench test</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/739">Pull request #739</a></p></li>
+</ul>
+</li>
+<li><p>Suppress -Wreturn-type warning from octomap</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/728">Pull request #728</a></p></li>
+</ul>
+</li>
+<li><p>Fix collision checking issues in bullet-featherstone</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/727">Pull request #727</a></p></li>
+</ul>
+</li>
+<li><p>Fix windows warnings</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/720">Pull request #720</a></p></li>
+</ul>
+</li>
+<li><p>bullet-featherstone: Remove joint motor constraint on joint force cmd</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/713">Pull request #713</a></p></li>
+</ul>
+</li>
+<li><p>Visibility fixes for DART on Windows</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/711">Pull request #711</a></p></li>
+</ul>
+</li>
+<li><p>Support setting max contacts in dart’s bullet collision detector</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/593">Pull request #593</a></p></li>
+</ul>
+</li>
+<li><p>Remove unreferenced switching-physics-engine tutorial and fix broken link in 04_physics_engines</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/684">Pull request #684</a></p></li>
+</ul>
+</li>
+<li><p>Prevent crash when objects move to invalid poses</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/706">Pull request #706</a></p></li>
+</ul>
+</li>
+<li><p>bullet-featherstone: Reset joint motor constraint’s velocity target after each step</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/699">Pull request #699</a></p></li>
+</ul>
+</li>
+<li><p>GzOdeCollisionDetector: Use static mutex in create</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/675">Pull request #675</a></p></li>
+</ul>
+</li>
+<li><p>bullet-featherstone - add applied constraint to joint transmitted wrench</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/668">Pull request #668</a></p></li>
+</ul>
+</li>
+</ol>
+<p class="rubric" id="gazebo-physics-8-1-0-2025-02-12">Gazebo Physics 8.1.0 (2025-02-12)</p>
+<ol class="arabic simple">
+<li><p>bullet-featherstone: Remove joint motor constraint on joint force cmd</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/713">Pull request #713</a></p></li>
+</ul>
+</li>
+<li><p>ci.yml: run cppcheck, cpplint on noble</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/710">Pull request #710</a></p></li>
+</ul>
+</li>
+<li><p>Support setting max contacts in dart’s bullet collision detector</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/593">Pull request #593</a></p></li>
+</ul>
+</li>
+<li><p>Prevent crash when objects move to invalid poses</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/706">Pull request #706</a></p></li>
+</ul>
+</li>
+<li><p>bullet-featherstone: Fix finding free group for a body with fixed base</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/700">Pull request #700</a></p></li>
+</ul>
+</li>
+<li><p>bullet-featherstone: Reset joint motor constraint’s velocity target after each step</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/699">Pull request #699</a></p></li>
+</ul>
+</li>
+<li><p>Update physics_plugins tutorial</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/687">Pull request #687</a></p></li>
+</ul>
+</li>
+</ol>
 <p class="rubric" id="gazebo-physics-8-0-0-2024-09-25">Gazebo Physics 8.0.0 (2024-09-25)</p>
 <ol class="arabic simple">
 <li><p><strong>Baseline:</strong> this includes all changes from 7.3.0 and earlier.</p></li>
@@ -623,6 +853,83 @@ Changelog</label><div class="sd-tab-content docutils">
 </li>
 </ol>
 <p class="rubric" id="gazebo-physics-7-x">Gazebo Physics 7.x</p>
+<p class="rubric" id="gazebo-physics-7-5-0-2025-01-30">Gazebo Physics 7.5.0 (2025-01-30)</p>
+<ol class="arabic simple">
+<li><p>bullet-featherstone: Remove joint motor constraint on joint force cmd</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/713">Pull request #713</a></p></li>
+</ul>
+</li>
+<li><p>Visibility fixes for DART on Windows</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/711">Pull request #711</a></p></li>
+</ul>
+</li>
+<li><p>Support setting max contacts in dart’s bullet collision detector</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/593">Pull request #593</a></p></li>
+</ul>
+</li>
+<li><p>Remove unreferenced switching-physics-engine tutorial and fix broken link in 04_physics_engines</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/684">Pull request #684</a></p></li>
+</ul>
+</li>
+<li><p>Prevent crash when objects move to invalid poses</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/706">Pull request #706</a></p></li>
+</ul>
+</li>
+</ol>
+<p class="rubric" id="gazebo-physics-7-4-0-2024-11-08">Gazebo Physics 7.4.0 (2024-11-08)</p>
+<ol class="arabic simple">
+<li><p>bullet-featherstone: Reset joint motor constraint’s velocity target after each step</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/699">Pull request #699</a></p></li>
+</ul>
+</li>
+<li><p>GzOdeCollisionDetector: Use static mutex in create</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/675">Pull request #675</a></p></li>
+</ul>
+</li>
+<li><p>bullet-featherstone: add applied constraint to joint transmitted wrench</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/668">Pull request #668</a></p></li>
+</ul>
+</li>
+<li><p>bullet-featherstone: Support empty links</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/665">Pull request #665</a></p></li>
+</ul>
+</li>
+<li><p>Fix compile warnings</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/663">Pull request #663</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/629">Pull request #629</a></p></li>
+</ul>
+</li>
+<li><p>bullet-featherstone: Enforce joint velocity and effort limits for velocity control commands</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/658">Pull request #658</a></p></li>
+</ul>
+</li>
+<li><p>dartsim: optimize picking contact points with ODE collision detector</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/584">Pull request #584</a></p></li>
+</ul>
+</li>
+<li><p>Add no gravity link support</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/633">Pull request #633</a></p></li>
+</ul>
+</li>
+<li><p>Disable test failing due to ODE/libccd (backport #621)</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/gazebosim/gz-physics/pull/621">Pull request #621</a></p></li>
+</ul>
+</li>
+</ol>
 <p class="rubric" id="gazebo-physics-7-3-0-2024-06-25">Gazebo Physics 7.3.0 (2024-06-25)</p>
 <ol class="arabic simple">
 <li><p>Backport: Add Cone as a collision shape</p>
@@ -2517,8 +2824,8 @@ Changelog</label><div class="sd-tab-content docutils">
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -2528,7 +2835,7 @@ Changelog</label><div class="sd-tab-content docutils">
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     <br/>
   </p>
 </div>
@@ -2540,8 +2847,8 @@ Changelog</label><div class="sd-tab-content docutils">
       
         <div class="footer-item"><p> Brought to you by <a href="https://openrobotics.org">Open Robotics</a>. </p>
 <p> Except where otherwise noted, the gazebosim.org web pages are licensed under <a
-    href="https://creativecommons.org/licenses/by/3.0/us/">Creative Commons
-    Attribution 3.0</a>. </p></div>
+    href="https://creativecommons.org/licenses/by/4.0/us/">Creative Commons
+    Attribution 4.0</a>. </p></div>
       
     </div>
   
@@ -2550,7 +2857,8 @@ Changelog</label><div class="sd-tab-content docutils">
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
 </p></div>
       
     </div>

@@ -2,7 +2,7 @@
 
 {.gz-libs-lists}
 - [{material-regular}`code;2em` Source Code](https://github.com/gazebosim/gz-math)
-- [{material-regular}`description;2em` API & Tutorials](https://gazebosim.org/api/math/8)
+- [{material-regular}`description;2em` API & Tutorials](https://gazebosim.org/api/math/9)
 
 ::::{tab-set}
 
@@ -18,10 +18,10 @@
 
 Build | Status
 -- | --
-Test coverage | [![codecov](https://codecov.io/gh/gazebosim/gz-math/branch/gz-math8/graph/badge.svg)](https://codecov.io/gh/gazebosim/gz-math/tree/gz-math8)
-Ubuntu Noble  | [![Build Status](https://build.osrfoundation.org/buildStatus/icon?job=gz_math-ci-gz-math8-noble-amd64)](https://build.osrfoundation.org/job/gz_math-ci-gz-math8-noble-amd64)
-Homebrew      | [![Build Status](https://build.osrfoundation.org/buildStatus/icon?job=gz_math-ci-gz-math8-homebrew-amd64)](https://build.osrfoundation.org/job/gz_math-ci-gz-math8-homebrew-amd64)
-Windows       | [![Build Status](https://build.osrfoundation.org/buildStatus/icon?job=gz_math-8-win)](https://build.osrfoundation.org/job/gz_math-8-win)
+Test coverage | [![codecov](https://codecov.io/gh/gazebosim/gz-math/branch/gz-math9/graph/badge.svg)](https://codecov.io/gh/gazebosim/gz-math/tree/gz-math9)
+Ubuntu Noble  | [![Build Status](https://build.osrfoundation.org/buildStatus/icon?job=gz_math-ci-gz-math9-noble-amd64)](https://build.osrfoundation.org/job/gz_math-ci-gz-math9-noble-amd64)
+Homebrew      | [![Build Status](https://build.osrfoundation.org/buildStatus/icon?job=gz_math-ci-gz-math9-homebrew-amd64)](https://build.osrfoundation.org/job/gz_math-ci-gz-math9-homebrew-amd64)
+Windows       | [![Build Status](https://build.osrfoundation.org/buildStatus/icon?job=gz_math-9-cnlwin)](https://build.osrfoundation.org/job/gz_math-9-cnlwin)
 
 Gazebo Math, a component of [Gazebo](https://gazebosim.org), provides general purpose math
 classes and functions designed for robotic applications.
@@ -60,7 +60,7 @@ See the [installation tutorial](https://gazebosim.org/api/math/8/install.html).
 
 # Usage
 
-Please refer to the [examples directory](https://github.com/gazebosim/gz-math/raw/gz-math8/examples/).
+Please refer to the [examples directory](https://github.com/gazebosim/gz-math/raw/gz-math9/examples/).
 
 # Folder Structure
 
@@ -91,7 +91,7 @@ Please see the
 # Code of Conduct
 
 Please see
-[CODE_OF_CONDUCT.md](https://github.com/gazebosim/gz-sim/blob/main/CODE_OF_CONDUCT.md).
+[CODE_OF_CONDUCT.md](https://github.com/gazebosim/gz-sim/blob/gz-math9/CODE_OF_CONDUCT.md).
 
 # Versioning
 
@@ -99,12 +99,125 @@ This library uses [Semantic Versioning](https://semver.org/). Additionally, this
 
 # License
 
-This library is licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0). See also the [LICENSE](https://github.com/gazebosim/gz-math/blob/gz-math8/LICENSE) file.
+This library is licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0). See also the [LICENSE](https://github.com/gazebosim/gz-math/blob/gz-math9/LICENSE) file.
 
 :::
 
 :::{tab-item} Changelog
+## Gazebo Math 9.x
+
+### Gazebo Math 9.0.0 (2025-09-30)
+
+1. **Baseline:** this includes all changes from 8.2.0 and earlier.
+
+1. Removed warning OccupancyGrid
+    * [Pull request #693](https://github.com/gazebosim/gz-math/pull/693)
+
+1. packages.apt: use jetty package names
+    * [Pull request #687](https://github.com/gazebosim/gz-math/pull/687)
+
+1. Add simple OccupancyGrid class
+    * [Pull request #685](https://github.com/gazebosim/gz-math/pull/685)
+
+1. Update tutorial build step
+    * [Pull request #626](https://github.com/gazebosim/gz-math/pull/626)
+
+1. Bazel support
+    * [Pull request #695](https://github.com/gazebosim/gz-math/pull/695)
+    * [Pull request #691](https://github.com/gazebosim/gz-math/pull/691)
+    * [Pull request #683](https://github.com/gazebosim/gz-math/pull/683)
+    * [Pull request #681](https://github.com/gazebosim/gz-math/pull/681)
+    * [Pull request #680](https://github.com/gazebosim/gz-math/pull/680)
+    * [Pull request #673](https://github.com/gazebosim/gz-math/pull/673)
+
+1. python: suppress Pose3 deprecation warnings
+    * [Pull request #682](https://github.com/gazebosim/gz-math/pull/682)
+
+1. Bump dependency versions of gz-cmake and others in jetty and remove version from package names
+    * [Pull request #677](https://github.com/gazebosim/gz-math/pull/677)
+    * [Release-tools issue #1309](https://github.com/gazebo-tooling/release-tools/issues/1309)
+
+1. Include `numpy_helpers` in the `py_test` calls
+    * [Pull request #673](https://github.com/gazebosim/gz-math/pull/673)
+
+1. Unify `Python3_Development_FOUND` checks
+    * [Pull request #663](https://github.com/gazebosim/gz-math/pull/663)
+
+1. Remove deprecations from SphericalCoordinates, Stopwatch, graph/Edge, and graph/Vertex classes
+    * [Pull request #653](https://github.com/gazebosim/gz-math/pull/653)
+
+1. Bump major version to 9
+    * [Pull request #635](https://github.com/gazebosim/gz-math/pull/635)
+
+1. `buffer_protocol` for vectors and matrices in python bindings
+    * [Pull request #524](https://github.com/gazebosim/gz-math/pull/524)
+
 ## Gazebo Math 8.x
+
+### Gazebo Math 8.2.0 (2025-05-12)
+
+1. Fix bazel build errors with clang
+    * [Pull request #678](https://github.com/gazebosim/gz-math/pull/678)
+
+1. Use 24.04 for doxygen CI
+    * [Pull request #676](https://github.com/gazebosim/gz-math/pull/676)
+
+1. Use Bazel Central Registry version of eigen
+    * [Pull request #675](https://github.com/gazebosim/gz-math/pull/675)
+
+1. Test building python bindings in Ubuntu CI
+    * [Pull request #672](https://github.com/gazebosim/gz-math/pull/672)
+
+1. Docs/spell check
+    * [Pull request #669](https://github.com/gazebosim/gz-math/pull/669)
+
+1. feat: Add AxisAlignedBox conversion helpers
+    * [Pull request #667](https://github.com/gazebosim/gz-math/pull/667)
+
+1. bazel: Build pybind module and test
+    * [Pull request #661](https://github.com/gazebosim/gz-math/pull/661)
+
+### Gazebo Math 8.1.1 (2025-02-12)
+
+1. Unify `Python3_Development_FOUND` checks
+    * [Pull request #662](https://github.com/gazebosim/gz-math/pull/662)
+
+1. Change to globbed bazel targets
+    * [Pull request #652](https://github.com/gazebosim/gz-math/pull/652)
+
+1. SignalStats.cc: add missing includes
+    * [Pull request #659](https://github.com/gazebosim/gz-math/pull/659)
+
+1. Encapsulate std::cerr under a single point of control
+    * [Pull request #656](https://github.com/gazebosim/gz-math/pull/656)
+
+1. ci.yml: run cppcheck, cpplint on noble
+    * [Pull request #655](https://github.com/gazebosim/gz-math/pull/655)
+
+### Gazebo Math 8.1.0 (2024-11-15)
+
+1. Build gz-math with bzlmod
+    * [Pull request #648](https://github.com/gazebosim/gz-math/pull/648)
+    * [Pull request #646](https://github.com/gazebosim/gz-math/pull/646)
+    * [Pull request #644](https://github.com/gazebosim/gz-math/pull/644)
+    * [Pull request #589](https://github.com/gazebosim/gz-math/pull/589)
+
+1. Add CI support for bzlmod
+    * [Pull request #643](https://github.com/gazebosim/gz-math/pull/643)
+    * [Pull request #637](https://github.com/gazebosim/gz-math/pull/637)
+
+1. Specify template for Vector2 in Vector2_TEST
+    * [Pull request #645](https://github.com/gazebosim/gz-math/pull/645)
+
+1. Python bindings: get version from package.xml
+    * [Pull request #642](https://github.com/gazebosim/gz-math/pull/642)
+
+1. Permit building python bindings separately from gz-math library
+    * [Pull request #640](https://github.com/gazebosim/gz-math/pull/640)
+    * [Pull request #636](https://github.com/gazebosim/gz-math/pull/636)
+
+1. Merge all changes from 7.5.1
+    * [Pull request #623](https://github.com/gazebosim/gz-math/pull/623)
 
 ### Gazebo Math 8.0.0 (2024-09-25)
 
@@ -173,6 +286,28 @@ This library is licensed under [Apache 2.0](https://www.apache.org/licenses/LICE
     * [Pull request #478](https://github.com/gazebosim/gz-math/pull/478)
 
 ## Gazebo Math 7.x
+
+### Gazebo Math 7.5.2 (2025-01-30)
+
+1. Backport bazel BUILD updates from gz-math8
+    * [Pull request #651](https://github.com/gazebosim/gz-math/pull/651)
+
+1. Permit building python bindings separately from gz-math library
+    * [Pull request #640](https://github.com/gazebosim/gz-math/pull/640)
+
+### Gazebo Math 7.5.1 (2024-08-23)
+
+1. Fix tolerance for axis-angle conversion of quaternions
+    * [Pull request #620](https://github.com/gazebosim/gz-math/pull/620)
+
+1. Added box examples in C++ and Python
+    * [Pull request #584](https://github.com/gazebosim/gz-math/pull/584)
+
+1. Check for 0 stddev when generating a random number using normal distribution
+    * [Pull request #615](https://github.com/gazebosim/gz-math/pull/615)
+
+1. Clean up nested namespaces
+    * [Pull request #603](https://github.com/gazebosim/gz-math/pull/603)
 
 ### Gazebo Math 7.5.0 (2024-06-18)
 
@@ -987,7 +1122,7 @@ This library is licensed under [Apache 2.0](https://www.apache.org/licenses/LICE
     * [Pull request 132](https://github.com/gazebosim/gz-math/pull/132)
     * [Issue 71](https://github.com/gazebosim/gz-math/issues/71)
 
-1. Update vector2 fuctions from vector3
+1. Update vector2 functions from vector3
     * [Pull request 130](https://github.com/gazebosim/gz-math/pull/130)
     * [Issue 71](https://github.com/gazebosim/gz-math/issues/71)
 
@@ -1196,7 +1331,7 @@ specify a density.
     * [Issue 72](https://github.com/gazebosim/gz-math/issues/72)
     * [Issue 53](https://github.com/gazebosim/gz-math/issues/53)
 
-1. Added graph utilites:
+1. Added graph utilities:
     1. Added a Vertex class:
     * [BitBucket pull request 170](https://osrf-migration.github.io/ignition-gh-pages/#!/ignitionrobotics/ign-math/pull-requests/170)
     1. Added an Edge class:
@@ -1267,7 +1402,7 @@ specify a density.
     * [BitBucket pull request 137](https://osrf-migration.github.io/ignition-gh-pages/#!/ignitionrobotics/ign-math/pull-requests/137)
 
 1. Removed exceptions. Return values should be evaluated to determine if
-   errors have occured.
+   errors have occurred.
     * [BitBucket pull request 132](https://osrf-migration.github.io/ignition-gh-pages/#!/ignitionrobotics/ign-math/pull-requests/132)
 
 1. Added `operator=(const Quaternion<T> &_q)` to `Matrix3`.
